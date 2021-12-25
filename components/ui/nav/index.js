@@ -68,7 +68,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
           >
-            <span>Who we are</span>
+            <span>How it Works</span>
             <i className="far fa-chevron-down"></i>
           </button>
           <div className={`${styles.dropdownMenu} ${about ? styles.show : ""}`}>
@@ -94,7 +94,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
           >
-            <span>What we do</span>
+            <span>FAQs</span>
             <i className="far fa-chevron-down"></i>
           </button>
           <div
@@ -122,7 +122,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
           >
-            <span>Industries and Expertise</span>
+            <span>About Us</span>
             <i className="far fa-chevron-down"></i>
           </button>
           <div
@@ -137,66 +137,15 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             </div>
           </div>
         </li>
-        <li className={styles.hasDrop}>
-          <button
-            className={`${styles.hasDropBtn} ${
-              publicService ? styles.boldText : ""
-            } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
-              openPublicService(!publicService);
-              openIndustries(false);
-              openServices(false);
-              openAbout(false);
-              openPortfolio(false);
-              publicService ? clicked(false) : clicked(true);
-              document.querySelector("nav").classList.toggle(styles.hidden);
-            }}
-          >
-            <span>Public Service</span>
-            <i className="far fa-chevron-down"></i>
-          </button>
-          <div
-            className={`${styles.dropdownMenu} ${
-              publicService ? styles.show : ""
-            }`}
-          >
-            <div className={styles.dropdownContainer}>
-              <div
-                className={`${styles.dropdownWrapper} ${styles.publicService}`}
-              >
-                <PublicServiceDrop />
-              </div>
-            </div>
-          </div>
+
+        <li>
+          <ActiveLink
+            name="Contact Us"
+            href="/blogs"
+            linkClass={`${isDrop ? styles.darkText : ""}`}
+          />
         </li>
-        <li className={styles.hasDrop}>
-          <button
-            className={`${styles.hasDropBtn} ${
-              portfolio ? styles.boldText : ""
-            } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
-              openPortfolio(!portfolio);
-              openPublicService(false);
-              openIndustries(false);
-              openServices(false);
-              openAbout(false);
-              portfolio ? clicked(false) : clicked(true);
-              document.querySelector("nav").classList.toggle(styles.hidden);
-            }}
-          >
-            <span>Portfolio</span>
-            <i className="far fa-chevron-down"></i>
-          </button>
-          <div
-            className={`${styles.dropdownMenu} ${portfolio ? styles.show : ""}`}
-          >
-            <div className={styles.dropdownContainer}>
-              <div className={`${styles.dropdownWrapper} ${styles.portfolio}`}>
-                <PortfolioDrop />
-              </div>
-            </div>
-          </div>
-        </li>
+
         <li>
           <ActiveLink
             name="Insight"
