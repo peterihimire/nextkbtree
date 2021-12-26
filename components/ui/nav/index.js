@@ -4,8 +4,6 @@ import Dropdown from "../dropdown";
 import AboutDrop from "./aboutus";
 import ServicesDrop from "./services";
 import IndustriesDrop from "./industries";
-import PublicServiceDrop from "./publicService";
-import PortfolioDrop from "./portfolio";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import ActiveLink from "../../../hoc/activeLink";
@@ -15,8 +13,6 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
   const [about, openAbout] = useState(false);
   const [services, openServices] = useState(false);
   const [industries, openIndustries] = useState(false);
-  const [publicService, openPublicService] = useState(false);
-  const [portfolio, openPortfolio] = useState(false);
 
   const router = useRouter();
 
@@ -24,8 +20,6 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
     openAbout(false);
     openServices(false);
     openIndustries(false);
-    openPublicService(false);
-    openPortfolio(false);
   }, [router.pathname]);
 
   useEffect(() => {
@@ -45,8 +39,6 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
       openAbout(false);
       openServices(false);
       openIndustries(false);
-      openPublicService(false);
-      openPortfolio(false);
     }
   }, [isOpen]);
 
@@ -62,8 +54,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               openAbout(!about);
               openServices(false);
               openIndustries(false);
-              openPublicService(false);
-              openPortfolio(false);
+
               about ? clicked(false) : clicked(true);
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
@@ -88,8 +79,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               openServices(!services);
               openAbout(false);
               openIndustries(false);
-              openPublicService(false);
-              openPortfolio(false);
+
               services ? clicked(false) : clicked(true);
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
@@ -116,8 +106,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               openIndustries(!industries);
               openServices(false);
               openAbout(false);
-              openPublicService(false);
-              openPortfolio(false);
+
               industries ? clicked(false) : clicked(true);
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
@@ -148,14 +137,14 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
       </ul>
 
       <div className={styles.navEnd}>
-        <div className={styles.contactLink}>
+        <div className={styles.contactLin}>
           <Link href="/contact-us">
-            <a className="btn-transparent">Log In</a>
+            <a className="btn-transparent btn-login">Log In</a>
           </Link>
         </div>
-        <div className={styles.contactLink}>
+        <div className={styles.contactLin}>
           <Link href="/contact-us">
-            <a className="btn-primary">Create an account</a>
+            <a className="btn-primary btn-medium">Create an account</a>
           </Link>
         </div>
         {/* <div className={styles.searchBtn}>

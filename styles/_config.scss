@@ -195,8 +195,8 @@ button:disabled {
 }
 
 .btn-large {
-  width: 256px;
-  height: 49px;
+  width: 216px;
+  height: 56px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -204,8 +204,17 @@ button:disabled {
 }
 
 .btn-medium {
-  width: 192px;
-  height: 40px;
+  width: 200px;
+  height: 48px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login {
+  width: 100px;
+  height: 48px;
   max-width: 100%;
   display: flex;
   align-items: center;
