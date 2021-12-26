@@ -145,28 +145,25 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             linkClass={`${isDrop ? styles.darkText : ""}`}
           />
         </li>
-
-        <li>
-          <ActiveLink
-            name="Insight"
-            href="/blogs"
-            linkClass={`${isDrop ? styles.darkText : ""}`}
-          />
-        </li>
       </ul>
 
       <div className={styles.navEnd}>
         <div className={styles.contactLink}>
           <Link href="/contact-us">
-            <a className="btn-light">Shoot Us A Message</a>
+            <a className="btn-transparent">Log In</a>
           </Link>
         </div>
-        <div className={styles.searchBtn}>
+        <div className={styles.contactLink}>
+          <Link href="/contact-us">
+            <a className="btn-primary">Create an account</a>
+          </Link>
+        </div>
+        {/* <div className={styles.searchBtn}>
           <button className={`${isDrop ? styles.darkText : ""}`}>
             <i className="far fa-search"></i>
           </button>
-        </div>
-        <Dropdown
+        </div> */}
+        {/* <Dropdown
           btnText="EN"
           isDrop={isDrop}
           show={showLang}
@@ -175,7 +172,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
 
             setShowLang(!showLang);
           }}
-        ></Dropdown>
+        ></Dropdown> */}
       </div>
     </nav>
   );

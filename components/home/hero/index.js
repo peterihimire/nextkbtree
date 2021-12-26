@@ -11,8 +11,8 @@ const HomeHero = () => {
           finance to great, stable returns for investors. . Get started quickly
           and make your way.
         </p>
-        <a href="/" className="btn-transparent btn-medium">
-          Shoot Us A Message
+        <a href="/" className="btn-primary btn-medium">
+          Get Started
         </a>
       </div>
       {/* <div className={styles.buttonGroup}>

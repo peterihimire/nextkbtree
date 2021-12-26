@@ -1,4 +1,12 @@
 .hero {
   width: 100%;
   padding: 198px 0;
+  background: url("/images/home-hero.svg") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: 700px) {
+    padding: 150px 0px;
+    background-position: center;
+  }
 }
