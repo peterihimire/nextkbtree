@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Header from "../../components/ui/header";
 import Backdrop from "../../components/ui/backdrop";
-// import Footer from "../../components/ui/footer";
+import Footer from "../../components/ui/footer";
 import { useRouter } from "next/router";
 
 const LandingLayout = ({ children }) => {
@@ -41,7 +41,7 @@ const LandingLayout = ({ children }) => {
 
       <main className={styles.main}>{children}</main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
