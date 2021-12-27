@@ -137,13 +137,13 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
       </ul>
 
       <div className={styles.navEnd}>
-        <div className={styles.contactLin}>
-          <Link href="/contact-us">
+        <div className={styles.login}>
+          <Link href="/">
             <a className="btn-transparent btn-login">Log In</a>
           </Link>
         </div>
-        <div className={styles.contactLin}>
-          <Link href="/contact-us">
+        <div className={styles.create}>
+          <Link href="/">
             <a className="btn-primary btn-medium">Create an account</a>
           </Link>
         </div>

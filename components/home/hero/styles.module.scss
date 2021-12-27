@@ -9,4 +9,52 @@
     padding: 150px 0px;
     background-position: center;
   }
+
+  .wrapper {
+    color: var(--white);
+
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 59px;
+      max-width: 684px;
+
+      @media (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 400px;
+      margin: 30px 0;
+    }
+  }
+  .accomplishment {
+    display: flex;
+    position: absolute;
+    bottom: -60px;
+    z-index: 99;
+    color: var(--black);
+    background-color: var(--white);
+    width: 85%;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 8px;
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+  }
 }
