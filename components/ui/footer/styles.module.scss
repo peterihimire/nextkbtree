@@ -3,4 +3,17 @@
   background: var(--black);
   padding: 100px 0 100px;
   color: var(--white);
+
+  @media (max-width: 903px) {
+    padding: 120px 10px;
+  }
+
+  .wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 50px;
+    margin-top: 16px;
+  }
 }

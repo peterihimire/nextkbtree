@@ -13,6 +13,9 @@ const Footer = () => {
         <div className={styles.logo}>
             <Logo />
           </div>
+          <p>
+            32 Heywhy address, 39th Floor Washing, DC 20038
+          </p>
 
         </div>
         <div className={styles.second}>
