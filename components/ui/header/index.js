@@ -43,7 +43,9 @@ const Header = ({ isOpen, clicked }) => {
   }, []);
 
   return (
-    <header className={`${styles.header} `}>
+    <header
+      className={`${styles.header} ${bgChange || isOpen ? styles.bgDark : ""}`}
+    >
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href="/">
