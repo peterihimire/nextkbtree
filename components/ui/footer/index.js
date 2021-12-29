@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Logo from "../../../public/images/logo-light.svg";
-import Input from "../customInput";
+import Input from "../customInputWithIcon";
 import ActiveLink from "../../../hoc/activeLink";
 import Link from "next/link";
 
