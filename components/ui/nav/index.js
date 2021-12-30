@@ -139,7 +139,15 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       <div className={styles.navEnd}>
         <div className={styles.login}>
           <Link href="/">
-            <a className="btn-transparent btn-login">Log In</a>
+            <a
+              className={`${
+                isOpen || bgChange
+                  ? "btn-transparent-dark btn-login"
+                  : "btn-transparent btn-login"
+              }`}
+            >
+              Log In
+            </a>
           </Link>
         </div>
         <div className={styles.create}>
