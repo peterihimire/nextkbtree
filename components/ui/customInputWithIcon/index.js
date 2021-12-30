@@ -8,7 +8,8 @@ const Input = ({
   id,
   required,
   clicked,
-  icon,
+  inputHolder,
+  src,
   ...props
 }) => {
   return (
@@ -17,17 +18,23 @@ const Input = ({
 
       {innerLabel && (
         <div className={`input-wrapper ${wrapperClass ? wrapperClass : ""}`}>
-          <div className="input-holder">
-            <input {...props} id={id} required={required} />
-            {icon && <img {...props} className={`icon-wrapper`} />}
-          </div>
+          <input {...props} id={id} required={required} />
           <label htmlFor={id} onClick={clicked}>
             {children}
           </label>
         </div>
       )}
 
-      {!innerLabel && <input {...props} id={id} required={required} />}
+      {!innerLabel && (
+        <div className={`input-holder ${inputHolder ? inputHolder : ""}`}>
+          <input {...props} id={id} required={required} />
+          {src ? (
+            <button {...props} className="icon-wrapper">
+              <img src={src} alt="" />
+            </button>
+          ) : null}
+        </div>
+      )}
     </>
   );
 };

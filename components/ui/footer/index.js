@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={`${styles.wrapper} wrapper`}>
+      <div className={`${styles.wrapper}`}>
         <div className={styles.first}>
           <div className={styles.logo}>
             <Logo />
@@ -21,18 +21,21 @@ const Footer = () => {
               <Input
                 type="email"
                 id="email"
-                required
+                // required
                 name="email"
                 placeholder="Join the waiting list (Your email)"
+                src="/images/send-icon.svg"
+                alt=""
+                loading="lazy"
               />
             </div>
           </form>
         </div>
         <div className={styles.last}>
-          <div className={styles.icon}>
+          <div className={styles.storeIcon}>
             <img alt="" loading="lazy" src="/images/apple-store-grey.svg" />
           </div>
-          <div className={styles.icon}>
+          <div className={styles.storeIcon}>
             <img alt="" loading="lazy" src="/images/google-store-grey.svg" />
           </div>
         </div>
