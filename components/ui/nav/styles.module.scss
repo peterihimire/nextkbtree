@@ -12,7 +12,8 @@
     left: -100vw;
     z-index: 250;
     transition: left 0.4s ease-in-out;
-    background: var(--black);
+    // background: var(--black);
+    background: var(--white);
     display: initial;
     justify-content: stretch;
     align-items: stretch;
@@ -67,7 +68,7 @@
         color: var(--white);
 
         @media (max-width: 1264px) {
-          color: var(--white) !important;
+          color: var(--black) !important;
           font-size: 16px;
         }
 
@@ -88,7 +89,7 @@
           @media (max-width: 1264px) {
             justify-content: space-between;
             width: var(--full);
-            color: var(--white) !important;
+            color: var(--black) !important;
             font-size: 16px;
           }
 

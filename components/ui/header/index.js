@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import Nav from "../nav";
 import Logo from "../../../public/images/logo-light.svg";
+import LogoDark from "../../../public/images/logo-dark.svg";
 import { useRouter } from "next/router";
 
 const Header = ({ isOpen, clicked }) => {
@@ -44,18 +45,27 @@ const Header = ({ isOpen, clicked }) => {
 
   return (
     <header
-      className={`${styles.header} ${bgChange || isOpen ? styles.bgDark : ""}`}
+      className={`${styles.header} ${
+        bgChange ||
+        isOpen ||
+        router.pathname === "/contact" ||
+        router.pathname === "/about" ||
+        router.pathname === "/faq"
+          ? styles.bgLight
+          : ""
+      }`}
     >
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href="/">
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
-              <Logo />
+              {bgChange || isOpen ? <LogoDark /> : <Logo />}
             </a>
           </Link>
         </div>
 
         <Nav
+          bgChange={bgChange}
           isDrop={isDropOpen}
           isOpen={isOpen}
           clicked={(payload) => dropHandler(payload)}
@@ -66,12 +76,16 @@ const Header = ({ isOpen, clicked }) => {
             type="button"
             aria-label="navigation button"
             onClick={clicked}
-            className={`hamburger hamburger--spring ${
-              isOpen ? "is-active" : ""
-            }`}
+            className={`hamburger hamburger--spin ${isOpen ? "is-active" : ""}`}
           >
             <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
+              <span
+                className={`${
+                  bgChange
+                    ? "hamburger-inner hamburger-inner-dark"
+                    : "hamburger-inner hamburger-inner-light"
+                }`}
+              ></span>
             </span>
           </button>
         </div>

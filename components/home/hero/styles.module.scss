@@ -1,7 +1,15 @@
 .hero {
   width: 100%;
   padding: 198px 0;
-  background: url("/images/kobo-hero.png") no-repeat;
+
+  background: linear-gradient(
+      to right,
+      rgba(020, 25, 71, 0.8),
+      rgba(20, 25, 71, 0.8)
+    ),
+    url("/images/kobo-hero.png") center/cover no-repeat;
+
+  // background: url("/images/kobo-hero.png") no-repeat;
   background-size: cover;
   position: relative;
 

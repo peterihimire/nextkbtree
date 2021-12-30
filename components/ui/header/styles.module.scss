@@ -12,7 +12,9 @@
   &.bgDark {
     background: rgba(0, 0, 0, 0.9);
   }
-
+  &.bgLight {
+    background: rgba(252, 252, 252, 0.986);
+  }
   .wrapper {
     width: 85%;
     margin: 0 auto;
@@ -54,6 +56,20 @@
 
                 @media (max-width: 1264px) {
                   fill: var(--white) !important;
+                }
+              }
+            }
+          }
+        }
+
+        &.darkLogo {
+          svg {
+            > g {
+              > path {
+                fill: var(--white);
+
+                @media (max-width: 1264px) {
+                  fill: var(--black) !important;
                 }
               }
             }

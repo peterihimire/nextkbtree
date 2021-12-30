@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import ActiveLink from "../../../hoc/activeLink";
 
-const Nav = ({ clicked, isDrop, isOpen }) => {
+const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   const [showLang, setShowLang] = useState(false);
   const [about, openAbout] = useState(false);
   const [services, openServices] = useState(false);
@@ -48,7 +48,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
         <li className={styles.hasDrop}>
           <button
             className={`${styles.hasDropBtn} ${about ? styles.boldText : ""} ${
-              isDrop ? styles.darkText : ""
+              isDrop || bgChange ? styles.darkText : ""
             }`}
             onClick={() => {
               openAbout(!about);
@@ -74,7 +74,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
           <button
             className={`${styles.hasDropBtn} ${
               services ? styles.boldText : ""
-            } ${isDrop ? styles.darkText : ""}`}
+            } ${isDrop || bgChange ? styles.darkText : ""}`}
             onClick={() => {
               openServices(!services);
               openAbout(false);
@@ -101,7 +101,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
           <button
             className={`${styles.hasDropBtn} ${
               industries ? styles.boldText : ""
-            } ${isDrop ? styles.darkText : ""}`}
+            } ${isDrop || bgChange ? styles.darkText : ""}`}
             onClick={() => {
               openIndustries(!industries);
               openServices(false);
@@ -131,7 +131,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
           <ActiveLink
             name="Contact Us"
             href="/blogs"
-            linkClass={`${isDrop ? styles.darkText : ""}`}
+            linkClass={`${isDrop || bgChange ? styles.darkText : ""}`}
           />
         </li>
       </ul>
