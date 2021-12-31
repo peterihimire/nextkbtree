@@ -2,6 +2,8 @@
 // import Image from 'next/image'
 import Layout from "../layouts/landing";
 import HomeHero from "../components/home/hero";
+import CrowdFunding from "../components/home/crowdFunding";
+import SafeInvesting from "../components/home/safeInvesting";
 // import Companies from "../components/home/companies";
 // import OurWork from "../components/home/ourWork";
 // import WhyChooseUs from "../components/home/whyChooseUs";
@@ -18,6 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <HomeHero />
+      <CrowdFunding />
+      <SafeInvesting />
       {/* <Companies />
       <OurWork />
       <WhyChooseUs />

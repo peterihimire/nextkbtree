@@ -1,0 +1,73 @@
+.crowdFunding {
+  width: 100%;
+  background: linear-gradient(180deg, #e9f4fe 0%, rgba(233, 244, 254, 0) 100%);
+  padding: 300px 0px 80px 0px;
+  .wrapper {
+    .content {
+      background: linear-gradient(
+          to right,
+          rgba(19, 42, 245, 0.8),
+          rgba(19, 42, 245, 0.8)
+        ),
+        url("/images/random-square-halftone.svg") center/cover no-repeat;
+      height: 497px;
+      border-radius: 8px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .left {
+        position: absolute;
+        left: 50px;
+        bottom: -10px;
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+        @media (max-width: 900px) {
+          display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+          left: 0px;
+        }
+      }
+      .right {
+        position: absolute;
+        right: 50px;
+        top: -80px;
+      }
+      .textContent {
+        color: var(--white);
+        max-width: 600px;
+        padding: 0 0 0 90px;
+
+        &:first-of-type {
+          text-transform: uppercase;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        h3 {
+          font-size: 32px;
+          line-height: 39px;
+          margin: 20px 0;
+        }
+        &:last-of-type {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+          padding: 10px 10px 10px 10px !important;
+        }
+        @media (max-width: 900px) {
+          padding: 10px !important;
+        }
+        @media screen and (max-width: 1200px) {
+          padding: 0px 0px 0px 150px;
+        }
+      }
+    }
+  }
+}

@@ -72,7 +72,7 @@ body {
   width: 100%;
   height: 100%;
   // background: #e5e5e5;
-  background: #e5e5e5;
+  background: #ffffff;
   color: var(--black);
   overflow-x: hidden;
 }
@@ -460,7 +460,7 @@ input[type="radio"] {
   height: 2px;
   margin: 0;
 }
-
+// to change the colors depending on the bg of the nav
 .hamburger-inner-dark,
 .hamburger-inner-dark::before,
 .hamburger-inner-dark::after {
