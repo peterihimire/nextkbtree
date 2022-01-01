@@ -1,0 +1,84 @@
+.trustedBy {
+  width: 100%;
+  padding: 100px 0px;
+  background: var(--primary);
+  // color: var(--white);
+
+  .wrapper {
+    .heading {
+      // text-align: center;
+      // justify-content: center;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 32px;
+        line-height: 39.01px;
+        color: var(--white);
+        margin-bottom: 10px;
+        text-align: center;
+        max-width: 600px;
+
+        @media screen and (max-width: 700px) {
+          font-size: 29px;
+          line-height: 32.01px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19.5px;
+        color: var(--white);
+        text-align: center;
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 40px 30px;
+
+      .cardHeader {
+        display: flex;
+        align-items: center;
+
+        p {
+          color: #4f5665;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .cardBody {
+        margin: 20px 0px;
+        color: #6b778c;
+        font-size: 16px;
+        line-height: 19.5px;
+      }
+      .cardFooter {
+        display: flex;
+        align-items: center;
+
+        .nameLocation {
+          &:last-of-type {
+            margin-left: 20px;
+          }
+          h5 {
+            color: #0b132a;
+            font-size: 16px;
+            line-height: 19.5px;
+          }
+          p {
+            color: #4f5665;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}

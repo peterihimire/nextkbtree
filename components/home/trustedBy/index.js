@@ -16,18 +16,18 @@ const TrustedBy = () => {
 
         <div className={styles.carousel}>
           <Swiper
-            // spaceBetween={30}
+            spaceBetween={50}
             // slidesPerView={4}
             breakpoints={{
               200: { slidesPerView: 1 },
               500: { slidesPerView: 1 },
-              700: { slidesPerView: 1 },
-              900: { slidesPerView: 2 },
-              1200: { slidesPerView: 3 },
+              700: { slidesPerView: 2 },
+              900: { slidesPerView: 2.5 },
+              1200: { slidesPerView: 3.5 },
               2500: { slidesPerView: 4 },
             }}
-            spaceBetween={0}
-            centeredSlides={true}
+            // spaceBetween={0}
+            // centeredSlides={true}
             loop
             pagination={{
               el: ".custom-pag1",
@@ -45,88 +45,120 @@ const TrustedBy = () => {
             <SwiperSlide>
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
-                  {/* <Icon1 /> */}
-                  <h3>Join Our Team</h3>
+                  <p>4.5</p>
+                  <img src="/images/star-fill.svg" alt="" loading="lazy" />
                 </div>
                 <div className={styles.cardBody}>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                    id consequat pellentesque volutpat dolor lorem maecenas
-                    nullam lectus. Quis a eu, amet, adipiscing et at erat
-                    aliquet.
+                    I had an awesome experience with carbon, very reliable n
+                    trustworthy, infact d instalmental repayment is d tip of d
+                    iceberg. I hereby recommend this LOAN APP among
+                    apps...CARBON to all prospective borrower, u will never be
+                    disappointed.
                   </p>
                 </div>
                 <div className={styles.cardFooter}>
-                  <a href="/">
-                    <span>SEARCH CLOUFIFT JOBS</span>
-                    <i className="far fa-arrow-right"></i>
-                  </a>
+                  <img src="/images/image-round.svg" alt="" loading="lazy" />
+                  <div className={styles.nameLocation}>
+                    <h5>Lucky Onoriode</h5>
+                    <p>Lagos, Nigeria</p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
-                  {/* <Icon1 /> */}
-                  <h3>Join Our Team</h3>
+                  <p>4.5</p>
+                  <img src="/images/star-fill.svg" alt="" loading="lazy" />
                 </div>
                 <div className={styles.cardBody}>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                    id consequat pellentesque volutpat dolor lorem maecenas
-                    nullam lectus. Quis a eu, amet, adipiscing et at erat
-                    aliquet.
+                    I had an awesome experience with carbon, very reliable n
+                    trustworthy, infact d instalmental repayment is d tip of d
+                    iceberg. I hereby recommend this LOAN APP among
+                    apps...CARBON to all prospective borrower, u will never be
+                    disappointed.
                   </p>
                 </div>
                 <div className={styles.cardFooter}>
-                  <a href="/">
-                    <span>SEARCH CLOUFIFT JOBS</span>
-                    <i className="far fa-arrow-right"></i>
-                  </a>
+                  <img src="/images/image-round.svg" alt="" loading="lazy" />
+                  <div className={styles.nameLocation}>
+                    <h5>Pricilla Chan</h5>
+                    <p>Lagos, Nigeria</p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
-                  {/* <Icon1 /> */}
-                  <h3>Join Our Team</h3>
+                  <p>4.5</p>
+                  <img src="/images/star-fill.svg" alt="" loading="lazy" />
                 </div>
                 <div className={styles.cardBody}>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                    id consequat pellentesque volutpat dolor lorem maecenas
-                    nullam lectus. Quis a eu, amet, adipiscing et at erat
-                    aliquet.
+                    I had an awesome experience with carbon, very reliable n
+                    trustworthy, infact d instalmental repayment is d tip of d
+                    iceberg. I hereby recommend this LOAN APP among
+                    apps...CARBON to all prospective borrower, u will never be
+                    disappointed.
                   </p>
                 </div>
                 <div className={styles.cardFooter}>
-                  <a href="/">
-                    <span>SEARCH CLOUFIFT JOBS</span>
-                    <i className="far fa-arrow-right"></i>
-                  </a>
+                  <img src="/images/image-round.svg" alt="" loading="lazy" />
+                  <div className={styles.nameLocation}>
+                    <h5>Peter Pan</h5>
+                    <p>Lagos, Nigeria</p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
-                  {/* <Icon1 /> */}
-                  <h3>Join Our Team</h3>
+                  <p>4.5</p>
+                  <img src="/images/star-fill.svg" alt="" loading="lazy" />
                 </div>
                 <div className={styles.cardBody}>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                    id consequat pellentesque volutpat dolor lorem maecenas
-                    nullam lectus. Quis a eu, amet, adipiscing et at erat
-                    aliquet.
+                    I had an awesome experience with carbon, very reliable n
+                    trustworthy, infact d instalmental repayment is d tip of d
+                    iceberg. I hereby recommend this LOAN APP among
+                    apps...CARBON to all prospective borrower, u will never be
+                    disappointed.
                   </p>
                 </div>
                 <div className={styles.cardFooter}>
-                  <a href="/">
-                    <span>SEARCH CLOUFIFT JOBS</span>
-                    <i className="far fa-arrow-right"></i>
-                  </a>
+                  <img src="/images/image-round.svg" alt="" loading="lazy" />
+                  <div className={styles.nameLocation}>
+                    <h5>Obinna Anayo</h5>
+                    <p>Lagos, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.card}>
+                <div className={styles.cardHeader}>
+                  <p>4.5</p>
+                  <img src="/images/star-fill.svg" alt="" loading="lazy" />
+                </div>
+                <div className={styles.cardBody}>
+                  <p>
+                    I had an awesome experience with carbon, very reliable n
+                    trustworthy, infact d instalmental repayment is d tip of d
+                    iceberg. I hereby recommend this LOAN APP among
+                    apps...CARBON to all prospective borrower, u will never be
+                    disappointed.
+                  </p>
+                </div>
+                <div className={styles.cardFooter}>
+                  <img src="/images/image-round.svg" alt="" loading="lazy" />
+                  <div className={styles.nameLocation}>
+                    <h5>Sunday Falade</h5>
+                    <p>Lagos, Nigeria</p>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
