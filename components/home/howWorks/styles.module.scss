@@ -1,7 +1,8 @@
-.safeInvesting {
+.how {
   width: 100%;
-  background: #fcfcfc;
-  padding: 80px 0px 80px 0px;
+  background-color: #f5f5f5;
+  padding: 100px 0;
+
   .wrapper {
     .heading {
       // text-align: center;
@@ -34,36 +35,40 @@
         margin-bottom: 20px;
       }
     }
-    .logos {
-      width: 100%;
-      display: flex;
-      // justify-content: space-between;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 100px;
 
-      .logo {
-        margin: 10px 20px;
-      }
-    }
     .grid {
       width: 100%;
       margin-top: 57px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 53px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 103px;
 
       @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(auto-fit, minmax(200px, 377px));
         justify-content: center;
       }
 
-      .single {
-        background: #ffffff;
-        box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.05);
+      .card {
         border-radius: 8px;
-        // width: 268px;
-        // height: 377px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1.5px solid rgb(190, 190, 190);
+        padding: 70px 50px;
+
+        h4 {
+          font-size: 24px;
+          line-height: 29.26px;
+          color: #3c3c3c;
+          margin: 15px 0px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          color: #65676f;
+        }
       }
     }
   }

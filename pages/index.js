@@ -4,13 +4,8 @@ import Layout from "../layouts/landing";
 import HomeHero from "../components/home/hero";
 import CrowdFunding from "../components/home/crowdFunding";
 import SafeInvesting from "../components/home/safeInvesting";
-// import Companies from "../components/home/companies";
-// import OurWork from "../components/home/ourWork";
-// import WhyChooseUs from "../components/home/whyChooseUs";
-// import Services from "../components/home/services";
-// import WorkWith from "../components/home/workWith";
-// import HomeContact from "../components/home/homeContact";
-// import HomeInsight from "../components/home/homeInsight";
+import HowWorks from "../components/home/howWorks";
+
 export default function Home() {
   return (
     <>
@@ -22,13 +17,7 @@ export default function Home() {
       <HomeHero />
       <CrowdFunding />
       <SafeInvesting />
-      {/* <Companies />
-      <OurWork />
-      <WhyChooseUs />
-      <Services />
-      <WorkWith heading="Working With Cloudfift" />
-      <HomeContact />
-      <HomeInsight /> */}
+      <HowWorks />
     </>
   );
 }
