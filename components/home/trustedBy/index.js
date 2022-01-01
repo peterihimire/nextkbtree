@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
+import StarUnfill from "../../../public/images/star-unfill.svg";
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -16,8 +17,9 @@ const TrustedBy = () => {
 
         <div className={styles.carousel}>
           <Swiper
-            spaceBetween={50}
+            // centeredSlides={true}
             // slidesPerView={4}
+            spaceBetween={50}
             breakpoints={{
               200: { slidesPerView: 1 },
               500: { slidesPerView: 1 },
@@ -26,8 +28,6 @@ const TrustedBy = () => {
               1200: { slidesPerView: 3.5 },
               2500: { slidesPerView: 4 },
             }}
-            // spaceBetween={0}
-            // centeredSlides={true}
             loop
             pagination={{
               el: ".custom-pag1",
@@ -165,6 +165,21 @@ const TrustedBy = () => {
           </Swiper>
 
           {/* <div className="custom-pag1" style={{ marginTop: "40px" }}></div> */}
+        </div>
+
+        <div className={styles.footing}>
+          <div className={styles.starFooting}>
+            <StarUnfill />
+            <StarUnfill />
+            <StarUnfill />
+            <StarUnfill />
+            <StarUnfill />
+            <h5>+4.4</h5>
+          </div>
+          <p>
+            Score based on over 78,000 reviews on Google Play Store and App
+            Store
+          </p>
         </div>
       </div>
     </section>

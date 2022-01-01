@@ -1,0 +1,28 @@
+.wide {
+  width: 100%;
+  padding: 150px 0px;
+
+  .wideContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      max-width: 392px;
+      margin-left: 100px;
+
+      h3 {
+        font-size: 32px;
+        line-height: 39px;
+        color: #3c3c3c;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+    }
+  }
+}

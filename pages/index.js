@@ -7,6 +7,7 @@ import SafeInvesting from "../components/home/safeInvesting";
 import HowWorks from "../components/home/howWorks";
 import DownloadApp from "../components/home/downloadApp";
 import TrustedBy from "../components/home/trustedBy";
+import WideOption from "../components/home/wideOption";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <HowWorks />
       <DownloadApp />
       <TrustedBy />
+      <WideOption />
     </>
   );
 }
