@@ -5,6 +5,8 @@ import HomeHero from "../components/home/hero";
 import CrowdFunding from "../components/home/crowdFunding";
 import SafeInvesting from "../components/home/safeInvesting";
 import HowWorks from "../components/home/howWorks";
+import DownloadApp from "../components/home/downloadApp";
+import TrustedBy from "../components/home/trustedBy";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <CrowdFunding />
       <SafeInvesting />
       <HowWorks />
+      <DownloadApp />
+      <TrustedBy />
     </>
   );
 }
