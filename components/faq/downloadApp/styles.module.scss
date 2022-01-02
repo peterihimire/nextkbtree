@@ -1,13 +1,14 @@
 .download {
   width: 100%;
   padding: 100px 0px;
+  background: #004ef0 !important;
 
   .wrapper {
     .content {
       background: linear-gradient(
           to right,
-          rgba(230, 230, 230, 0.8),
-          rgba(230, 230, 230, 0.8)
+          rgba(230, 230, 230, 0.925),
+          rgba(230, 230, 230, 0.925)
         ),
         url("/images/random-square-halftone-2.svg") center/cover no-repeat;
       height: 497px;
