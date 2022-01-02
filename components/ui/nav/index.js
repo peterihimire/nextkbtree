@@ -48,7 +48,13 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         <li className={styles.hasDrop}>
           <button
             className={`${styles.hasDropBtn} ${about ? styles.boldText : ""} ${
-              isDrop || bgChange ? styles.darkText : ""
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact" ||
+              router.pathname === "/about" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
             }`}
             onClick={() => {
               openAbout(!about);
@@ -74,7 +80,15 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           <button
             className={`${styles.hasDropBtn} ${
               services ? styles.boldText : ""
-            } ${isDrop || bgChange ? styles.darkText : ""}`}
+            } ${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact" ||
+              router.pathname === "/about" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
             onClick={() => {
               openServices(!services);
               openAbout(false);
@@ -101,7 +115,15 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           <button
             className={`${styles.hasDropBtn} ${
               industries ? styles.boldText : ""
-            } ${isDrop || bgChange ? styles.darkText : ""}`}
+            } ${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact" ||
+              router.pathname === "/about" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
             onClick={() => {
               openIndustries(!industries);
               openServices(false);
@@ -131,7 +153,15 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           <ActiveLink
             name="Contact Us"
             href="/blogs"
-            linkClass={`${isDrop || bgChange ? styles.darkText : ""}`}
+            linkClass={`${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact" ||
+              router.pathname === "/about" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
           />
         </li>
       </ul>
@@ -141,7 +171,11 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           <Link href="/">
             <a
               className={`${
-                isOpen || bgChange
+                isOpen ||
+                bgChange ||
+                router.pathname === "/contact" ||
+                router.pathname === "/about" ||
+                router.pathname === "/faq"
                   ? "btn-transparent-dark btn-login"
                   : "btn-transparent btn-login"
               }`}

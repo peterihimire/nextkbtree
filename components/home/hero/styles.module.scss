@@ -73,6 +73,17 @@
       align-items: center;
       justify-content: center;
 
+      h4 {
+        font-size: 24px;
+        line-height: 29px;
+        color: #333131;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #333131;
+      }
+
       @media (max-width: 700px) {
         text-align: center;
         flex-direction: column;

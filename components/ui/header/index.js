@@ -59,7 +59,15 @@ const Header = ({ isOpen, clicked }) => {
         <div className={styles.logo}>
           <Link href="/">
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
-              {bgChange || isOpen ? <LogoDark /> : <Logo />}
+              {bgChange ||
+              isOpen ||
+              router.pathname === "/contact" ||
+              router.pathname === "/about" ||
+              router.pathname === "/faq" ? (
+                <LogoDark />
+              ) : (
+                <Logo />
+              )}
             </a>
           </Link>
         </div>
@@ -81,7 +89,10 @@ const Header = ({ isOpen, clicked }) => {
             <span className="hamburger-box">
               <span
                 className={`${
-                  bgChange
+                  bgChange ||
+                  router.pathname === "/contact" ||
+                  router.pathname === "/about" ||
+                  router.pathname === "/faq"
                     ? "hamburger-inner hamburger-inner-dark"
                     : "hamburger-inner hamburger-inner-light"
                 }`}
