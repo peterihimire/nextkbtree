@@ -6,6 +6,7 @@ import Hero from "../../components/faq/hero";
 // import SafeInvesting from "../../components/home/safeInvesting";
 // import HowWorks from "../../components/home/howWorks";
 import DownloadApp from "../../components/faq/downloadApp";
+import Accordion from "../../components/faq/accordion";
 // import TrustedBy from "../../components/home/trustedBy";
 // import WideOption from "../../components/home/wideOption";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <Hero />
+      <Accordion />
       {/* <CrowdFunding />
       <SafeInvesting />
       <HowWorks /> */}
