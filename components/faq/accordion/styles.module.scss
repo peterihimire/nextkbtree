@@ -33,11 +33,12 @@
             display: flex;
             flex-direction: column;
 
-            .difficulty {
-              font-size: 17px;
-              color: var(--orange);
-              font-family: Noto-Bold;
-              margin-bottom: 8px;
+            h4 {
+              font-size: 20px;
+              line-height: 24px;
+              color: var(--primary);
+              // font-family: Noto-Bold;
+              // margin-bottom: 8px;
             }
 
             .duration {
@@ -47,7 +48,7 @@
           }
 
           .rotate {
-            background: #191919;
+            // background: #191919;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -60,6 +61,11 @@
 
             i {
               transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+            }
+
+            .fas fa-caret-down {
+              font-size: 20px;
+              color: var(--primary);
             }
           }
         }
@@ -96,12 +102,14 @@
           }
 
           .subHead {
-            display: flex;
-            margin-bottom: 13px;
-            align-items: center;
-            font-size: 14px;
-            font-family: Noto-Bold;
-            color: var(--text-primary);
+            // display: flex;
+            // margin-bottom: 13px;
+            // align-items: center;
+            font-size: 16px;
+            line-height: 22px;
+            // font-family: Noto-Bold;
+            color: #333131;
+
 
             > div {
               margin-right: 8px;
@@ -116,61 +124,6 @@
             }
           }
 
-          .subPlaylist {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 0px 10px 0px 30px;
-
-            > li {
-              width: 100%;
-              margin-bottom: 12px;
-
-              &:last-of-type {
-                margin-bottom: 0px;
-              }
-
-              a {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .videoInfo {
-                  display: flex;
-                  align-items: center;
-
-                  .playIcon {
-                    width: 26px;
-                    height: 26px;
-                    border-radius: 50%;
-                    background: rgba(235, 237, 236, 0.2);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 13px;
-                    color: rgba(244, 244, 244, 0.8);
-                    flex-shrink: 0;
-                  }
-
-                  .videoTitle {
-                    margin-left: 6px;
-                    //   max-width: 153px;
-                    white-space: pre-line;
-                    //   line-height: 1.4;
-                    font-size: 14px;
-                    font-family: Noto-Light;
-                    color: var(--text-secondary);
-                  }
-                }
-
-                .videoDuration {
-                  font-size: 13px;
-                  color: rgba(244, 244, 244, 0.8);
-                }
-              }
-            }
-          }
         }
       }
     }

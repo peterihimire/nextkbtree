@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import ArrowUp from "/public/images/arrow-up.svg";
+import ArrowDown from "/public/images/arrow-dowm.svg";
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(0);
@@ -20,20 +22,17 @@ const Accordion = () => {
           <li>
             <button onClick={() => toggler(0)}>
               <div className={styles.headInfo}>
-                <h4 className={styles.difficulty}>
-                  {" "}
+                <h4>
                   Frequency Asked Questions?
                 </h4>
-                <span className={styles.duration}>
-                  40 Total Lessons, 5 Hours Video
-                </span>
               </div>
               <div className={styles.rotate}>
-                <i
-                  className={`fas fa-chevron-down ${
+                {/* <i
+                  className={`fas fa-caret-down ${
                     clicked === 0 && "fa-rotate-180"
                   }`}
-                ></i>
+                ></i> */}
+                {clicked === 0 ? <ArrowUp /> : <ArrowDown />}
               </div>
             </button>
 
@@ -57,26 +56,18 @@ const Accordion = () => {
             <button onClick={() => toggler(1)}>
               <div className={styles.headInfo}>
                 <h4 className={styles.difficulty}>
-                  {" "}
                   Frequency Asked Questions?
                 </h4>
-                <span className={styles.duration}>
-                  40 Total Lessons, 5 Hours Video
-                </span>
               </div>
               <div className={styles.rotate}>
-                <i
-                  className={`fas fa-chevron-down ${
-                    clicked === 1 && "fa-rotate-180"
-                  }`}
-                ></i>
+                {clicked === 1 ? <ArrowUp /> : <ArrowDown />}
               </div>
             </button>
 
             <div
               className={`${styles.content} ${clicked === 1 && styles.show}`}
             >
-             <p className={styles.subHead}>
+              <p className={styles.subHead}>
                 JavaScript is also used in environments that aren’t web-based,
                 such as PDF documents, site-specific browsers, and desktop
                 widgets. Newer and faster JavaScript virtual machines (VMs) and
@@ -93,19 +84,11 @@ const Accordion = () => {
             <button onClick={() => toggler(2)}>
               <div className={styles.headInfo}>
                 <h4 className={styles.difficulty}>
-                  {" "}
                   Frequency Asked Questions?
                 </h4>
-                <span className={styles.duration}>
-                  40 Total Lessons, 5 Hours Video
-                </span>
               </div>
               <div className={styles.rotate}>
-                <i
-                  className={`fas fa-chevron-down ${
-                    clicked === 2 && "fa-rotate-180"
-                  }`}
-                ></i>
+                {clicked === 2 ? <ArrowUp /> : <ArrowDown />}
               </div>
             </button>
 
@@ -129,19 +112,15 @@ const Accordion = () => {
             <button onClick={() => toggler(3)}>
               <div className={styles.headInfo}>
                 <h4 className={styles.difficulty}>
-                  {" "}
                   Frequency Asked Questions?
                 </h4>
-                <span className={styles.duration}>
-                  40 Total Lessons, 5 Hours Video
-                </span>
               </div>
               <div className={styles.rotate}>
-                <i
-                  className={`fas fa-chevron-down ${
-                    clicked === 3 && "fa-rotate-180"
-                  }`}
-                ></i>
+                {clicked === 3 ? (
+                  <img src="/images/arrow-up.svg" alt="" />
+                ) : (
+                  <img src="/images/arrow-dowm.svg" alt="" />
+                )}
               </div>
             </button>
 

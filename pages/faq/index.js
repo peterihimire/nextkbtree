@@ -2,13 +2,10 @@
 // import Image from 'next/image'
 import Layout from "../../layouts/landing";
 import Hero from "../../components/faq/hero";
-// import CrowdFunding from "../../components/home/crowdFunding";
-// import SafeInvesting from "../../components/home/safeInvesting";
-// import HowWorks from "../../components/home/howWorks";
 import DownloadApp from "../../components/faq/downloadApp";
 import Accordion from "../../components/faq/accordion";
-// import TrustedBy from "../../components/home/trustedBy";
-// import WideOption from "../../components/home/wideOption";
+import Figures from "../../components/faq/figures";
+import CurateArticle from "../../components/faq/curateArticle";
 
 export default function Home() {
   return (
@@ -20,12 +17,9 @@ export default function Home() {
       </Head> */}
       <Hero />
       <Accordion />
-      {/* <CrowdFunding />
-      <SafeInvesting />
-      <HowWorks /> */}
       <DownloadApp />
-      {/* <TrustedBy />
-      <WideOption /> */}
+      <Figures />
+      <CurateArticle />
     </>
   );
 }
