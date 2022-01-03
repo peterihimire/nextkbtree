@@ -6,9 +6,9 @@ const CurateArticle = () => {
   return (
     <section className={styles.curate}>
       <div className={`${styles.wrapper} wrapper`}>
-        <h2>
+        <h3>
           we curate articles that helps you make better investment decisions
-        </h2>
+        </h3>
         <p>
           Share your email to stay updated on helpful articles about Real estate
           investments.
@@ -23,7 +23,10 @@ const CurateArticle = () => {
               placeholder="Your email"
             />
           </div>
-          <button type="submit">Send</button>
+
+          <button type="submit" className="btn-curate btn-primary">
+            Send
+          </button>
         </form>
       </div>
     </section>
