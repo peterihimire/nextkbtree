@@ -48,7 +48,7 @@ const Header = ({ isOpen, clicked }) => {
       className={`${styles.header} ${
         bgChange ||
         isOpen ||
-        router.pathname === "/contact" ||
+        router.pathname === "/contact-us" ||
         router.pathname === "/about-us" ||
         router.pathname === "/faq"
           ? styles.bgLight
@@ -61,7 +61,7 @@ const Header = ({ isOpen, clicked }) => {
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
               {bgChange ||
               isOpen ||
-              router.pathname === "/contact" ||
+              router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq" ? (
                 <LogoDark />
@@ -90,7 +90,7 @@ const Header = ({ isOpen, clicked }) => {
               <span
                 className={`${
                   bgChange ||
-                  router.pathname === "/contact" ||
+                  router.pathname === "/contact-us" ||
                   router.pathname === "/about-us" ||
                   router.pathname === "/faq"
                     ? "hamburger-inner hamburger-inner-dark"

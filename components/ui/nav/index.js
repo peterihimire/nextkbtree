@@ -50,7 +50,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             className={`${styles.hasDropBtn} ${about ? styles.boldText : ""} ${
               isDrop ||
               bgChange ||
-              router.pathname === "/contact" ||
+              router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq"
                 ? styles.darkText
@@ -83,7 +83,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             } ${
               isDrop ||
               bgChange ||
-              router.pathname === "/contact" ||
+              router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq"
                 ? styles.darkText
@@ -118,7 +118,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             } ${
               isDrop ||
               bgChange ||
-              router.pathname === "/contact" ||
+              router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq"
                 ? styles.darkText
@@ -156,7 +156,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             linkClass={`${
               isDrop ||
               bgChange ||
-              router.pathname === "/contact" ||
+              router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq"
                 ? styles.darkText
@@ -173,7 +173,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               className={`${
                 isOpen ||
                 bgChange ||
-                router.pathname === "/contact" ||
+                router.pathname === "/contact-us" ||
                 router.pathname === "/about-us" ||
                 router.pathname === "/faq"
                   ? "btn-transparent-dark btn-login"

@@ -346,9 +346,9 @@ input[type="radio"] {
 
   &::after {
     content: "";
-    // width: 10px;
-    // height: 6px;
-    // background: url("../public/images/chevron-d.svg") no-repeat center;
+    width: 10px;
+    height: 6px;
+    background: url("/images/arrow-ios-downward.svg") no-repeat center;
     background-size: cover;
     position: absolute;
     right: 12px;

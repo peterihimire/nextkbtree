@@ -1,0 +1,191 @@
+.contact {
+  width: 100%;
+  padding: 100px 0;
+
+  .wrapper {
+    // width: 100%;
+    display: flex;
+
+    .left {
+      width: 45%;
+      padding: 55px 83px 124px;
+      background: linear-gradient(rgba(0, 0, 0, 0.81)),
+        url("/images/contact-us1.png") no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 1200px) {
+        padding: 55px 32px 124px;
+      }
+
+      @media screen and (max-width: 903px) {
+        width: 100%;
+        align-items: center;
+      }
+
+      h2 {
+        color: var(--white);
+        font-size: 18px;
+        font-family: Proxima-Bold;
+
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+      }
+
+      .lead {
+        font-size: 48px;
+        margin-top: 28px;
+        max-width: 373px;
+        color: var(--white);
+        line-height: 1;
+        font-family: Proxima-Regular;
+        margin-bottom: 108px;
+
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+          font-size: 32px;
+        }
+      }
+
+      .leadLink {
+        margin-top: auto;
+
+        p {
+          font-size: 18px;
+          color: var(--white);
+
+          @media screen and (max-width: 903px) {
+            text-align: center;
+          }
+
+          a {
+            font-family: Proxima-Bold;
+            color: var(--white);
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 55%;
+      padding: 53px 94px 32px;
+      background: #f6f8fa;
+
+      @media screen and (max-width: 1200px) {
+        padding: 53px 32px 32px;
+      }
+
+      @media screen and (max-width: 903px) {
+        width: 100%;
+      }
+
+      form {
+        width: 100%;
+
+        .formGrid {
+          display: grid;
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px 48px;
+
+          @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 32px 48px;
+          }
+
+          .formGroup {
+            &:last-of-type {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+
+              @media screen and (max-width: 600px) {
+                justify-content: flex-start;
+                margin-top: 16px;
+              }
+            }
+
+            label {
+              margin-bottom: 0px;
+              font-family: Wesfy-Bold;
+              font-size: 15px;
+            }
+
+            input {
+              // border: 0;
+              // border-bottom: 1px solid #dedede;
+              // border-radius: 0 !important;
+              // height: 40px !important;
+              // padding: 0px !important;
+              // background: transparent;
+
+              &:focus {
+                border-bottom: 1px solid var(--new-blue);
+              }
+
+              &::placeholder {
+                color: #858585;
+              }
+            }
+
+            .selectWrap {
+              &::after {
+                background: url("/images/arrow-down.svg") no-repeat;
+                width: 15px;
+                height: 15px;
+                right: 5px !important;
+                
+              }
+            }
+
+            select {
+              // border: 0;
+              // border-bottom: 1px solid #dedede;
+              // border-radius: 0 !important;
+              // height: 40px !important;
+              // padding: 0px !important;
+              // background: transparent;
+              // color: #858585;
+
+              &:focus {
+                border-bottom: 1px solid var(--new-blue);
+              }
+            }
+
+            > button {
+              background: transparent;
+              border: 1px solid var(--new-blue);
+              color: var(--new-blue);
+              border-radius: 4px;
+              font-family: Wesfy-Bold;
+              font-size: 15px;
+            }
+          }
+        }
+
+        .extraInfo {
+          width: 100%;
+          margin-top: 36px;
+
+          p {
+            line-height: 1.6;
+            max-width: 635px;
+            color: var(--heading);
+            font-size: 14px;
+
+            a,
+            span {
+              font-family: Proxima-Bold;
+              color: var(--heading);
+            }
+          }
+        }
+      }
+    }
+  }
+}
