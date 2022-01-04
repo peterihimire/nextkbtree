@@ -49,7 +49,7 @@ const Header = ({ isOpen, clicked }) => {
         bgChange ||
         isOpen ||
         router.pathname === "/contact" ||
-        router.pathname === "/about" ||
+        router.pathname === "/about-us" ||
         router.pathname === "/faq"
           ? styles.bgLight
           : ""
@@ -62,7 +62,7 @@ const Header = ({ isOpen, clicked }) => {
               {bgChange ||
               isOpen ||
               router.pathname === "/contact" ||
-              router.pathname === "/about" ||
+              router.pathname === "/about-us" ||
               router.pathname === "/faq" ? (
                 <LogoDark />
               ) : (
@@ -91,7 +91,7 @@ const Header = ({ isOpen, clicked }) => {
                 className={`${
                   bgChange ||
                   router.pathname === "/contact" ||
-                  router.pathname === "/about" ||
+                  router.pathname === "/about-us" ||
                   router.pathname === "/faq"
                     ? "hamburger-inner hamburger-inner-dark"
                     : "hamburger-inner hamburger-inner-light"

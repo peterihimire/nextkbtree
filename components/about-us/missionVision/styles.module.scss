@@ -1,0 +1,51 @@
+.mission {
+  width: 100%;
+  padding: 120px 0px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/unsplash-lady.png") center/cover no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .wrapper {
+    .grid {
+      width: 100%;
+      margin-top: 57px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 377px));
+        justify-content: center;
+      }
+
+      .content {
+        color: #ffffff;
+        background: rgba(86, 84, 84, 0.5);
+        border-radius: 8px;
+        padding: 100px;
+        text-align: center;
+
+        @media (max-width: 700px) {
+          padding: 20px;
+        }
+        @media (max-width: 900px) {
+          padding: 40px;
+        }
+        @media screen and (max-width: 1200px) {
+          padding: 60px;
+        }
+
+        h2 {
+          font-size: 40px;
+          line-height: 49px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

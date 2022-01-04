@@ -1,0 +1,183 @@
+.crowdinvest {
+  width: 100%;
+  padding: 100px 0;
+  background: linear-gradient(180deg, #e9f4fe 0%, rgba(233, 244, 254, 0) 100%);
+
+  .wrapper {
+    .heading {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 40px;
+        line-height: 49px;
+        margin: 0px 0px 100px 0px;
+        text-align: center;
+        max-width: 700px;
+        color: var(--primary);
+
+        @media screen and (max-width: 700px) {
+          font-size: 29px;
+          line-height: 32.01px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19.5px;
+        color: var(--white);
+        text-align: center;
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .content {
+      background: url("/images/estate-home.png") no-repeat;
+      background-position: right;
+      height: 561px;
+      border-radius: 8px;
+      position: relative;
+
+      .left {
+        position: absolute;
+        left: 0px;
+        top: -100px;
+        background: var(--white);
+        max-width: 579px;
+        padding: 100px 50px;
+        border-radius: 8px;
+
+        @media screen and (max-width: 600px) {
+          padding: 50px 10px;
+        }
+        @media (max-width: 900px) {
+          // padding-left: 150px;
+        }
+        @media screen and (max-width: 1200px) {
+          // padding-left: 150px;
+        }
+
+        h4 {
+          font-size: 32px;
+          line-height: 39px;
+          color: #333131;
+          max-width: 400px;
+
+          @media screen and (max-width: 600px) {
+            font-size: 29px;
+            line-height: 30px;
+            text-align: center;
+          }
+        }
+
+        p {
+          margin: 10px 0 0 0;
+          color: #65676f;
+
+          @media screen and (max-width: 600px) {
+            text-align: center;
+          }
+        }
+      }
+      .right {
+        position: absolute;
+        right: 50px;
+        bottom: -100px;
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+        @media (max-width: 900px) {
+          display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+          right: 0px;
+          bottom: -100px;
+        }
+      }
+    }
+
+    .rightSkills {
+      padding: 100px 0;
+      margin-top: 200px;
+      position: relative;
+
+      .ringOne {
+        position: absolute;
+        left: 120px;
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+        @media (max-width: 900px) {
+          display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+          left: 60px;
+        }
+      }
+
+      .ringTwo {
+        position: absolute;
+        right: 100px;
+        bottom: 0;
+      }
+
+      .ringThree {
+        position: absolute;
+        right: 200px;
+        top: 0px;
+      }
+
+      .ringFour {
+        position: absolute;
+        left: 350px;
+        bottom: 0px;
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .head {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        // margin-bottom: 40px;
+
+        h3 {
+          font-size: 40px;
+          line-height: 49px;
+          // margin: 0px 0px 100px 0px;
+          text-align: center;
+          max-width: 500px;
+          color: var(--primary);
+
+          @media screen and (max-width: 700px) {
+            font-size: 29px;
+            line-height: 32.01px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 19.5px;
+          // color: var(--white);
+          color: #65676f;
+          text-align: center;
+          max-width: 400px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

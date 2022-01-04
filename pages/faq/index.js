@@ -7,7 +7,7 @@ import Accordion from "../../components/faq/accordion";
 import Figures from "../../components/faq/figures";
 import CurateArticle from "../../components/faq/curateArticle";
 
-export default function Home() {
+export default function Faq() {
   return (
     <>
       {/* <Head>
@@ -24,6 +24,6 @@ export default function Home() {
   );
 }
 
-Home.getLayout = function getLayout(page) {
+Faq.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
