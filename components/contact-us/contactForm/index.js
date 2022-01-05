@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Input from "../../ui/customInput";
 import Select from "../../ui/customSelect";
-// import Textarea from "../../ui/customTextarea";
+import Textarea from "../../ui/customTextarea";
 
 const ContactForm = () => {
   return (
@@ -12,7 +12,7 @@ const ContactForm = () => {
           <h4>Get in touch with US</h4>
           <p>
             Submit this form and a sales representative will get back to you
-            within 24 hours.{" "}
+            within 24 hours.
           </p>
         </div>
         <div className={styles.right}>
@@ -72,7 +72,23 @@ const ContactForm = () => {
               >
                 <option>Country</option>
                 <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>United Kingdom</option>
+                <option>Australia</option>
               </Select>
+            </div>
+
+            <div className={styles.textarea}>
+              <Textarea
+                // labelText="Message"
+                id="message"
+                required
+                name="message"
+                placeholder="Message"
+              />
+            </div>
+            <div className={styles.submitBtn}>
+              <button className="btn-primary btn-block">Send</button>
             </div>
           </form>
         </div>

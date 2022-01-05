@@ -12,11 +12,14 @@
     }
 
     .left {
-      width: 45%;
+      width: 40%;
       padding: 55px 83px 124px;
-      background: linear-gradient(rgba(0, 0, 0, 0.81)),
-        url("/images/contact-us1.png") no-repeat;
-      background-size: cover;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 8px;
+      // background: linear-gradient(rgba(0, 0, 0, 0.81)),
+      //   url("/images/contact-us1.png") no-repeat;
+      // background-size: cover;
       display: flex;
       flex-direction: column;
 
@@ -77,9 +80,9 @@
     }
 
     .right {
-      width: 55%;
+      width: 60%;
       // padding: 53px 94px 32px;
-      padding-left: 100px;
+      padding-left: 200px;
       // background: #f6f8fa;
 
       @media screen and (max-width: 1200px) {
@@ -88,6 +91,10 @@
 
       @media screen and (max-width: 903px) {
         width: 100%;
+      }
+
+      @media screen and (max-width: 700px) {
+        padding: 53px 0px 0px;
       }
 
       form {
@@ -151,13 +158,13 @@
             }
 
             select {
-              // border: 0;
-              // border-bottom: 1px solid #dedede;
-              // border-radius: 0 !important;
-              // height: 40px !important;
-              // padding: 0px !important;
-              // background: transparent;
-              // color: #858585;
+              border: 0;
+              border-bottom: 1px solid #dedede;
+              border-radius: 0 !important;
+              height: 40px !important;
+              padding: 0px !important;
+              background: transparent;
+              color: #858585;
 
               &:focus {
                 border-bottom: 1px solid var(--new-blue);
