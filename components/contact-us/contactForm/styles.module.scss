@@ -17,11 +17,9 @@
       background: var(--primary);
       color: var(--white);
       border-radius: 8px;
-      // background: linear-gradient(rgba(0, 0, 0, 0.81)),
-      //   url("/images/contact-us1.png") no-repeat;
-      // background-size: cover;
       display: flex;
       flex-direction: column;
+      position: relative;
 
       @media screen and (max-width: 1200px) {
         padding: 55px 32px 124px;
@@ -32,48 +30,79 @@
         align-items: center;
       }
 
-      h2 {
-        color: var(--white);
-        font-size: 18px;
-        font-family: Proxima-Bold;
-
-        @media screen and (max-width: 903px) {
-          text-align: center;
-        }
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        align-items: flex-start;
+        // align-items: center;
       }
 
-      .lead {
-        font-size: 48px;
-        margin-top: 28px;
-        max-width: 373px;
+      h4 {
         color: var(--white);
-        line-height: 1;
-        font-family: Proxima-Regular;
-        margin-bottom: 108px;
+        font-size: 40px;
+        line-height: 49px;
+        max-width: 250px;
 
         @media screen and (max-width: 903px) {
           text-align: center;
         }
 
         @media screen and (max-width: 700px) {
-          font-size: 32px;
+          text-align: left;
         }
       }
 
-      .leadLink {
-        margin-top: auto;
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 350px;
+        margin-top: 20px;
 
-        p {
-          font-size: 18px;
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+          text-align: left;
+        }
+      }
+      .iconText {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        margin-top: 40px;
+
+        @media screen and (max-width: 903px) {
+          text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+          text-align: left;
+        }
+
+        span {
+          margin-left: 10px;
+        }
+      }
+      // .iconBottom {
+      //   margin-bottom: 40px;
+      // }
+      .socials {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 60px;
+
+        @media (max-width: 903px) {
+          justify-content: center;
+        }
+
+        a {
           color: var(--white);
+          margin-right: 30px;
+          font-size: 16px;
 
-          @media screen and (max-width: 903px) {
-            text-align: center;
-          }
-
-          a {
-            font-family: Proxima-Bold;
-            color: var(--white);
+          &:last-of-type {
+            margin-right: 0px;
           }
         }
       }
@@ -83,7 +112,6 @@
       width: 60%;
       // padding: 53px 94px 32px;
       padding-left: 200px;
-      // background: #f6f8fa;
 
       @media screen and (max-width: 1200px) {
         padding: 53px 32px 32px;
@@ -124,62 +152,34 @@
                 // margin-top: 16px;
               }
             }
+          }
+        }
 
-            label {
-              margin-bottom: 0px;
-              font-family: Wesfy-Bold;
-              font-size: 15px;
-            }
+        .formSelect {
+          margin-top: 20px;
 
-            input {
-              // border: 0;
-              // border-bottom: 1px solid #dedede;
-              // border-radius: 0 !important;
-              // height: 40px !important;
-              // padding: 0px !important;
-              // background: transparent;
-
-              &:focus {
-                border-bottom: 1px solid var(--new-blue);
-              }
-
-              &::placeholder {
-                color: #858585;
-              }
-            }
-
-            .selectWrap {
-              &::after {
-                background: url("/images/arrow-down.svg") no-repeat;
-                width: 15px;
-                height: 15px;
-                right: 5px !important;
-              }
-            }
-
-            select {
-              border: 0;
-              border-bottom: 1px solid #dedede;
-              border-radius: 0 !important;
-              height: 40px !important;
-              padding: 0px !important;
-              background: transparent;
-              color: #858585;
-
-              &:focus {
-                border-bottom: 1px solid var(--new-blue);
-              }
-            }
-
-            > button {
-              background: transparent;
-              border: 1px solid var(--new-blue);
-              color: var(--new-blue);
-              border-radius: 4px;
-              font-family: Wesfy-Bold;
-              font-size: 15px;
+          .selectWrap {
+            &::after {
+              width: 10px;
+              height: 6px;
+              background: url("/images/arrow-ios-downward.svg") no-repeat center;
+              background-size: cover;
+              position: absolute;
+              right: 12px;
+              top: 50%;
+              transform: translateY(-50%);
+              pointer-events: none;
+              display: block;
             }
           }
+        }
+
+        .textarea {
+          margin-top: 25px;
+        }
+
+        .submitBtn {
+          margin-top: 45px;
         }
 
         .extraInfo {

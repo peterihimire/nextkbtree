@@ -14,6 +14,29 @@ const ContactForm = () => {
             Submit this form and a sales representative will get back to you
             within 24 hours.
           </p>
+          <div className={styles.iconText}>
+            <img src="/images/phone-yellow.svg" alt="" />
+            <span>Call sales +234 800 000 0000</span>
+          </div>
+          <div className={`${styles.iconText}  ${styles.iconBottom}`}>
+            <img src="/images/position-yellow.svg" alt="" />
+            <span>32 Heywhy address, 39th Floor Washington, DC 20036</span>
+          </div>
+
+          <div className={styles.socials}>
+            <a href="/">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a href="/">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="/">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="/">
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
         <div className={styles.right}>
           <form>
@@ -62,7 +85,7 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className={styles.formGroup}>
+            <div className={styles.formSelect}>
               <Select
                 // labelText="Country"
                 id="country"
