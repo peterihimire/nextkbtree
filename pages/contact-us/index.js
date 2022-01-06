@@ -1,9 +1,9 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 import Layout from "../../layouts/landing";
-import Hero from "../../components/contact-us/hero";
-import DownloadApp from "../../components/contact-us/downloadApp";
-import ContactForm from "../../components/contact-us/contactForm";
+import Hero from "../../components/contactUs/hero";
+import DownloadApp from "../../components/contactUs/downloadApp";
+import ContactForm from "../../components/contactUs/contactForm";
 
 export default function Faq() {
   return (

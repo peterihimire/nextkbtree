@@ -1,17 +1,14 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 import Layout from "../../layouts/landing";
-import Hero from "../../components/about-us/hero";
-import TrustedBy from "../../components/about-us/trustedBy";
-import Figures from "../../components/about-us/figures";
-import MissionVision from "../../components/about-us/missionVision";
-import CrowdFunding from "../../components/about-us/crowdFunding";
-import CrowdInvest from "../../components/about-us/crowdInvest";
-import Team from "../../components/about-us/team";
-// import DownloadApp from "../../components/faq/downloadApp";
-// import Accordion from "../../components/faq/accordion";
-// import Figures from "../../components/faq/figures";
-// import CurateArticle from "../../components/faq/curateArticle";
+import Hero from "../../components/aboutUs/hero";
+import TrustedBy from "../../components/aboutUs/trustedBy";
+import Figures from "../../components/aboutUs/figures";
+import MissionVision from "../../components/aboutUs/missionVision";
+import CrowdFunding from "../../components/aboutUs/crowdFunding";
+import CrowdInvest from "../../components/aboutUs/crowdInvest";
+import Team from "../../components/aboutUs/team";
+
 
 export default function About() {
   return (
