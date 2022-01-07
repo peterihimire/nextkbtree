@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Form from "./form";
 
-const ResetPassword = () => {
+const ResetPasswordOtp = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.left}></div>
@@ -14,4 +14,4 @@ const ResetPassword = () => {
   );
 };
 
-export default ResetPassword;
+export default ResetPasswordOtp;

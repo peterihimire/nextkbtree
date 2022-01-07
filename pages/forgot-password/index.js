@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../layouts/auth";
-import ResetPasswordForm from "../../components/resetPassword";
+import ForgotPasswordForm from "../../components/forgotPassword";
 
 const ResetPassword = () => {
   return (
     <>
-      <ResetPasswordForm />
+      <ForgotPasswordForm />
     </>
   );
 };
