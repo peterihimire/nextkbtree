@@ -29,24 +29,25 @@ const OTPBox = () => {
         <div className="col text-center">
           <h2>Reset Password</h2>
           <p>OTP code has been sent to 0806 032 0090</p>
-
-          {otp.map((data, index) => {
-            return (
-              <Input
-                className={styles.otpField}
-                type="text"
-                name="otp"
-                maxLength="1"
-                size="1"
-                key={index}
-                value={data}
-                onChange={(e) => handleChange(e.target, index)}
-                onFocus={(e) => e.target.select()}
-                placeholder="_"
-              />
-            );
-          })}
-
+          <div className={styles.inputDiv}>
+            {otp.map((data, index) => {
+              return (
+                <Input
+                  className={styles.otpField}
+                  type="text"
+                  name="otp"
+                  maxLength="1"
+                  size="1"
+                  key={index}
+                  value={data}
+                  onChange={(e) => handleChange(e.target, index)}
+                  onFocus={(e) => e.target.select()}
+                  placeholder="-"
+                />
+              );
+            })}
+          </div>
+          
           <p>OTP Entered - {otp.join("")}</p>
           <p>
             {/* <button
