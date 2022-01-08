@@ -1,4 +1,17 @@
 .otpDiv {
+  h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 40px;
+    max-width: 200px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    max-width: 400px;
+  }
+
   .card-hover {
     opacity: 0.95;
   }
@@ -12,47 +25,54 @@
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   }
   .inputDiv {
-    width: 100%;
-  
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px 27px;
+    // width: 100%;
 
-    @media screen and (max-width: 600px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 5px 7px;
-    }
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 25px 27px;
+
+    // @media screen and (max-width: 600px) {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   gap: 5px 7px;
+    // }
+
+    display: flex;
 
     .otpField {
-      // width: 100%;
-
-      // width: 40% !important;
-      // margin-right: 10px;
-      // padding-left: 12px;
-      // height: 40% !important;
-
       // width: 38px;
       // margin-right: 10px;
       // padding-left: 12px;
       // height: 40px;
 
-      // width: 70px !important;
-      // margin-right: 20px;
-      padding-left: 60px;
-      height: 100px !important;
+      width: 120px !important;
+      margin-right: 20px;
+      padding-left: 54px;
+      height: 120px !important;
 
       &:last-of-type {
         margin-right: 0px;
       }
 
-
       @media screen and (max-width: 600px) {
-        padding-left: 35px;
+        padding-left: 30px;
         height: 70px !important;
       }
     }
     .cursor-pointer {
       cursor: pointer;
+    }
+  }
+  .otpBtn {
+    margin: 40px 0px;
+  }
+  .resendOtp {
+    max-width: 200px;
+
+    .linkStyle {
+      color: #004ef0;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
     }
   }
 }

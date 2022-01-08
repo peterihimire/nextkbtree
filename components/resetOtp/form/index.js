@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Input from "../../ui/customInput";
+import Link from "next/link";
 // import Header from "components/Header";
 // import AppConfig from "App.config";
 // import ExternalInfo from "components/ExternalInfo";
@@ -47,21 +48,27 @@ const OTPBox = () => {
               );
             })}
           </div>
-          
-          <p>OTP Entered - {otp.join("")}</p>
-          <p>
-            {/* <button
+
+          {/* <p>OTP Entered - {otp.join("")}</p> */}
+          {/* <p> */}
+          {/* <button
               className="btn btn-secondary mr-2"
               onClick={(e) => setOtp([...otp.map((v) => "")])}
             >
               Clear
             </button> */}
-            <button
-              className="btn btn-primary btn-block"
-              onClick={(e) => alert("Entered OTP is " + otp.join(""))}
-            >
-              Continue
-            </button>
+          <button
+            className={`${styles.otpBtn}  btn-primary btn-block`}
+            onClick={(e) => alert("Entered OTP is " + otp.join(""))}
+          >
+            Continue
+          </button>
+          {/* </p> */}
+          <p className={styles.resendOtp}>
+            Did not receive any code ?{" "}
+            <Link href="">
+              <a className={styles.linkStyle}>Resend OTP Code</a>
+            </Link>
           </p>
         </div>
       </div>
