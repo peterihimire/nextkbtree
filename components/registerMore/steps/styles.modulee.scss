@@ -1,0 +1,147 @@
+.regForm {
+  width: var(--full);
+  padding: 140px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    // background: url("../../../public/images/tapeBg.PNG") no-repeat center;
+    background: url("/images/image-BG.png") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  @media (max-width: 903px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 72px;
+  }
+
+  .formLead {
+    font-size: 15px;
+    font-family: Noto-Medium;
+    text-align: center;
+    color: var(--orange);
+  }
+
+  > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 12px 0px 60px;
+    font-family: Noto-Bold;
+  }
+
+  .stepContent {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 903px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: var(--full);
+    }
+
+    .orderSummary {
+      width: 398px;
+      max-width: var(--full);
+      margin-left: 48px;
+
+      @media (max-width: 903px) {
+        margin-left: 0;
+        margin-bottom: 48px;
+      }
+
+      .orderSumContent {
+        height: fit-content;
+        background: var(--secondary-dark);
+        border-radius: 2px;
+        border-radius: var(--radius);
+        padding: 32px;
+
+        > h4 {
+          font-size: 14px;
+          font-family: Noto-Regular;
+        }
+
+        .sumList {
+          margin-top: 28px;
+
+          > li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+
+            &.sumDiscount {
+              padding-bottom: 16px;
+              border-bottom: 1px solid var(--ghost);
+            }
+
+            &.justifyEnd {
+              justify-content: flex-end;
+              white-space: nowrap;
+
+              .sumLeft {
+                margin-right: 32px;
+                font-size: 14px;
+              }
+            }
+
+            &.sumTotal {
+              padding-top: 16px;
+              border-top: 1px solid var(--ghost);
+
+              .sumLeft {
+                font-size: 17px;
+                font-family: Noto-Bold;
+              }
+            }
+
+            .sumLeft {
+              font-size: 12px;
+              color: var(--text-secondary);
+
+              > span {
+                color: var(--text-primary);
+              }
+            }
+
+            .sumRight {
+              font-size: 17px;
+              font-family: Noto-Bold;
+            }
+          }
+        }
+      }
+
+      .sumInfo {
+        margin-top: 16px;
+
+        > p {
+          font-size: 12px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

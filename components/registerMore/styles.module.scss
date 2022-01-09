@@ -1,0 +1,146 @@
+.register {
+  width: var(--full);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    // background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background: url("/images/image-BG.png") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  .wrapper {
+    width: var(--full);
+    padding: 140px 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    h4 {
+      font-family: Noto-Medium;
+      color: var(--orange);
+      font-size: 15px;
+    }
+
+    h2 {
+      margin: 12px 0px 52px;
+      font-family: Noto-Bold;
+      font-size: 40px;
+      max-width: 846px;
+      text-align: center;
+
+      @media (max-width: 1200px) {
+        max-width: 512px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+  }
+}
+.regWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  // align-items: flex-start;
+  margin: 30px 0 150px;
+
+  > a {
+    color: inherit;
+    white-space: pre-line;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 64px;
+  }
+}
+.WrapperCard {
+  padding: 60px 40px;
+  width: 413px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  background-color: var(--secondary-dark);
+  margin: 0 10px;
+
+  &:first-child {
+    cursor: pointer;
+  }
+
+  .contactLink {
+    color: var(--primary);
+    // background: transparent;
+    // padding: 0;
+    margin-top: 25px;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.WrapperCard h4 {
+  padding: 10px 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.WrapperCard p {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 12px;
+}
+.regImg {
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .regWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .WrapperCard {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 440px) {
+  .WrapperCard {
+    width: 313px;
+  }
+}
+@media (max-width: 320px) {
+  .WrapperCard {
+    width: 280px;
+  }
+}

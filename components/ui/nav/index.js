@@ -1,53 +1,50 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
-import Dropdown from "../dropdown";
-import AboutDrop from "./aboutus";
-import ServicesDrop from "./services";
-import IndustriesDrop from "./industries";
+// import Dropdown from "../dropdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import ActiveLink from "../../../hoc/activeLink";
 
 const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
-  const [showLang, setShowLang] = useState(false);
-  const [about, openAbout] = useState(false);
-  const [services, openServices] = useState(false);
-  const [industries, openIndustries] = useState(false);
+  // const [showLang, setShowLang] = useState(false);
+
 
   const router = useRouter();
 
-  useEffect(() => {
-    openAbout(false);
-    openServices(false);
-    openIndustries(false);
-  }, [router.pathname]);
+  // useEffect(() => {
+  //   openAbout(false);
+  //   openServices(false);
+  //   openIndustries(false);
+  // }, [router.pathname]);
 
-  useEffect(() => {
-    const hideLang = () => {
-      setShowLang(false);
-    };
+  // useEffect(() => {
+  //   const hideLang = () => {
+  //     setShowLang(false);
+  //   };
 
-    document.body.addEventListener("click", hideLang);
+  //   document.body.addEventListener("click", hideLang);
 
-    return () => {
-      document.body.removeEventListener("click", hideLang);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeEventListener("click", hideLang);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    if (!isOpen) {
-      openAbout(false);
-      openServices(false);
-      openIndustries(false);
-    }
-  }, [isOpen]);
+  // useEffect(() => {
+  //   if (!isOpen) {
+  //     openAbout(false);
+  //     openServices(false);
+  //     openIndustries(false);
+  //   }
+  // }, [isOpen]);
 
   return (
     <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
       <ul className={styles.navLinks}>
-        <li className={styles.hasDrop}>
-          <button
-            className={`${styles.hasDropBtn} ${about ? styles.boldText : ""} ${
+        <li>
+          <ActiveLink
+            name="How it works"
+            href="/"
+            linkClass={`${
               isDrop ||
               bgChange ||
               router.pathname === "/contact-us" ||
@@ -56,31 +53,14 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 ? styles.darkText
                 : ""
             }`}
-            onClick={() => {
-              openAbout(!about);
-              openServices(false);
-              openIndustries(false);
-
-              about ? clicked(false) : clicked(true);
-              document.querySelector("nav").classList.toggle(styles.hidden);
-            }}
-          >
-            <span>How it Works</span>
-            <i className="far fa-chevron-down"></i>
-          </button>
-          <div className={`${styles.dropdownMenu} ${about ? styles.show : ""}`}>
-            <div className={styles.dropdownContainer}>
-              <div className={`${styles.dropdownWrapper} ${styles.about}`}>
-                <AboutDrop />
-              </div>
-            </div>
-          </div>
+          />
         </li>
-        <li className={styles.hasDrop}>
-          <button
-            className={`${styles.hasDropBtn} ${
-              services ? styles.boldText : ""
-            } ${
+
+        <li>
+          <ActiveLink
+            name="FAQs"
+            href="/faq"
+            linkClass={`${
               isDrop ||
               bgChange ||
               router.pathname === "/contact-us" ||
@@ -89,33 +69,14 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 ? styles.darkText
                 : ""
             }`}
-            onClick={() => {
-              openServices(!services);
-              openAbout(false);
-              openIndustries(false);
-
-              services ? clicked(false) : clicked(true);
-              document.querySelector("nav").classList.toggle(styles.hidden);
-            }}
-          >
-            <span>FAQs</span>
-            <i className="far fa-chevron-down"></i>
-          </button>
-          <div
-            className={`${styles.dropdownMenu} ${services ? styles.show : ""}`}
-          >
-            <div className={styles.dropdownContainer}>
-              <div className={`${styles.dropdownWrapper} ${styles.services}`}>
-                <ServicesDrop />
-              </div>
-            </div>
-          </div>
+          />
         </li>
-        <li className={styles.hasDrop}>
-          <button
-            className={`${styles.hasDropBtn} ${
-              industries ? styles.boldText : ""
-            } ${
+
+        <li>
+          <ActiveLink
+            name="About Us"
+            href="/about-us"
+            linkClass={`${
               isDrop ||
               bgChange ||
               router.pathname === "/contact-us" ||
@@ -124,35 +85,13 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 ? styles.darkText
                 : ""
             }`}
-            onClick={() => {
-              openIndustries(!industries);
-              openServices(false);
-              openAbout(false);
-
-              industries ? clicked(false) : clicked(true);
-              document.querySelector("nav").classList.toggle(styles.hidden);
-            }}
-          >
-            <span>About Us</span>
-            <i className="far fa-chevron-down"></i>
-          </button>
-          <div
-            className={`${styles.dropdownMenu} ${
-              industries ? styles.show : ""
-            }`}
-          >
-            <div className={styles.dropdownContainer}>
-              <div className={`${styles.dropdownWrapper} ${styles.industries}`}>
-                <IndustriesDrop />
-              </div>
-            </div>
-          </div>
+          />
         </li>
 
         <li>
           <ActiveLink
             name="Contact Us"
-            href="/blogs"
+            href="/contact-us"
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -168,7 +107,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
 
       <div className={styles.navEnd}>
         <div className={styles.login}>
-          <Link href="/">
+          <Link href="/login">
             <a
               className={`${
                 isOpen ||
@@ -185,7 +124,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           </Link>
         </div>
         <div className={styles.create}>
-          <Link href="/">
+          <Link href="/register">
             <a className="btn-primary btn-medium">Create an account</a>
           </Link>
         </div>

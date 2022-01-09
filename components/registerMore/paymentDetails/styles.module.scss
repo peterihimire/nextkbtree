@@ -1,0 +1,96 @@
+.form {
+  flex: 1;
+  max-width: 413px;
+
+  @media (max-width: 903px) {
+    width: var(--full);
+  }
+
+  .formGrid {
+    width: var(--full);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &.mb20 {
+      margin-bottom: 20px;
+    }
+
+    &.mb48 {
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  > h4 {
+    font-size: 14px;
+    font-family: Noto-Regular;
+
+    @media (max-width: 903px) {
+      text-align: center;
+    }
+
+    @media (max-width: 400px) {
+      text-align: left;
+    }
+  }
+
+  .formPayType {
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 40px;
+
+    @media (max-width: 903px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .formRadioGroup {
+      display: flex;
+      align-items: center;
+      margin-right: 84px;
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      @media (max-width: 400px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      input {
+        width: 24px;
+        height: 24px;
+      }
+
+      label {
+        font-size: 15px;
+        font-family: Noto-Medium;
+        margin-bottom: 0px;
+        margin-left: 13px;
+      }
+    }
+  }
+
+  .payInput {
+    margin-bottom: 20px;
+
+    .cardInput {
+      padding-right: 50px !important;
+    }
+  }
+}
