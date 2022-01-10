@@ -29,11 +29,11 @@ const Register = ({ step, stepHandler, backHandler }) => {
         {/* <Form /> */}
         <Stepper step={step}>
           <div className={styles.stepContent}>
-            {step === 1 && (
+            {step === 0 && (
               <Form stepHandler={stepHandler} backHandler={backHandler} />
             )}
 
-            {step === 2 && (
+            {step === 1 && (
               <>
                 <Form2 stepHandler={stepHandler} backHandler={backHandler} />
               </>
