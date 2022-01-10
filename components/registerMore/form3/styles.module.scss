@@ -1,0 +1,50 @@
+.loginForm {
+  .backStep {
+    background: none;
+    padding: 0;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    max-width: 300px;
+  }
+  p {
+    font-size: 19px;
+    line-height: 19px;
+    margin-bottom: 40px;
+    max-width: 300px;
+  }
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  .forgot {
+    display: flex;
+    justify-content: flex-end;
+
+    .linkStyle {
+      color: #004ef0;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 600;
+    }
+  }
+  .submitBtn {
+    margin: 40px 0;
+  }
+  .register {
+    display: flex;
+    justify-content: center;
+
+    span {
+      margin-right: 10px;
+    }
+    .linkStyle {
+      color: #004ef0;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 600;
+    }
+  }
+}

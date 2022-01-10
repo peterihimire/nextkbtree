@@ -9,6 +9,7 @@ import styles from "./styles.module.scss";
 import Stepper from "../../ui/stepper";
 import Form from "../form";
 import Form2 from "../form2";
+import Form3 from "../form3";
 
 const Register = ({ step, stepHandler, backHandler }) => {
   return (
@@ -34,9 +35,11 @@ const Register = ({ step, stepHandler, backHandler }) => {
             )}
 
             {step === 1 && (
-              <>
-                <Form2 stepHandler={stepHandler} backHandler={backHandler} />
-              </>
+              <Form2 stepHandler={stepHandler} backHandler={backHandler} />
+            )}
+
+            {step === 2 && (
+              <Form3 stepHandler={stepHandler} backHandler={backHandler} />
             )}
           </div>
         </Stepper>

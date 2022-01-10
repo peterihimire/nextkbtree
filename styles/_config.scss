@@ -324,6 +324,30 @@ input[type="radio"] {
   }
 }
 
+// react-datepicker style
+// .react-datepicker-wrapper,
+.react-datepicker__input-container,
+// .react-datepicker__input-container 
+input {
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("/images/calendar-outline.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: block;
+  }
+}
+
+.react-datepicker-wrapper {
+  color: rgb(121, 121, 121) !important;
+}
+
 // mine
 .input-holder {
   display: flex;
