@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import Input from "../../ui/customInput";
+import DropXone from "../../ui/customDropzone";
 import Select from "../../ui/customSelect";
+// import Dropzone from "react-dropzone";
 
 // import Link from "next/link";
 
@@ -32,14 +33,29 @@ const Form = ({ stepHandler, backHandler }) => {
         </div>
 
         <div className={styles.formGroup}>
-          <Input
+          {/* <Input
             // labelText="Create a Password"
             type="text"
             name="phoneNumber"
             id="phoneNumber"
             // required
             placeholder="Enter Bank Verification Number"
-          />
+          /> */}
+
+          {/* <Dropzone>Upload image here</Dropzone> */}
+
+          {/* <Dropzone onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
+            {({ getRootProps, getInputProps }) => (
+              <section>
+                <div {...getRootProps()}>
+                  <input {...getInputProps()} />
+                  <p>Upload image here</p>
+                </div>
+              </section>
+            )}
+          </Dropzone> */}
+
+          <DropXone />
         </div>
 
         <div className={styles.submitBtn}>
