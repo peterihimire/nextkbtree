@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 // import DropXone from "../../ui/customDropzone";
-import Select from "../../ui/customSelect";
+import Input from "../../ui/customInput";
 import { useDropzone } from "react-dropzone";
 // import Link from "next/link";
 
@@ -32,7 +32,7 @@ const Form = ({ stepHandler, backHandler }) => {
   };
 
   return (
-    <div className={styles.loginForm}>
+    <div className={styles.radioForm}>
       <button onClick={backHandler} className={styles.backStep}>
         <img src="/images/arrow-back.svg" alt="" />
       </button>
@@ -41,24 +41,34 @@ const Form = ({ stepHandler, backHandler }) => {
 
       <form>
         <div className={styles.formGroup}>
-          <Select
-            name="id"
-            // labelText="Country of Residence"
+          <input
+            className={styles.radioInput}
+            // labelText="Create a Password"
+            type="radio"
+            name="employmentStatus"
+            id="employed"
+            // checked
             // required
-            id="id"
-            defaultValue=""
-          >
-            <option value="" disabled>
-              Select Preferred ID
-            </option>
-            <option value="nig">National ID</option>
-            <option value="gh">Driving License</option>
-          </Select>
+            // placeholder="Enter Bank Verification Number"
+          />
+          <label htmlFor="radioEmployed" className={styles.radioLabel}>
+            Employed
+          </label>
         </div>
 
         <div className={styles.formGroup}>
-          <Dropzone />
-          {/* <DropXone /> */}
+          <input
+            className={styles.radioInput}
+            // labelText="Create a Password"
+            type="radio"
+            name="employmentStatus"
+            id="unemployed"
+            // required
+            // placeholder="Enter Bank Verification Number"
+          />
+          <label htmlFor="radioUnemployed" className={styles.radioLabel}>
+            Unemployed
+          </label>
         </div>
 
         <div className={styles.submitBtn}>

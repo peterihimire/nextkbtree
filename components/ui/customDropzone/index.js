@@ -11,7 +11,7 @@ const Dropzone = () => {
   ));
 
   return (
-    <section className="container">
+    <div className="container">
       <div {...getRootProps({ className: "dropzone" })}>
         <input {...getInputProps()} />
         <img src="images/camIcon.svg" alt="" />
@@ -19,10 +19,10 @@ const Dropzone = () => {
         <p>Drag and drop</p>
       </div>
       <aside>
-        <h4>Files</h4>
+        {/* <h4>Files</h4> */}
         <ul>{files}</ul>
       </aside>
-    </section>
+    </div>
   );
 };
 

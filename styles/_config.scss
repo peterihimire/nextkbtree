@@ -369,6 +369,16 @@ input {
 
   p {
     margin-bottom: 5px !important;
+    color: #333131;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+
+    &:last-of-type {
+      font-size: 10px;
+      line-height: 12px;
+      color: #65676f;
+    }
   }
 }
 // mine

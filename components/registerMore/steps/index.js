@@ -1,15 +1,10 @@
-// import React from "react";
-// import styles from "./styles.module.scss";
-// import Stepper from "../../ui/stepper";
-// import AccountDetails from "../accountDetails";
-// import PaymentDetails from "../register";
-
 import React from "react";
 import styles from "./styles.module.scss";
 import Stepper from "../../ui/stepper";
 import Form from "../form";
 import Form2 from "../form2";
 import Form3 from "../form3";
+import Form4 from "../form4";
 
 const Register = ({ step, stepHandler, backHandler }) => {
   return (
@@ -40,6 +35,10 @@ const Register = ({ step, stepHandler, backHandler }) => {
 
             {step === 2 && (
               <Form3 stepHandler={stepHandler} backHandler={backHandler} />
+            )}
+
+            {step === 3 && (
+              <Form4 stepHandler={stepHandler} backHandler={backHandler} />
             )}
           </div>
         </Stepper>
