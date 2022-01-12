@@ -24,7 +24,7 @@
       width: 0%;
 
       &:focus + label {
-        border: 1.5px dashed #42ae51;
+        border: 2px dashed #42ae51;
       }
 
       &:checked + label {
@@ -37,6 +37,22 @@
 
         span {
           display: block;
+        }
+
+        .radioText {
+          h5 {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 5px;
+            color: var(--white);
+          }
+          p {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: normal;
+            max-width: 240px;
+            color: var(--white);
+          }
         }
       }
 
@@ -66,6 +82,22 @@
       width: 100%;
       color: #65676f;
 
+      .radioText {
+        h5 {
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 5px;
+          color: #333131;
+        }
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: normal;
+          max-width: 240px;
+          color: #65676f;
+        }
+      }
+
       &:hover {
         background-color: #42ae51;
         border: 2px solid #42ae51;
@@ -74,6 +106,22 @@
 
         span {
           display: none;
+        }
+
+        .radioText {
+          h5 {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 5px;
+            color: var(--white);
+          }
+          p {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: normal;
+            max-width: 240px;
+            color: var(--white);
+          }
         }
       }
     }

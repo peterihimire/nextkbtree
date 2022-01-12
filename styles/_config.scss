@@ -261,7 +261,7 @@ textarea {
   color: inherit;
   width: 100%;
   font-family: inherit;
-  border: 1px solid #dedede;
+  border: 1.5px solid #b6b7b9;
   // background: var(--white);
   // background: transparent;
   background: rgba(255, 255, 255, 0.137);
@@ -269,6 +269,7 @@ textarea {
   height: 55px !important;
   transition: all 0.3s ease-in-out;
   padding: 12px;
+  color: #65676f;
 
   &:focus {
     border: 1px solid var(--primary);
@@ -353,7 +354,7 @@ input {
   // border: solid 3px rgb(121, 121, 121) !important;
 
   border-style: dashed;
-  border-color: #e5e5e5;
+  border-color: #b6b7b9;
   border-width: 2px;
   border-radius: 16px;
   padding: 60px 30px;

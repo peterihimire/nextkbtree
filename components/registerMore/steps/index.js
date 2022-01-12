@@ -5,6 +5,7 @@ import Form from "../form";
 import Form2 from "../form2";
 import Form3 from "../form3";
 import Form4 from "../form4";
+import Form5 from "../form5";
 
 const Register = ({ step, stepHandler, backHandler }) => {
   return (
@@ -39,6 +40,10 @@ const Register = ({ step, stepHandler, backHandler }) => {
 
             {step === 3 && (
               <Form4 stepHandler={stepHandler} backHandler={backHandler} />
+            )}
+
+            {step === 4 && (
+              <Form5 stepHandler={stepHandler} backHandler={backHandler} />
             )}
           </div>
         </Stepper>
