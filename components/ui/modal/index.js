@@ -15,7 +15,8 @@ const Modal = ({ children, click, header, bodyClass, ...props }) => {
 
         <div className={styles.cancel}>
           <button onClick={click}>
-            <CloseOutlined />
+            {/* <CloseOutlined /> */}
+            <img src="/images/Close.svg" alt="" />
           </button>
         </div>
 
