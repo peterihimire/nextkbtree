@@ -37,7 +37,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   // }, [isOpen]);
 
   return (
-    <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
+    <nav className={`${styles.nav} `} id="navbar">
       <ul className={styles.navLinks}>
         <li>
           <ActiveLink

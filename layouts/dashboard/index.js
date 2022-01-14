@@ -6,7 +6,7 @@ import Backdrop from "../../components/ui/backdrop";
 // import Sidebar from "../../components/ui/dashboardNav";
 import { useRouter } from "next/router";
 
-const LandingLayout = ({ children }) => {
+const DashboardLayout = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
@@ -48,4 +48,4 @@ const LandingLayout = ({ children }) => {
   );
 };
 
-export default LandingLayout;
+export default DashboardLayout;

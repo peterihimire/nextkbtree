@@ -5,11 +5,13 @@
   // align-items: center;
   // justify-content: space-between;
   // margin-left: 38px;
+    left: 0;
 
-  // @media (max-width: 1264px) {
+  @media (max-width: 1264px) {
     position: fixed;
     top: 70px;
-    left: -100vw;
+    left: 0;
+    // left: -100vw;
     z-index: 250;
     transition: left 0.4s ease-in-out;
     background: var(--primary);
@@ -29,7 +31,33 @@
     &.hidden {
       overflow: hidden;
     }
-  // }
+  }
+
+  // added PETER
+  @media (min-width: 1264px) {
+    left: 0;
+    position: fixed;
+    top: 70px;
+    z-index: 250;
+    transition: left 0.4s ease-in-out;
+    background: var(--primary);
+    // background: var(--white);
+    display: initial;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-left: 0;
+    overflow-y: auto;
+    padding: 40px 16px 120px;
+    width: 300px;
+
+    &.show {
+      left: 0;
+    }
+
+    &.hidden {
+      overflow: hidden;
+    }
+  }
 
   @media screen and (max-width: 299px) {
     width: 280px;
@@ -41,11 +69,11 @@
     // justify-content: center;
 
     // @media (max-width: 1264px) {
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: stretch;
-      width: var(--full);
-      height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    width: var(--full);
+    height: auto;
     // }
 
     > li {
@@ -58,9 +86,9 @@
       // }
 
       // @media (max-width: 1264px) {
-        margin-bottom: 40px;
-        width: var(--full);
-        margin-right: 0px;
+      margin-bottom: 40px;
+      width: var(--full);
+      margin-right: 0px;
       // }
 
       > a {
@@ -223,17 +251,17 @@
     // height: 100%;
 
     // @media (max-width: 1264px) {
-      flex-direction: column;
-      align-items: stretch;
-      height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
     // }
     .login {
       // margin-right: 20px;
 
       // @media (max-width: 1264px) {
-        margin-bottom: 40px;
-        width: var(--full);
-        margin-right: 0px;
+      margin-bottom: 40px;
+      width: var(--full);
+      margin-right: 0px;
       // }
     }
     .contactLink {
@@ -256,7 +284,7 @@
       // margin: 0 39px;
 
       // @media (max-width: 1264px) {
-        margin: 40px 0px;
+      margin: 40px 0px;
       // }
 
       > button {
