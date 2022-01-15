@@ -4,6 +4,8 @@ import Header from "../../components/ui/dashboardHeader";
 import Backdrop from "../../components/ui/backdrop";
 // import Footer from "../../components/ui/footer";
 import Sidebar from "../../components/ui/dashboardNav";
+import DashboardHeader from "../../components/ui/dashboardMainHeader";
+
 import { useRouter } from "next/router";
 
 const DashboardLayout = ({ children }) => {
@@ -40,7 +42,7 @@ const DashboardLayout = ({ children }) => {
           document.body.classList.toggle("_fixed");
         }}
       />
-
+      <DashboardHeader />
       <main className={styles.main}>{children}</main>
 
       {/* <Footer /> */}

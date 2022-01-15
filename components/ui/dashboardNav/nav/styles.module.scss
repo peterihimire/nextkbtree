@@ -62,7 +62,11 @@
   @media screen and (max-width: 299px) {
     width: 280px;
   }
-
+  .logo {
+    @media (max-width: 1264px) {
+      display: none;
+    }
+  }
   .navLinks {
     display: flex;
     // align-items: center;

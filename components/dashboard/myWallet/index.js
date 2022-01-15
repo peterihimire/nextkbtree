@@ -22,7 +22,7 @@ const MyWallet = () => {
 
   return (
     <section className={styles.walletInvestment}>
-      <div className={styles.container}>
+      <div className={styles.wrapper}>
         <div className={styles.left}>
           <h3>My wallet</h3>
           <div className={styles.walletContent}>

@@ -191,7 +191,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       </ul>
 
       <div className={styles.attention}>
-        <Attention /> <span>Tap to complete your profile setup</span>
+        <Attention /> <p>Tap to complete your profile setup</p>
       </div>
       <div className={styles.navLogout}>
         <Logout />
