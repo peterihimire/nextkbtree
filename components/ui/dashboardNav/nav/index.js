@@ -4,6 +4,19 @@ import styles from "./styles.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import ActiveLink from "../../../../hoc/activeLink";
+import Logo from "../../../../public/images/logo-light.svg";
+import LogoDark from "../../../../public/images/logo-dark.svg";
+import Dashboard from "../../../../public/images/dashboardd.svg";
+
+import CrowdInvest from "../../../../public/images/crowd-invest.svg";
+import LongHold from "../../../../public/images/long-hold.svg";
+import Wallet from "../../../../public/images/wallet.svg";
+import Portfolio from "../../../../public/images/portfolio.svg";
+import Favourite from "../../../../public/images/favourite.svg";
+import Referral from "../../../../public/images/referral.svg";
+import Settings from "../../../../public/images/settings.svg";
+import Attention from "../../../../public/images/attention.svg";
+import Logout from "../../../../public/images/logoutt.svg";
 
 const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   // const [showLang, setShowLang] = useState(false);
@@ -37,12 +50,31 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   // }, [isOpen]);
 
   return (
-    <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
+    // <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
+    <nav className={`${styles.nav}`} id="navbar">
+      <div className={styles.logo}>
+        <Link href="/">
+          <a
+          // className={`${isDropOpen ? styles.lightLogo : ""}`}
+          >
+            {bgChange ||
+            isOpen ||
+            router.pathname === "/contact-us" ||
+            router.pathname === "/about-us" ||
+            router.pathname === "/faq" ? (
+              <LogoDark />
+            ) : (
+              <Logo />
+            )}
+          </a>
+        </Link>
+      </div>
       <ul className={styles.navLinks}>
         <li>
+          <Dashboard />
           <ActiveLink
-            name="How it works"
-            href="/"
+            name="Dashboard"
+            href="/dashboard"
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -56,9 +88,10 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
+          <CrowdInvest />
           <ActiveLink
-            name="FAQs"
-            href="/faq"
+            name="Crowd Invest"
+            href="/crowd-invest"
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -72,9 +105,10 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
+          <LongHold />
           <ActiveLink
-            name="About Us"
-            href="/about-us"
+            name="Long Hold Investment"
+            href="/long-hold-investment"
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -88,9 +122,61 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
+          <Favourite />
           <ActiveLink
-            name="Contact Us"
-            href="/contact-us"
+            name="Favourite"
+            href="/favourite"
+            linkClass={`${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact-us" ||
+              router.pathname === "/about-us" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
+          />
+        </li>
+
+        <li>
+          <Wallet />
+          <ActiveLink
+            name="Wallet"
+            href="/wallet"
+            linkClass={`${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact-us" ||
+              router.pathname === "/about-us" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
+          />
+        </li>
+
+        <li>
+          <Portfolio />
+          <ActiveLink
+            name="My Portfolio"
+            href="/my-portfolio"
+            linkClass={`${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact-us" ||
+              router.pathname === "/about-us" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
+          />
+        </li>
+
+        <li>
+          <Referral />
+          <ActiveLink
+            name="Referral"
+            href="/referral"
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -104,44 +190,12 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
       </ul>
 
-      <div className={styles.navEnd}>
-        <div className={styles.login}>
-          <Link href="/login">
-            <a
-              className={`${
-                isOpen ||
-                bgChange ||
-                router.pathname === "/contact-us" ||
-                router.pathname === "/about-us" ||
-                router.pathname === "/faq"
-                  ? "btn-transparent-dark btn-login"
-                  : "btn-transparent btn-login"
-              }`}
-            >
-              Log In
-            </a>
-          </Link>
-        </div>
-        <div className={styles.create}>
-          <Link href="/register">
-            <a className="btn-primary btn-medium">Create an account</a>
-          </Link>
-        </div>
-        {/* <div className={styles.searchBtn}>
-          <button className={`${isDrop ? styles.darkText : ""}`}>
-            <i className="far fa-search"></i>
-          </button>
-        </div> */}
-        {/* <Dropdown
-          btnText="EN"
-          isDrop={isDrop}
-          show={showLang}
-          clicked={(e) => {
-            e.stopPropagation();
-
-            setShowLang(!showLang);
-          }}
-        ></Dropdown> */}
+      <div className={styles.attention}>
+        <Attention /> <span>Tap to complete your profile setup</span>
+      </div>
+      <div className={styles.navLogout}>
+        <Logout />
+        <button>Logout</button>
       </div>
     </nav>
   );

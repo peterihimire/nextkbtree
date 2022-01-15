@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import Header from "../../components/ui/dashboardHeader";
 import Backdrop from "../../components/ui/backdrop";
 // import Footer from "../../components/ui/footer";
-// import Sidebar from "../../components/ui/dashboardNav";
+import Sidebar from "../../components/ui/dashboardNav";
 import { useRouter } from "next/router";
 
 const DashboardLayout = ({ children }) => {
@@ -20,7 +20,7 @@ const DashboardLayout = ({ children }) => {
 
   return (
     <div className={styles.layout}>
-      {/* <Sidebar isOpen={open} /> */}
+      <Sidebar isOpen={open} />
       <Backdrop
         open={open}
         clicked={() => {
