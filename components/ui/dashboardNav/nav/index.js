@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 // import Dropdown from "../dropdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import ActiveLink from "../../../../hoc/activeLink";
+import ActiveLink from "../../../../hoc/activeLink2";
 import Logo from "../../../../public/images/logo-light.svg";
 import LogoDark from "../../../../public/images/logo-dark.svg";
 import Dashboard from "../../../../public/images/dashboardd.svg";
@@ -177,6 +177,23 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           <ActiveLink
             name="Referral"
             href="/referral"
+            linkClass={`${
+              isDrop ||
+              bgChange ||
+              router.pathname === "/contact-us" ||
+              router.pathname === "/about-us" ||
+              router.pathname === "/faq"
+                ? styles.darkText
+                : ""
+            }`}
+          />
+        </li>
+
+        <li>
+          <Settings />
+          <ActiveLink
+            name="Settings"
+            href="/settings"
             linkClass={`${
               isDrop ||
               bgChange ||

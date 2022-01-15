@@ -1,18 +1,10 @@
 .dash_header {
   width: calc(100% - 300px);
-  // display: grid;
-  // grid-template-columns: auto auto;
-  // // padding: 39px 56px 22px 52px;
-  padding: 22px 0px;
-  // align-items: center;
-  // justify-content: space-between;
+  height: 60px;
   position: relative;
-
-  // // color: white;
-  // // background-color: #fff;
+  display: flex;
+  align-items: center;
   background-color: red;
-  // // position: fixed;
-  // z-index: 2;
   top: 0px;
   left: 0;
 
@@ -22,13 +14,12 @@
 
   @media (min-width: 1271px) {
     left: 300px;
-    // position: fixed;
     z-index: 2;
   }
 
   @media (max-width: 1271px) {
     width: var(--full);
-    top: 60px;
+    top: 70px;
     box-shadow: none;
   }
 
@@ -37,13 +28,9 @@
   }
 
   @media (max-width: 903px) {
-    top: 60px;
+    top: 70px;
   }
   @media (max-width: 659px) {
-    // display: flex;
-    // flex-direction: column;
-    // padding: 10px 20px;
-    // align-items: flex-start;
   }
 
   .wrapper {
@@ -63,71 +50,24 @@
       width: 95%;
     }
 
-    // @media (max-width: 1264px) {
-    //   justify-content: space-between;
-    // }
+    @media (max-width: 1264px) {
+      justify-content: space-between;
+    }
   }
 
   &__notif {
-    position: relative;
-    display: flex;
-    height: var(--full);
-    border-radius: 25px;
-    // padding: 13px 0px;
-    // @media (max-width: 659px) {
-    //   display: none;
-    // }
-
     > span {
       font-size: 14px;
       font-weight: 400;
       color: var(--black);
     }
-
-    // @media (max-width: 659px) {
-    //   order: 2;
-    //   width: var(--full);
-    //   max-width: 500px;
-    // }
-
-    // &::before {
-    //   content: "";
-    //   width: 14px;
-    //   height: 14px;
-    //   background-size: cover;
-    //   flex-shrink: 0;
-    //   position: absolute;
-    //   left: 0;
-    // }
-
-    // input {
-    //   padding-left: 27px;
-    //   border: 0;
-    //   width: 300px;
-
-    //   @media (max-width: 659px) {
-    //     width: var(--full);
-    //   }
-
-    //   &::placeholder {
-    //     color: var(--fade);
-    //   }
-    // }
   }
 
   &__actions {
-    display: flex;
-    align-items: center;
-    height: var(--full);
-
     @media (max-width: 659px) {
-      // width: var(--full);
-      // margin-bottom: 16px;
     }
 
     @media (max-width: 319px) {
-      // flex-direction: column;
-      // align-items: flex-start;
     }
 
     .profile_img {

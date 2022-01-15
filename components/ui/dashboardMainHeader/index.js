@@ -19,7 +19,7 @@ const DashboardHeader = ({ isOpen, clicked }) => {
 
   const buttonStyle = [
     "hamburger",
-    "hamburger--spin",
+    "hamburger--spring",
     open ? "is-active" : null,
   ];
 

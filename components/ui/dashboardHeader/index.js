@@ -44,30 +44,12 @@ const Header = ({ isOpen, clicked }) => {
   }, []);
 
   return (
-    <header
-      className={`${styles.header} ${
-        bgChange ||
-        isOpen ||
-        router.pathname === "/contact-us" ||
-        router.pathname === "/about-us" ||
-        router.pathname === "/faq"
-          ? styles.bgLight
-          : ""
-      }`}
-    >
+    <header className={`${styles.header} `}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href="/">
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
-              {bgChange ||
-              isOpen ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq" ? (
-                <LogoDark />
-              ) : (
-                <Logo />
-              )}
+              <Logo />
             </a>
           </Link>
         </div>
@@ -84,18 +66,11 @@ const Header = ({ isOpen, clicked }) => {
             type="button"
             aria-label="navigation button"
             onClick={clicked}
-            className={`hamburger hamburger--spin ${isOpen ? "is-active" : ""}`}
+            className={`hamburger hamburger--spring ${isOpen ? "is-active" : ""}`}
           >
             <span className="hamburger-box">
               <span
-                className={`${
-                  bgChange ||
-                  router.pathname === "/contact-us" ||
-                  router.pathname === "/about-us" ||
-                  router.pathname === "/faq"
-                    ? "hamburger-inner hamburger-inner-dark"
-                    : "hamburger-inner hamburger-inner-light"
-                }`}
+                className={`${"hamburger-inner  hamburger-dashboard"}`}
               ></span>
             </span>
           </button>

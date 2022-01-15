@@ -352,7 +352,6 @@ input {
 // dropzone
 .dropzone {
   // border: solid 3px rgb(121, 121, 121) !important;
-
   border-style: dashed;
   border-color: #b6b7b9;
   border-width: 2px;
@@ -545,6 +544,19 @@ input {
 .hamburger.is-active .hamburger-inner-light::before,
 .hamburger.is-active .hamburger-inner-light::after {
   background-color: var(--black) !important;
+}
+
+// hamburger dashboard
+.hamburger-dashboard,
+.hamburger-dashboard::before,
+.hamburger-dashboard::after {
+  background-color: var(--white) !important;
+}
+// removed the hamburger.is-active for the first, to allow for the spring animation
+.hamburger-dashboard,
+.hamburger.is-active .hamburger-dashboard::before,
+.hamburger.is-active .hamburger-dashboard::after {
+  background-color: var(--white) !important;
 }
 
 .hamburger:hover {

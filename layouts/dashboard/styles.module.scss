@@ -20,13 +20,14 @@
     background: rgb(0, 255, 13);
 
     @media (max-width: 1312px) {
-      left: 0;
+      left: 300px;
       width: 100%;
     }
 
     @media (max-width: 1264px) {
+      left: 0;
       // position: fixed;
-      margin-top: 60px;
+      margin-top: 70px;
       // margin-top: 0px;
     }
   }
