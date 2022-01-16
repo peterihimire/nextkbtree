@@ -18,14 +18,16 @@
     // margin-top: 120px;
     margin-top: 0px;
     background: #e5e5e5;
+    // background: #7edf7e;
 
     @media (max-width: 1312px) {
       left: 300px;
-      width: 100%;
     }
 
     @media (max-width: 1264px) {
       left: 0;
+      width: 100%;
+
       // position: fixed;
       margin-top: 70px;
       // margin-top: 0px;

@@ -10,14 +10,10 @@
   }
 
   .wrapper {
-    // .wrapper {
     width: 95%;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     // height: 100%;
-    // max-width: var(--wrapper-max-width);
+    max-width: var(--wrapper-max-width);
 
     @media (max-width: 1387px) {
       width: 90%;
@@ -27,16 +23,12 @@
       width: 95%;
     }
 
-    // @media (max-width: 1264px) {
-    //   justify-content: space-between;
-    // }
-    // }
-
     .walletHeader {
       width: 100%;
       display: grid;
       grid-template-columns: 30% 68%;
-      column-gap: 20px;
+      gap: 2%;
+      // column-gap: 20px;
       // background: yellowgreen;
 
       .right {
