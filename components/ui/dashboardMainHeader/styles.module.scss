@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: red;
+  // background-color: red;
   top: 0px;
   left: 0;
 
@@ -57,8 +57,10 @@
 
   &__notif {
     > span {
-      font-size: 14px;
-      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: bold;
+      text-transform: capitalize;
       color: var(--black);
     }
   }
@@ -99,8 +101,15 @@
       justify-content: center;
       height: var(--full);
       margin-left: 10px;
-      color: var(--dark-blue);
 
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: bold;
+      text-transform: capitalize;
+
+      a {
+        color: var(--dashBlue) !important;
+      }
       @media (max-width: 319px) {
         margin-left: 0;
       }

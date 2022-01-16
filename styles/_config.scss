@@ -461,6 +461,9 @@ input {
   bottom: 0;
   right: 0;
   transition: all 0.4s ease-in-out;
+  // blur property
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   @media (min-width: 1265px) {
     display: none;

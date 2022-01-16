@@ -7,8 +7,11 @@ const ActiveLink2 = ({ href, name, as, children, linkClass }) => {
   const router = useRouter();
 
   const style = {
-    color: router.pathname === href ? " #ffffff" : "",
-    fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
+    backgroundColor: router.pathname === href ? "rgba(255, 255, 255, 0.3)" : "",
+    color: router.pathname === href ? "#ffffff" : "",
+    // fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
+    borderRight: router.pathname === href ? "solid #fff 5px" : "",
+    borderRadius: router.pathname === href ? "5px" : "",
   };
 
   return (

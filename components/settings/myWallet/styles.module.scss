@@ -1,0 +1,69 @@
+.walletInvestment {
+  width: 100%;
+
+  .walletContent {
+    background-color: #0202c6;
+    color: #fff;
+    border-radius: 16px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .wrapper {
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 30% 68%;
+    column-gap: 20px;
+    // background: yellowgreen;
+
+    // .wrapper {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      max-width: var(--wrapper-max-width);
+  
+      @media (max-width: 1387px) {
+        width: 90%;
+      }
+  
+      @media (max-width: 1315px) {
+        width: 95%;
+      }
+  
+      @media (max-width: 1264px) {
+        justify-content: space-between;
+      }
+    // }
+  }
+  .right {
+    .grid {
+      // width: 80%;
+      // margin-top: 49px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--white);
+      border-radius: 16px;
+      height: 160px;
+      padding: 20px;
+
+      .investPortfolio {
+        background: linear-gradient(136.48deg, #e6edfe 3.14%, #dee4f5 98.63%);
+        border-radius: 8px;
+      }
+      .expectReturn {
+        background: #e6feea;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .tabsHeaderList{
+    justify-content: center;
+  }
+}

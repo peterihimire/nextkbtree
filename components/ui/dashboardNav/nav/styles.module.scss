@@ -2,8 +2,9 @@
   height: 100%;
   display: flex;
   position: fixed;
+  // position: relative;
   transition: left 0.4s ease-in-out;
-  background: var(--primary);
+  background: var(--dashBlue);
   // background: var(--white);
   display: initial;
   justify-content: stretch;
@@ -27,7 +28,7 @@
     // left: -100vw;
     z-index: 250;
     transition: left 0.4s ease-in-out;
-    background: var(--primary);
+    background: var(--dashBlue);
     // background: var(--white);
     display: initial;
     justify-content: stretch;
@@ -50,6 +51,7 @@
     width: 280px;
   }
   .logo {
+    margin-bottom: 40px;
     @media (max-width: 1264px) {
       display: none;
     }
@@ -71,12 +73,12 @@
     }
 
     > li {
-      margin-bottom: 40px;
+      margin-bottom: 15px;
       width: var(--full);
       margin-right: 0px;
 
       @media (max-width: 1264px) {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
         width: var(--full);
         margin-right: 0px;
       }
@@ -84,16 +86,52 @@
       > a {
         font-size: 16px;
         color: var(--white);
+        font-weight: bold;
 
         @media (max-width: 1264px) {
           // color: var(--black) !important;
           font-size: 16px;
+          font-weight: bold;
         }
 
         &.darkText {
           color: var(--new-blue);
         }
       }
+    }
+
+    .dashLink {
+      display: flex;
+      align-items: center;
+      padding: 15px 10px;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .attention {
+    background: #fdda61;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .navLogout {
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    padding: 5px 10px;
+
+    button {
+      background: none;
+      color: var(--white);
+      margin-left: 10px;
     }
   }
 }

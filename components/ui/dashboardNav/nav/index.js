@@ -71,139 +71,61 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <Dashboard />
-          <ActiveLink
-            name="Dashboard"
-            href="/dashboard"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/dashboard" linkClass={`${styles.dashLink}`}>
+            <Dashboard />
+            <span>Dashboard</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <CrowdInvest />
-          <ActiveLink
-            name="Crowd Invest"
-            href="/crowd-invest"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/crowd-invest" linkClass={`${styles.dashLink}`}>
+            <CrowdInvest />
+            <span>Crowd Invest</span>
+          </ActiveLink>
         </li>
-
         <li>
-          <LongHold />
           <ActiveLink
-            name="Long Hold Investment"
             href="/long-hold-investment"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+            linkClass={`${styles.dashLink}`}
+          >
+            <LongHold />
+            <span>Long Hold Investment</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <Favourite />
-          <ActiveLink
-            name="Favourite"
-            href="/favourite"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/favourite" linkClass={`${styles.dashLink}`}>
+            <Favourite />
+            <span>Favourite</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <Wallet />
-          <ActiveLink
-            name="Wallet"
-            href="/wallet"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/wallet" linkClass={`${styles.dashLink}`}>
+            <Wallet />
+            <span>Wallet</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <Portfolio />
-          <ActiveLink
-            name="My Portfolio"
-            href="/my-portfolio"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/my-portfolio" linkClass={`${styles.dashLink}`}>
+            <Portfolio />
+            <span>My Portfolio</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <Referral />
-          <ActiveLink
-            name="Referral"
-            href="/referral"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/referral" linkClass={`${styles.dashLink}`}>
+            <Referral />
+            <span>Referral</span>
+          </ActiveLink>
         </li>
 
         <li>
-          <Settings />
-          <ActiveLink
-            name="Settings"
-            href="/settings"
-            linkClass={`${
-              isDrop ||
-              bgChange ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/faq"
-                ? styles.darkText
-                : ""
-            }`}
-          />
+          <ActiveLink href="/settings" linkClass={`${styles.dashLink}`}>
+            <Settings />
+            <span>Settings</span>
+          </ActiveLink>
         </li>
       </ul>
 
