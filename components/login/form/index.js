@@ -30,7 +30,7 @@ const Form = () => {
           />
         </div>
         <div className={styles.forgot}>
-          <Link href="/">
+          <Link href="/forgot-password">
             <a className={styles.linkStyle}>Forgot Password?</a>
           </Link>
         </div>
@@ -41,7 +41,7 @@ const Form = () => {
 
         <div className={styles.register}>
           <span>Don't have an account? </span>
-          <Link href="/">
+          <Link href="/register">
             <a className={styles.linkStyle}>Register</a>
           </Link>
         </div>

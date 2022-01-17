@@ -1,15 +1,15 @@
 import React from "react";
 import Layout from "../../layouts/dashboard";
 import DashboardMyWallet from "../../components/dashboard/myWallet";
-// import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
-// import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
+import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
+import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
 
 const Dashboard = () => {
   return (
     <>
       <DashboardMyWallet />
-      {/* <DashboardRecommendInvestment />
-      <DashboardHotInvestment /> */}
+      <DashboardRecommendInvestment />
+      <DashboardHotInvestment />
     </>
   );
 };

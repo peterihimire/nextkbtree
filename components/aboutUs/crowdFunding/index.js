@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import Aramex from "../../../public/images/google-store-black.svg";
+import Store from "../../../public/images/google-store-black.svg";
 
 const CrowdFunding = () => {
   return (
@@ -13,9 +13,9 @@ const CrowdFunding = () => {
         </p>
 
         <div className={styles.logos}>
-          <Aramex className={styles.logo} />
-          <Aramex className={styles.logo} />
-          <Aramex className={styles.logo} />
+          <Store className={styles.logo} />
+          <Store className={styles.logo} />
+          <Store className={styles.logo} />
         </div>
       </div>
     </section>

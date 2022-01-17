@@ -1,7 +1,8 @@
 .card {
   // display: flex;
-  border-radius: 12px;
+  border-radius: 14px;
   background: white;
+  padding: 15px;
   //   max-width: 662px;
 
   @media screen and (max-width: 499px) {
@@ -11,7 +12,8 @@
   .cardImg {
     // width: 40%;
     flex: 1;
-    height: 230px;
+    height: 173px;
+    position: relative;
 
     @media screen and (max-width: 700px) {
       height: auto;
@@ -31,65 +33,70 @@
         border-radius: 12px 12px 12px 12px;
       }
     }
+
+    .returns {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: var(--white);
+      background-color: rgba(66, 174, 81, 0.87);
+      border-radius: 4px;
+      padding: 5px;
+      text-align: center;
+    }
   }
 
   .cardBody {
     // width: 60%;
-    padding: 6px 13px 6px 20px;
+    // padding: 6px 13px 6px 20px;
     // display: flex;
     // flex-direction: column;
 
-    @media screen and (max-width: 499px) {
-      width: 100%;
+    // @media screen and (max-width: 499px) {
+    //   width: 100%;
+    // }
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
     }
 
-    > h3 {
-      text-transform: capitalize;
-      color: var(--text-primary);
-      font-size: 15px;
-      font-family: Noto-SemiBold;
-      margin-bottom: 8px;
-      max-width: 324px;
+    .investors {
+      color: #65676f;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
     }
+    .amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    .desc {
-      color: rgba(244, 244, 244, 0.8);
-      font-size: 12px;
-      max-width: 311px;
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
-
-    .tutor {
-      font-size: 15px;
-      color: var(--orange);
-      font-family: Noto-Medium;
-      margin-bottom: 28px;
-    }
-
-    .progress {
-      margin-top: auto;
-
-      > span {
-        font-size: 12px;
-        display: block;
-        color: rgba(244, 244, 244, 0.8);
-      }
-
-      .bar {
+      .totalAmt {
         display: flex;
         align-items: center;
-        margin-top: 7px;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+      }
+      span {
+        color: rgba(66, 174, 81, 0.87);
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    .durationDiv {
+      display: flex;
 
-        .progressBar {
-          flex: 1;
-          margin-right: 16px;
-        }
-
-        > span {
-          font-size: 12px;
-          color: rgba(244, 244, 244, 0.8);
-        }
+      .duration {
+        background-color: rgba(66, 174, 81, 0.87);
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        padding: 5px;
+        border-radius: 50px 50px 50px 50px;
+        margin: 10px 0;
       }
     }
   }
