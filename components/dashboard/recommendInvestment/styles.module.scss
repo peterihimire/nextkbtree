@@ -1,5 +1,6 @@
 .recommendedInvestment {
   width: 100%;
+  margin-top: 30px;
 
   h2 {
     font-family: Wesfy-Medium;
@@ -25,6 +26,12 @@
 
     @media (max-width: 1315px) {
       width: 95%;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
     }
 
     .grid {

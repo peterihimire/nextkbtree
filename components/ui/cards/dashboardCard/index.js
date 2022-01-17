@@ -9,7 +9,7 @@ const DashboardCard = ({
   duration,
   percentage,
   investors,
-  totalAmt,
+  targetAmt,
   raisedAmt,
   openModal,
 }) => {
@@ -32,9 +32,9 @@ const DashboardCard = ({
           <h3>{title}</h3>
           <p className={styles.investors}>{investors} Investors</p>
           <div className={styles.amount}>
-            <div className={styles.totalAmt}>
+            <div className={styles.targetAmt}>
               <img src="/images/red-spiral.svg" alt="" />
-              {totalAmt}
+              {targetAmt}
             </div>
             <span>Raised: {raisedAmt}</span>
           </div>

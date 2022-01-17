@@ -7,6 +7,7 @@
     border-radius: 16px;
     height: 160px;
     padding: 20px;
+    margin-top: 10px;
   }
 
   .wrapper {
@@ -31,10 +32,23 @@
       // column-gap: 20px;
       // background: yellowgreen;
 
+      .left {
+        h3 {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
       .right {
+        h3 {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+        }
         .grid {
           // width: 80%;
           // margin-top: 49px;
+          margin-top: 10px;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 26px 20px;

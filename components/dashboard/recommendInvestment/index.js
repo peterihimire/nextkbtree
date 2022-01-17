@@ -28,7 +28,7 @@ const RecommendInvestment = () => {
               duration="11d: 24h: 32m: 44s"
               percentage="30%"
               investors="208"
-              totalAmt="9,000,000"
+              targetAmt="9,000,000"
               raisedAmt="2,000,000"
               openModal={applyHandler}
             />
@@ -41,7 +41,7 @@ const RecommendInvestment = () => {
               duration="11d: 24h: 32m: 44s"
               percentage="30%"
               investors="208"
-              totalAmt="9,000,000"
+              targetAmt="9,000,000"
               raisedAmt="2,000,000"
             />
             <DashboardCard
@@ -53,7 +53,7 @@ const RecommendInvestment = () => {
               duration="11d: 24h: 32m: 44s"
               percentage="30%"
               investors="208"
-              totalAmt="9,000,000"
+              targetAmt="9,000,000"
               raisedAmt="2,000,000"
             />
             <DashboardCard
@@ -65,7 +65,7 @@ const RecommendInvestment = () => {
               duration="11d: 24h: 32m: 44s"
               percentage="30%"
               investors="208"
-              totalAmt="9,000,000"
+              targetAmt="9,000,000"
               raisedAmt="2,000,000"
             />
           </div>

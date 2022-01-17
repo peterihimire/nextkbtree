@@ -14,13 +14,12 @@
       overflow-x: auto;
       overflow-y: hidden;
       white-space: nowrap;
-      justify-content: center;
 
       &.horizontalPadding {
         padding: 0px 80px;
 
         &::after {
-          // content: "";
+          content: "";
           padding-right: 16px;
         }
 
@@ -30,33 +29,22 @@
       }
 
       > li {
-        height: 70%;
+        height: var(--full);
         position: relative;
-        background: transparent;
-        color: #fff;
-        border-radius: 8px;
-        border: solid #fff 2px;
-        font-weight: bold;
-        margin: 0 10px;
 
         &.active {
-          background: #fff;
-          color: blue;
-          border-radius: 8px;
-          font-weight: bold;
-
           &::after {
-            // content: "";
+            content: "";
             position: absolute;
             bottom: -1px;
             left: 0;
             width: var(--full);
             height: 2px;
+            background: var(--primary);
           }
 
           > button {
             color: var(--primary);
-            font-family: Proxima-Medium !important;
 
             > .dot {
               background: var(--orange);
@@ -72,8 +60,8 @@
         > button {
           width: fit-content;
           margin: 0 auto;
-          height: 70%;
-          padding: 16px 12px;
+          height: var(--full);
+          padding: 16px 32px;
           background: transparent;
           display: flex;
           align-items: center;
@@ -81,7 +69,6 @@
           font-size: 14px;
           font-family: Noto-Medium;
           position: relative;
-          font-family: Proxima-Medium !important;
 
           > .dot {
             display: none;
