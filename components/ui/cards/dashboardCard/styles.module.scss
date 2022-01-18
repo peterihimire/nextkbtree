@@ -66,6 +66,7 @@
       font-weight: bold;
       font-size: 10px;
       line-height: 12px;
+      margin: 8px 0px;
     }
     .amount {
       display: flex;
@@ -78,6 +79,10 @@
         font-weight: bold;
         font-size: 10px;
         line-height: 12px;
+
+        img {
+          margin-right: 5px;
+        }
       }
       span {
         color: rgba(66, 174, 81, 0.87);
@@ -97,6 +102,10 @@
         padding: 5px;
         border-radius: 50px 50px 50px 50px;
         margin: 10px 0;
+
+        img {
+          margin-right: 5px;
+        }
       }
     }
   }
