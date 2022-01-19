@@ -35,12 +35,14 @@ const MyWallet = () => {
                 <div className={styles.tabContent}>
                   {tabIndex === 1 && (
                     <div>
-                      <h3>This is NGN content</h3>
+                      <p>Wallet Balance</p>
+                      <h3>$0.00</h3>
                     </div>
                   )}
                   {tabIndex === 2 && (
                     <div>
-                      <h3>This is USD content</h3>
+                      <p>Wallet Balance</p>
+                      <h3>$0.00</h3>
                     </div>
                   )}
                 </div>
@@ -54,13 +56,13 @@ const MyWallet = () => {
                 <div className={styles.investPortfolio}>
                   <p>Investment Portfolio</p>
                   <div>
-                    <h3>This is NGN content</h3>
+                    <h3>$0.00</h3>
                   </div>
                 </div>
                 <div className={styles.expectReturn}>
                   <p>Expected Return</p>
                   <div>
-                    <h3>This is NGN content</h3>
+                    <h3>$0.00</h3>
                   </div>
                 </div>
               </div>
@@ -71,13 +73,13 @@ const MyWallet = () => {
                 <div className={styles.investPortfolio}>
                   <p>Investment Portfolio</p>
                   <div>
-                    <h3>This is USD content</h3>
+                    <h3>$0.00</h3>
                   </div>
                 </div>
                 <div className={styles.expectReturn}>
                   <p>Expected Return</p>
                   <div>
-                    <h3>This is USD content</h3>
+                    <h3>$0.00</h3>
                   </div>
                 </div>
               </div>
