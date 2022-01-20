@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Input from "../../ui/customInput";
 import Select from "../../ui/customSelect";
+// import Image from "next/image";
+
 
 const PaymentDetails = ({ stepHandler, backHandler }) => {
   const [payMethod, setPayMethod] = useState("");

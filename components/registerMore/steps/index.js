@@ -6,6 +6,8 @@ import Form2 from "../form2";
 import Form3 from "../form3";
 import Form4 from "../form4";
 import Form5 from "../form5";
+// import Image from "next/image";
+
 
 const Register = ({ step, stepHandler, backHandler }) => {
   return (

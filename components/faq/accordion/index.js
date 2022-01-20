@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import ArrowUp from "/public/images/arrow-up.svg";
 import ArrowDown from "/public/images/arrow-dowm.svg";
+// import Image from "next/image";
+
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(0);

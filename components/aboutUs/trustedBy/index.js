@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import StarUnfill from "../../../public/images/star-unfill.svg";
+// import Image from "next/image";
 
 SwiperCore.use([Pagination, Autoplay]);
 

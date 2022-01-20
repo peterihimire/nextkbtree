@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Aramex from "../../../public/images/aramex.svg";
 import SafeInvestCard from "../../ui/cards/safeInvestCard";
 
+
 const SafeInvesting = () => {
   return (
     <section className={styles.safeInvesting}>

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Form from "./form";
+// import Image from "next/image";
+
 
 const Login = () => {
   return (

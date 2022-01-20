@@ -4,6 +4,7 @@ import BrokenRing1 from "../../../public/images/broken-ring-1.svg";
 import BrokenRing2 from "../../../public/images/broken-ring-2.svg";
 import BrokenRing3 from "../../../public/images/broken-ring-3.svg";
 import BrokenRing4 from "../../../public/images/broken-ring-4.svg";
+// import Image from "next/image";
 
 const CrowdInvest = () => {
   return (

@@ -3,6 +3,8 @@ import styles from "./styles.module.scss";
 import Input from "../../ui/customInput";
 import Select from "../../ui/customSelect";
 import Textarea from "../../ui/customTextarea";
+// import Image from "next/image";
+
 
 const ContactForm = () => {
   return (

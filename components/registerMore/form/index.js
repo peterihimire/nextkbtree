@@ -3,6 +3,8 @@ import styles from "./styles.module.scss";
 import Input from "../../ui/customInput";
 import Select from "../../ui/customSelect";
 import Link from "next/link";
+// import Image from "next/image";
+
 
 const Form = ({ stepHandler, backHandler }) => {
   return (

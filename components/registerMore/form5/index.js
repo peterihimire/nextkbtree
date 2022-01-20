@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 // import Link from "next/link";
+// import Image from "next/image";
+
 
 const Form = ({ stepHandler, backHandler }) => {
   return (

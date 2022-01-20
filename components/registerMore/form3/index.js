@@ -4,6 +4,8 @@ import styles from "./styles.module.scss";
 import Select from "../../ui/customSelect";
 import { useDropzone } from "react-dropzone";
 // import Link from "next/link";
+// import Image from "next/image";
+
 
 const Form = ({ stepHandler, backHandler }) => {
   const Dropzone = () => {
