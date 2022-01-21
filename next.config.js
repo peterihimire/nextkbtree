@@ -1,4 +1,5 @@
 module.exports = {
+  eslint: { ignoreDuringBuilds: true },
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({

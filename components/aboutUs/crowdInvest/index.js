@@ -25,7 +25,7 @@ const CrowdInvest = () => {
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/images/galaxy-note20-full.svg" alt="" loading="lazy" />
+            <img src='/images/galaxy-note20-full.svg' alt='' loading='lazy' />
           </div>
         </div>
 
