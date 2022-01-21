@@ -36,7 +36,7 @@ const MyWallet = () => {
                   {tabIndex === 1 && (
                     <div>
                       <p>Wallet Balance</p>
-                      <h3>$0.00</h3>
+                      <h3>$1.00</h3>
                     </div>
                   )}
                   {tabIndex === 2 && (
@@ -56,13 +56,13 @@ const MyWallet = () => {
                 <div className={styles.investPortfolio}>
                   <p>Investment Portfolio</p>
                   <div>
-                    <h3>$0.00</h3>
+                    <h3>$1.00</h3>
                   </div>
                 </div>
                 <div className={styles.expectReturn}>
                   <p>Expected Return</p>
                   <div>
-                    <h3>$0.00</h3>
+                    <h3>$1.00</h3>
                   </div>
                 </div>
               </div>

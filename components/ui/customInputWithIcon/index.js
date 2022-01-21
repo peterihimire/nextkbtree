@@ -10,6 +10,7 @@ const Input = ({
   clicked,
   inputHolder,
   src,
+  iconClass,
   ...props
 }) => {
   return (
@@ -29,8 +30,11 @@ const Input = ({
         <div className={`input-holder ${inputHolder ? inputHolder : ""}`}>
           <input {...props} id={id} required={required} />
           {src ? (
-            <button {...props} className="icon-wrapper">
-              <img src={src} alt="" />
+            <button
+              {...props}
+              className={`icon-wrapper ${iconClass ? iconClass : ""}`}
+            >
+              <img src={src} alt='' />
             </button>
           ) : null}
         </div>

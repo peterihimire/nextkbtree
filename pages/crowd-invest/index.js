@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../../layouts/dashboard";
-import DashboardMyWallet from "../../components/crowdInvest/myWallet";
+import AllInvestments from "../../components/crowdInvest/AllInvestments";
 // import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
 // import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
 
 const Dashboard = () => {
   return (
     <>
-      <DashboardMyWallet />
+      <AllInvestments />
       {/* <DashboardRecommendInvestment />
       <DashboardHotInvestment /> */}
     </>
