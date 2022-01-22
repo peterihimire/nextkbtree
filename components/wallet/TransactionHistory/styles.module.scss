@@ -1,0 +1,21 @@
+.transactionHistory {
+  width: 100%;
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    // height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    .content {
+    }
+  }
+}

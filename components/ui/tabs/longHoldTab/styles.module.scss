@@ -29,7 +29,7 @@
       }
 
       > li {
-        height: 90%;
+        height: 100%;
         position: relative;
         background: var(--white);
         color: #65676f;
@@ -87,6 +87,14 @@
           }
         }
       }
+
+      @media (max-width: 600px) {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+     margin-bottom: 10px;
     }
   }
 }

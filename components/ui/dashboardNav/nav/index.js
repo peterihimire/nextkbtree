@@ -51,9 +51,9 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
 
   return (
     // <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
-    <nav className={`${styles.nav}`} id="navbar">
+    <nav className={`${styles.nav}`} id='navbar'>
       <div className={styles.logo}>
-        <Link href="/">
+        <Link href='/'>
           <a
           // className={`${isDropOpen ? styles.lightLogo : ""}`}
           >
@@ -71,21 +71,21 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <ActiveLink href="/dashboard" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/dashboard' linkClass={`${styles.dashLink}`}>
             <Dashboard />
             <span>Dashboard</span>
           </ActiveLink>
         </li>
 
         <li>
-          <ActiveLink href="/crowd-invest" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/crowd-invest' linkClass={`${styles.dashLink}`}>
             <CrowdInvest />
             <span>Crowd Invest</span>
           </ActiveLink>
         </li>
         <li>
           <ActiveLink
-            href="/long-hold-investment"
+            href='/long-hold-investment'
             linkClass={`${styles.dashLink}`}
           >
             <LongHold />
@@ -94,44 +94,49 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
-          <ActiveLink href="/favourite" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/favourite' linkClass={`${styles.dashLink}`}>
             <Favourite />
             <span>Favourite</span>
           </ActiveLink>
         </li>
 
         <li>
-          <ActiveLink href="/wallet" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/wallet' linkClass={`${styles.dashLink}`}>
             <Wallet />
             <span>Wallet</span>
           </ActiveLink>
         </li>
 
         <li>
-          <ActiveLink href="/my-portfolio" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/my-portfolio' linkClass={`${styles.dashLink}`}>
             <Portfolio />
             <span>My Portfolio</span>
           </ActiveLink>
         </li>
 
         <li>
-          <ActiveLink href="/referral" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/referral' linkClass={`${styles.dashLink}`}>
             <Referral />
             <span>Referral</span>
           </ActiveLink>
         </li>
 
         <li>
-          <ActiveLink href="/settings" linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/settings' linkClass={`${styles.dashLink}`}>
             <Settings />
             <span>Settings</span>
           </ActiveLink>
         </li>
       </ul>
 
-      <div className={styles.attention}>
-        <Attention /> <p>Tap to complete your profile setup</p>
-      </div>
+      <Link href='register-more'>
+        <a>
+          <div className={styles.attention}>
+            <Attention /> <p>Tap to complete your profile setup</p>
+          </div>
+        </a>
+      </Link>
+      
       <div className={styles.navLogout}>
         <Logout />
         <button>Logout</button>
