@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import CustomTabs from "../../ui/tabs/crowdInvestTab";
-import Input from "../../ui/customInputWithIcon";
+import CustomTabs from "../../ui/tabs/longHoldTab";
+import Select from "../../ui/customSelect";
 import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
 import Modal from "../../ui/modal";
 
-const AllInvestments = () => {
+const LandHome = () => {
   const [tabIndex, setTabIndex] = useState(1);
 
   const tabIndexHandler = (index) => {
@@ -14,16 +14,12 @@ const AllInvestments = () => {
 
   const tabHeaders = [
     {
-      name: "Popular",
+      name: "Land",
       id: 1,
     },
     {
-      name: "Recently Added",
+      name: "Home",
       id: 2,
-    },
-    {
-      name: "Matured",
-      id: 3,
     },
   ];
 
@@ -37,7 +33,7 @@ const AllInvestments = () => {
             headers={tabHeaders}
           />
 
-          <Input
+          {/* <Select
             type='text'
             id='search'
             // required
@@ -47,9 +43,38 @@ const AllInvestments = () => {
             alt=''
             loading='lazy'
             className={styles.searchInput}
-            iconClass={styles.iconClass}
-            inputHolder={styles.inputHolder}
-          />
+            // iconClass={styles.iconClass}
+            // inputHolder={styles.inputHolder}
+          /> */}
+
+          <Select
+            // labelText="Country"
+            id='country'
+            name='country'
+            required
+            wrapClass={styles.selectWrap}
+            className={styles.filterInput}
+          >
+            <option>Filter by State</option>
+            <option>Nigeria</option>
+            <option>Ghana</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </Select>
+          <Select
+            // labelText="Country"
+            id='country'
+            name='country'
+            required
+            wrapClass={styles.selectWrap}
+            className={styles.filterInput}
+          >
+            <option>Price: high to low</option>
+            <option>Nigeria</option>
+            <option>Ghana</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </Select>
         </div>
 
         <div className={styles.tabContent}>
@@ -331,112 +356,10 @@ const AllInvestments = () => {
               />
             </div>
           )}
-          {tabIndex === 3 && (
-            <div className={styles.grid}>
-              <DashboardCard
-                key='1'
-                id='1'
-                src='/images/recommend-invest-img.png'
-                alt='img hot'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-                // openModal={applyHandler}
-              />
-              <DashboardCard
-                key='2'
-                id='2'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-              <DashboardCard
-                key='3'
-                id='3'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-              <DashboardCard
-                key='4'
-                id='4'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-              <DashboardCard
-                key='1'
-                id='1'
-                src='/images/recommend-invest-img.png'
-                alt='img hot'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-                // openModal={applyHandler}
-              />
-              <DashboardCard
-                key='2'
-                id='2'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-              <DashboardCard
-                key='3'
-                id='3'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-              <DashboardCard
-                key='4'
-                id='4'
-                src='/images/recommend-invest-img.png'
-                alt='img'
-                title='Aklas real estate dual home'
-                duration='11d: 24h: 32m: 44s'
-                percentage='30%'
-                investors='208'
-                targetAmt='9,000,000'
-                raisedAmt='2,000,000'
-              />
-            </div>
-          )}
         </div>
       </div>
     </section>
   );
 };
 
-export default AllInvestments;
+export default LandHome;

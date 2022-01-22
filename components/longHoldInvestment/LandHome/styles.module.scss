@@ -44,13 +44,21 @@
       align-items: center;
       justify-content: space-between;
 
-      .inputHolder {
-        width: 600px;
+      // .inputHolder {
+      //   width: 600px;
+      // }
+
+      // .searchInput {
+      //   background-color: var(--white);
+      //   border-color: var(--white);
+      // }
+
+      .selectWrap {
+        width: 500px;
       }
 
-      .searchInput {
+      .filterInput {
         background-color: var(--white);
-        border-color: var(--white);
       }
     }
 

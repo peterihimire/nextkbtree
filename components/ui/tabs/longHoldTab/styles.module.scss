@@ -33,14 +33,14 @@
         position: relative;
         background: var(--white);
         color: #65676f;
-        border-radius: 50px;
+        border-radius: 16px;
         border: solid #fff 2px;
         font-weight: bold;
         margin: 0 10px;
 
         &.active {
           background: var(--dashBlue);
-          border-radius: 50px;
+          border-radius: 16px;
           font-weight: bold;
           border: solid var(--dashBlue) 2px;
 
@@ -72,7 +72,7 @@
           width: fit-content;
           margin: 0 auto;
           height: 100%;
-          padding: 16px 12px;
+          padding: 16px 22px;
           background: transparent;
           display: flex;
           align-items: center;
