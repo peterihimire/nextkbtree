@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../layouts/dashboard";
-import DashboardMyWallet from "../../components/dashboard/MyWallet";
+import DashboardMyWallet from "../../components/dashboard/myWallet";
 import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
 import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
 
