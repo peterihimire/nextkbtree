@@ -53,11 +53,115 @@
         border-radius: 16px;
         padding: 40px;
 
-        .labelClass {
-          position: absolute;
-          bottom: 20px;
-          left: 20px;
-          margin-bottom: 0px;
+        .content {
+          width: 60%;
+
+          h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+
+          form {
+            .formGroup {
+              margin-bottom: 20px;
+            }
+
+            .submitBtn {
+              margin-top: 40px;
+            }
+          }
+
+          .cardWrapper {
+          }
+          .atmCard1 {
+            background: linear-gradient(
+              136.48deg,
+              #004ef0 3.14%,
+              #0202c6 98.63%
+            );
+            color: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            margin: 0px 0px 20px 0px;
+
+            span {
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 20px;
+              margin-right: 10px;
+            }
+
+            h4 {
+              text-transform: uppercase;
+              font-size: 12px;
+              line-height: 15px;
+              margin: 10px 0;
+            }
+
+            .expiryDelete {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .date {
+                small {
+                  font-size: 7px;
+                  line-height: 9px;
+                }
+                p {
+                  font-size: 14px;
+                  line-height: 17px;
+                }
+              }
+            }
+          }
+          .atmCard2 {
+            background: linear-gradient(
+              136.48deg,
+              #f08200 3.14%,
+              #c66002 98.63%
+            );
+            color: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            margin: 0px 0px 20px 0px;
+
+            span {
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 20px;
+              margin-right: 10px;
+            }
+
+            h4 {
+              text-transform: uppercase;
+              font-size: 12px;
+              line-height: 15px;
+              margin: 10px 0;
+            }
+
+            .expiryDelete {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .date {
+                small {
+                  font-size: 7px;
+                  line-height: 9px;
+                }
+                p {
+                  font-size: 14px;
+                  line-height: 17px;
+                }
+              }
+            }
+          }
+          .submitBtn {
+            margin-top: 40px;
+          }
         }
       }
     }

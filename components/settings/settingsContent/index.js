@@ -57,38 +57,98 @@ const SettingsContent = () => {
             {tabIndex === 1 && (
               <div className={styles.content}>
                 <h3>Profile settings</h3>
-                {/* <Input
-                  children={<BlueEye />}
-                  innerLabel='First Name'
-                  clicked={() => {
-                    console.log("Hello inner-label clicked");
-                  }}
-                /> */}
-                <Input
-                  labelText='Full Name'
-                  placeholder='Full Name'
-                  // value='Peter Ihimire'
-                />
-                <Input
-                  labelText='Email'
-                  placeholder='Email'
-                  // value='Peter Ihimire'
-                />
-                <Input
-                  labelText='Phone Number'
-                  placeholder='Phone Number'
-                  // value='Peter Ihimire'
-                />
-                <Input
-                  labelText='Confirm New Password'
-                  placeholder='Confirm New Password'
-                  // value='Peter Ihimire'
-                />
+
+                <form>
+                  {/* <div className={styles.formGroup}>
+                    <Input
+                      children={<BlueEye />}
+                      innerLabel='First Name'
+                      clicked={() => {
+                        console.log("Hello inner-label clicked");
+                      }}
+                    />
+                  </div> */}
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Full Name'
+                      placeholder='Full Name'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Email'
+                      placeholder='Email'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Phone Number'
+                      placeholder='Phone Number'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Confirm New Password'
+                      placeholder='Confirm New Password'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+
+                  <div className={styles.submitBtn}>
+                    <button
+                      className='btn-primary btn-block'
+                      // onClick={stepHandler}
+                      type='submit'
+                    >
+                      Update
+                    </button>
+                  </div>
+                </form>
               </div>
             )}
             {tabIndex === 2 && (
-              <div>
+              <div className={styles.content}>
                 <h3>Card settings</h3>
+                <div className={styles.cardWrapper}>
+                  <div className={styles.atmCard1}>
+                    <span> 9877 </span> <span> 9877 </span> <span> 9877 </span>
+                    <span> 9877 </span>
+                    <h4>Obinna Ani</h4>
+                    <div className={styles.expiryDelete}>
+                      <div className={styles.date}>
+                        <small>MONTH/YEAR</small>
+                        <p>02 / 24</p>
+                      </div>
+                      <img src='/images/trash.svg' alt='' />
+                    </div>
+                  </div>
+
+                  <div className={styles.atmCard2}>
+                    <span> 9877 </span> <span> 9877 </span> <span> 9877 </span>
+                    <span> 9877 </span>
+                    <h4>Obinna Ani</h4>
+                    <div className={styles.expiryDelete}>
+                      <div className={styles.date}>
+                        <small>MONTH/YEAR</small>
+                        <p>02 / 24</p>
+                      </div>
+                      <img src='/images/trash.svg' alt='' />
+                    </div>
+                  </div>
+
+                  <div className={styles.submitBtn}>
+                    <button
+                      className='btn-transparent-dark btn-block'
+                      // onClick={stepHandler}
+                      type='submit'
+                    >
+                      Add New Card
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
             {tabIndex === 3 && (

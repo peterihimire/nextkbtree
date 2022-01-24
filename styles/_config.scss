@@ -156,8 +156,8 @@ button:disabled {
 
 .btn-transparent-dark {
   background: transparent;
-  border: 1px solid var(--black);
-  color: var(--black);
+  border: 1px solid var(--dashBlue);
+  color: var(--dashBlue);
   font-family: Proxima-Regular;
   border-radius: 16px;
   font-size: 16px;
@@ -325,10 +325,9 @@ input[type="radio"] {
   }
 }
 
-
 .profile-input-wrapper {
   position: relative;
-  max-width: 60%;
+  max-width: 100%;
 
   label {
     position: absolute !important;
