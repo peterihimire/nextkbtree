@@ -162,6 +162,26 @@
           .submitBtn {
             margin-top: 40px;
           }
+
+          .notifWrapper {
+            .notifSwitch {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 20px;
+              background: #fefefe;
+              border: 1px solid #b6b7b9;
+              box-sizing: border-box;
+              border-radius: 8px;
+              margin-bottom: 15px;
+
+              h4 {
+                font-size: 12px;
+                line-height: 15px;
+                color: #333131;
+              }
+            }
+          }
         }
       }
     }
