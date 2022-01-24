@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import CustomTabs from "../../ui/tabs/settingsTab";
 import Select from "../../ui/customSelect";
+
+import Input from "../../ui/profileInput";
 import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
 import Modal from "../../ui/modal";
+import BlueEye from "../../../public/images/eyeblue.svg";
 
 const SettingsContent = () => {
   const [tabIndex, setTabIndex] = useState(1);
@@ -52,8 +55,35 @@ const SettingsContent = () => {
           </div>
           <div className={styles.right}>
             {tabIndex === 1 && (
-              <div>
+              <div className={styles.content}>
                 <h3>Profile settings</h3>
+                {/* <Input
+                  children={<BlueEye />}
+                  innerLabel='First Name'
+                  clicked={() => {
+                    console.log("Hello inner-label clicked");
+                  }}
+                /> */}
+                <Input
+                  labelText='Full Name'
+                  placeholder='Full Name'
+                  // value='Peter Ihimire'
+                />
+                <Input
+                  labelText='Email'
+                  placeholder='Email'
+                  // value='Peter Ihimire'
+                />
+                <Input
+                  labelText='Phone Number'
+                  placeholder='Phone Number'
+                  // value='Peter Ihimire'
+                />
+                <Input
+                  labelText='Confirm New Password'
+                  placeholder='Confirm New Password'
+                  // value='Peter Ihimire'
+                />
               </div>
             )}
             {tabIndex === 2 && (

@@ -20,6 +20,7 @@ const CustomTabs = ({
           {headers.map((item) => {
             return (
               <li
+                onClick={() => clicked(item.id)}
                 key={item.id}
                 className={`${activeTab === item.id ? styles.active : ""}`}
               >

@@ -325,6 +325,22 @@ input[type="radio"] {
   }
 }
 
+
+.profile-input-wrapper {
+  position: relative;
+  max-width: 60%;
+
+  label {
+    position: absolute !important;
+    top: 5px !important;
+    left: 15px !important;
+    margin-bottom: 0px !important;
+    font-size: 10px;
+    line-height: 12px;
+    color: #65676f;
+  }
+}
+
 // react-datepicker style
 // .react-datepicker-wrapper,
 .react-datepicker__input-container,

@@ -33,19 +33,32 @@
     .grid {
       // width: 100%;
       display: grid;
-      grid-template-columns: 42% 56%;
+      grid-template-columns: 35% 63%;
       gap: 2%;
 
       .left {
-        background-color: red;
+        background-color: var(--white);
         height: 75vh;
         border-radius: 16px;
+        padding: 40px;
+
+        @media (max-width: 700px) {
+          padding: 10px;
+        }
       }
       .right {
         background-color: #fff;
         // height: 100%;
         height: 75vh;
         border-radius: 16px;
+        padding: 40px;
+
+        .labelClass {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          margin-bottom: 0px;
+        }
       }
     }
   }
