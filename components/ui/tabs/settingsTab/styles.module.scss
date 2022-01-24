@@ -34,17 +34,19 @@
         position: relative;
         background: var(--white);
         color: #65676f;
-        border-radius: 16px;
-        border: solid grey 1px;
+        border-radius: 8px;
+        // border: solid grey 1px;
         font-weight: bold;
         margin-bottom: 10px;
+        // background: #f2f2f2;
+        border: 1px solid #b6b7b9;
         // margin: 0 10px;
 
         &.active {
           background: #f2f2f2;
-          border-radius: 16px;
+          border-radius: 8px;
           font-weight: bold;
-          border: solid grey 1px;
+          border: 1px solid #b6b7b9;
 
           &::after {
             // content: "";
@@ -56,7 +58,7 @@
           }
 
           > button {
-            color: grey !important;
+            color: #333131;
             font-family: Proxima-Medium !important;
             // width: 100%;
 
@@ -78,6 +80,7 @@
           height: 100%;
           padding: 16px 22px;
           background: transparent;
+          color: #333131;
           // display: flex;
           // align-items: center;
           // justify-content: center;
