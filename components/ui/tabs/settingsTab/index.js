@@ -8,6 +8,7 @@ const CustomTabs = ({
   headers,
   headersSpaced,
   dot,
+  icon,
 }) => {
   return (
     <div className={styles.tabs}>
@@ -26,6 +27,7 @@ const CustomTabs = ({
               >
                 <button onClick={() => clicked(item.id)}>
                   {dot && <span className={styles.dot}></span>}
+                  {icon && <img src={item.icon} alt='' />}
                   {item.name}
                 </button>
               </li>

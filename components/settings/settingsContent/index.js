@@ -8,6 +8,12 @@ import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
 import Modal from "../../ui/modal";
 import BlueEye from "../../../public/images/eyeblue.svg";
+import Bank from "../../../public/images/bank.svg";
+import Bell from "../../../public/images/bell.svg";
+import CreditCard from "../../../public/images/credit-card.svg";
+import Lock from "../../../public/images/lock.svg";
+import Person from "../../../public/images/person.svg";
+import Shield from "../../../public/images/shield.svg";
 
 const SettingsContent = () => {
   const [tabIndex, setTabIndex] = useState(1);
@@ -19,6 +25,7 @@ const SettingsContent = () => {
   const tabHeaders = [
     {
       name: "Profile Settings",
+      icon: "../../../public/images/person.svg",
       id: 1,
     },
     {
@@ -52,6 +59,7 @@ const SettingsContent = () => {
               activeTab={tabIndex}
               clicked={(index) => tabIndexHandler(index)}
               headers={tabHeaders}
+              icon='../../../public/images/person.svg'
             />
           </div>
           <div className={styles.right}>
@@ -153,8 +161,49 @@ const SettingsContent = () => {
               </div>
             )}
             {tabIndex === 3 && (
-              <div>
-                <h3>Bank Settings</h3>
+              <div className={styles.content}>
+                <h3>Bank settings</h3>
+                <div className={styles.cardWrapper}>
+                  <div className={styles.bankCard}>
+                    <img src='/images/AccessBank.svg' alt='' />
+
+                    <div className={styles.bankDetailDelete}>
+                      <div className={styles.bankDetail}>
+                        <h4>Obinna Ani</h4>
+                        <h5>Access Bank</h5>
+                        <p>0237835648</p>
+                      </div>
+                      <div className={styles.expiryDelete}>
+                        <img src='/images/trash-black.svg' alt='' />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.bankCard}>
+                    <img src='/images/GTBank.svg' alt='' />
+
+                    <div className={styles.bankDetailDelete}>
+                      <div className={styles.bankDetail}>
+                        <h4>Obinna Ani</h4>
+                        <h5>Access Bank</h5>
+                        <p>0237835648</p>
+                      </div>
+                      <div>
+                        <img src='/images/trash-black.svg' alt='' />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.submitBtn}>
+                    <button
+                      className='btn-transparent-dark btn-block'
+                      // onClick={stepHandler}
+                      type='submit'
+                    >
+                      Add New Bank Account
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
             {tabIndex === 4 && (
@@ -190,13 +239,81 @@ const SettingsContent = () => {
               </div>
             )}
             {tabIndex === 5 && (
-              <div>
+              <div className={styles.content}>
                 <h3>Change Password</h3>
+
+                <form>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Old Password'
+                      placeholder='Old Password'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='New Password'
+                      placeholder='New Password'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Confirm New Password'
+                      placeholder='Confirm New Password'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+
+                  <div className={styles.submitBtn}>
+                    <button
+                      className='btn-primary btn-block'
+                      // onClick={stepHandler}
+                      type='submit'
+                    >
+                      Update
+                    </button>
+                  </div>
+                </form>
               </div>
             )}
             {tabIndex === 6 && (
-              <div>
+              <div className={styles.content}>
                 <h3>2FA Settings</h3>
+
+                <form>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Set Security Question'
+                      placeholder='Set Security Question'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Enter Answer'
+                      placeholder='Enter Answer'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <Input
+                      labelText='Comfirm Password'
+                      placeholder='Comfirm Password'
+                      // value='Peter Ihimire'
+                    />
+                  </div>
+
+                  <div className={styles.submitBtn}>
+                    <button
+                      className='btn-primary btn-block'
+                      // onClick={stepHandler}
+                      type='submit'
+                    >
+                      Update
+                    </button>
+                  </div>
+                </form>
               </div>
             )}
           </div>
