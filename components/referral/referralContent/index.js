@@ -86,7 +86,7 @@ const ReferralContent = () => {
               </div>
             </div>
             <div className={styles.content}>
-              <h3>Referral List</h3>
+              <h4>Referral List</h4>
               <div className={styles.listWrapper}>
                 <div className={styles.list}>
                   <img src='/images/user-frame.svg' alt='' />

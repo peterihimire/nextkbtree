@@ -107,17 +107,44 @@
           padding: 20px;
           margin-bottom: 20px;
 
+          h4 {
+            font-size: 14px;
+            line-height: 17px;
+          }
+
           .hudContent {
             margin-top: 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
+            .hudAmt {
+              h3 {
+                font-size: 24px;
+                line-height: 29px;
+              }
+
+              p {
+                font-size: 10px;
+                line-height: 12px;
+              }
+            }
+
+            @media (max-width: 900px) {
+              flex-direction: column;
+              margin-top: 0px;
+              // align-items: flex-start;
+            }
+
             @media (max-width: 700px) {
               flex-direction: column;
               margin-top: 0px;
               // align-items: flex-start;
             }
+          }
+
+          @media (max-width: 900px) {
+            text-align: center;
           }
 
           @media (max-width: 700px) {
@@ -140,6 +167,13 @@
             height: 97%;
           }
 
+          h4 {
+            font-size: 16px;
+            line-height: 20px;
+            color: #333131;
+            margin-bottom: 5px;
+          }
+
           .listWrapper {
             overflow-y: auto;
             flex-grow: 1;
@@ -156,6 +190,29 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                .nameDate {
+                  margin-left: 10px;
+
+                  h4 {
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #65676f;
+                    margin-bottom: 2px;
+                  }
+                  p {
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #b6b7b9;
+                  }
+                }
+
+                span {
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 17px;
+                  color: #65676f;
+                }
               }
             }
           }
