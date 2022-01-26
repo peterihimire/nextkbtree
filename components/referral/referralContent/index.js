@@ -51,7 +51,7 @@ const ReferralContent = () => {
   ];
 
   return (
-    <section className={styles.settings}>
+    <section className={styles.referral}>
       <div className={styles.wrapper}>
         <div className={styles.grid}>
           <div className={styles.left}>
