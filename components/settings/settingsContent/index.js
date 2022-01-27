@@ -25,27 +25,32 @@ const SettingsContent = () => {
   const tabHeaders = [
     {
       name: "Profile Settings",
-      icon: "../../../public/images/person.svg",
+      icon: "/images/person.svg",
       id: 1,
     },
     {
       name: "Card Settings",
+      icon: "/images/credit-card.svg",
       id: 2,
     },
     {
       name: "Bank Settings",
+      icon: "/images/bank.svg",
       id: 3,
     },
     {
       name: "Notifications",
+      icon: "/images/bell.svg",
       id: 4,
     },
     {
       name: "Change Password",
+      icon: "/images/lock.svg",
       id: 5,
     },
     {
       name: "2FA Settings",
+      icon: "/images/shield.svg",
       id: 6,
     },
   ];
@@ -59,7 +64,9 @@ const SettingsContent = () => {
               activeTab={tabIndex}
               clicked={(index) => tabIndexHandler(index)}
               headers={tabHeaders}
-              icon='../../../public/images/person.svg'
+              // src='../../../public/images/person.svg'
+              src={tabHeaders}
+              // src="/images/send-icon.svg"
             />
           </div>
           <div className={styles.right}>
