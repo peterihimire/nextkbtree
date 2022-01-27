@@ -80,7 +80,9 @@ const ReferralContent = () => {
                   <h3>$650</h3>
                   <p>13 Users referred</p>
                 </div>
-                <button className=' btn-transparent btn-medium'>
+                <button
+                  className={`${styles.withdrawBtn} btn-transparent btn-medium`}
+                >
                   Withdraw
                 </button>
               </div>
