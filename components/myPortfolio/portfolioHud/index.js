@@ -30,12 +30,12 @@ const PortfolioHud = () => {
                 <div className={styles.nairaDollarWrapper}>
                   <div className={styles.nairaDollarContent}>
                     <p>Investment Portfolio</p>
-                    <h3>$2,938,989.00</h3>
+                    <h3>$2,938,989</h3>
                   </div>
 
                   <div className={styles.nairaDollarContent}>
                     <p>Expected Return Value</p>
-                    <h3>$1,900,000.00</h3>
+                    <h3>$1,900,000</h3>
                   </div>
                 </div>
               )}
@@ -43,12 +43,12 @@ const PortfolioHud = () => {
                 <div className={styles.nairaDollarWrapper}>
                   <div className={styles.nairaDollarContent}>
                     <p>Investment Portfolio</p>
-                    <h3>$4,938,989.00</h3>
+                    <h3>$4,938,989</h3>
                   </div>
 
                   <div className={styles.nairaDollarContent}>
                     <p>Expected Return Value</p>
-                    <h3>$9,900,000.00</h3>
+                    <h3>$9,900,000</h3>
                   </div>
                 </div>
               )}

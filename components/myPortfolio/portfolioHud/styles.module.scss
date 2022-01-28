@@ -1,5 +1,6 @@
 .portfolioHud {
   width: 100%;
+  margin-bottom: 50px;
 
   .wrapper {
     width: 95%;
@@ -19,7 +20,7 @@
       display: grid;
       grid-template-columns: 48% 48%;
       gap: 4%;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
 
       // @media screen and (max-width: 900px) {
       //   display: flex;
@@ -55,9 +56,24 @@
 
             .nairaDollarContent {
               margin-bottom: 20px;
+              p {
+                font-size: 12px;
+                line-height: 15px;
+                color: #333131;
+              }
+
+              h3 {
+                font-size: 20px;
+                line-height: 24px;
+                color: #004ef0;
+              }
 
               &:last-of-type {
                 margin-bottom: 0px;
+
+                h3 {
+                  color: #42ae51;
+                }
               }
             }
           }
@@ -83,9 +99,28 @@
         border-radius: 16px;
         padding: 30px;
 
+        h4 {
+          font-size: 16px;
+          line-height: 20px;
+          color: #333131;
+        }
+
         .overview {
           display: flex;
           margin-top: 20px;
+          text-align: center;
+
+          h5 {
+            font-size: 16px;
+            line-height: 20px;
+            color: #333131;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 15px;
+            color: #65676f;
+          }
           span {
             margin-right: 60px;
           }
