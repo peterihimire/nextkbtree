@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CustomTabs from "../../ui/tabs/crowdInvestTab";
+import CustomTabs from "../../ui/tabs/portfolioTab2";
 import Input from "../../ui/customInputWithIcon";
 import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
@@ -14,15 +14,15 @@ const Investments = () => {
 
   const tabHeaders = [
     {
-      name: "Popular",
+      name: "All Investment",
       id: 1,
     },
     {
-      name: "Recently Added",
+      name: "Crowd Source",
       id: 2,
     },
     {
-      name: "Matured",
+      name: "Long Hold Investment",
       id: 3,
     },
   ];

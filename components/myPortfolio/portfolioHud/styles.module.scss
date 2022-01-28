@@ -19,6 +19,18 @@
       display: grid;
       grid-template-columns: 48% 48%;
       gap: 4%;
+      margin-bottom: 20px;
+
+      // @media screen and (max-width: 900px) {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
+
+      @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
+
       .left {
         background: linear-gradient(
             to right,
@@ -29,60 +41,98 @@
             no-repeat;
         background-size: cover;
         position: relative;
-
         border-radius: 16px;
-        padding: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nairaDollar {
+          .nairaDollarWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .nairaDollarContent {
+              margin-bottom: 20px;
+
+              &:last-of-type {
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+
+        .nairaDollarHead {
+          position: relative;
+          img {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            // margin-bottom: 20px;
+          }
+        }
+        @media screen and (max-width: 700px) {
+          margin-bottom: 20px;
+        }
       }
       .right {
         background-color: var(--white);
-        background-size: cover;
-        position: relative;
-
+        // background-size: cover;
+        // position: relative;
         border-radius: 16px;
-        padding: 20px;
-      }
-    }
-    .content {
-      // background-color: var(--dashBlue);
-      // background: url(/public/images/random-halftone-square-wallet.svg);
+        padding: 30px;
 
-      background: linear-gradient(
-          to right,
-          rgba(0, 62, 231, 0.849),
-          rgba(0, 62, 231, 0.849)
-        ),
-        url("/images/random-square-halftone-wallet.svg") center/cover no-repeat;
-      background-size: cover;
-      position: relative;
-
-      border-radius: 16px;
-      padding: 20px;
-      // color: var(--white);
-
-      p {
-        color: var(--white);
-      }
-      h3 {
-        color: var(--white);
-        margin-top: 10px;
-      }
-
-      .fundWithdrawBtn {
-        display: flex;
-        align-items: center;
-
-        .btn {
-          margin-top: 60px;
-
-          &:last-of-type {
-            margin-left: 20px;
-
-            @media screen and (max-width: 700px) {
-              margin-left: 20px;
-            }
+        .overview {
+          display: flex;
+          margin-top: 20px;
+          span {
+            margin-right: 60px;
           }
         }
       }
     }
+    // .content {
+    //   // background-color: var(--dashBlue);
+    //   // background: url(/public/images/random-halftone-square-wallet.svg);
+
+    //   background: linear-gradient(
+    //       to right,
+    //       rgba(0, 62, 231, 0.849),
+    //       rgba(0, 62, 231, 0.849)
+    //     ),
+    //     url("/images/random-square-halftone-wallet.svg") center/cover no-repeat;
+    //   background-size: cover;
+    //   position: relative;
+
+    //   border-radius: 16px;
+    //   padding: 20px;
+    //   // color: var(--white);
+
+    //   p {
+    //     color: var(--white);
+    //   }
+    //   h3 {
+    //     color: var(--white);
+    //     margin-top: 10px;
+    //   }
+
+    //   .fundWithdrawBtn {
+    //     display: flex;
+    //     align-items: center;
+
+    //     .btn {
+    //       margin-top: 60px;
+
+    //       &:last-of-type {
+    //         margin-left: 20px;
+
+    //         @media screen and (max-width: 700px) {
+    //           margin-left: 20px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
