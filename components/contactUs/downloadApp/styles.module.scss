@@ -23,6 +23,7 @@
 
         @media screen and (max-width: 600px) {
           padding-left: 0px !important;
+          padding: 0px 5px;
         }
         @media (max-width: 900px) {
           padding-left: 150px;
@@ -50,7 +51,7 @@
 
         p {
           color: var(--white);
-          
+
           @media screen and (max-width: 600px) {
             text-align: center;
             color: var(--white);
@@ -82,20 +83,6 @@
             }
           }
         }
-        // position: absolute;
-        // left: 50px;
-        // bottom: -10px;
-
-        // @media screen and (max-width: 600px) {
-        //   display: none;
-        // }
-        // @media (max-width: 900px) {
-        //   display: none;
-        // }
-
-        // @media screen and (max-width: 1200px) {
-        //   left: 0px;
-        // }
       }
       .right {
         position: absolute;

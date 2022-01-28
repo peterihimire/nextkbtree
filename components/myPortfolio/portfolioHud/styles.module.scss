@@ -1,0 +1,88 @@
+.portfolioHud {
+  width: 100%;
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    // height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 4%;
+      .left {
+        background: linear-gradient(
+            to right,
+            rgba(248, 249, 250, 0.849),
+            rgba(248, 249, 250, 0.849)
+          ),
+          url("/images/random-square-halftone-wallet.svg") center/cover
+            no-repeat;
+        background-size: cover;
+        position: relative;
+
+        border-radius: 16px;
+        padding: 20px;
+      }
+      .right {
+        background-color: var(--white);
+        background-size: cover;
+        position: relative;
+
+        border-radius: 16px;
+        padding: 20px;
+      }
+    }
+    .content {
+      // background-color: var(--dashBlue);
+      // background: url(/public/images/random-halftone-square-wallet.svg);
+
+      background: linear-gradient(
+          to right,
+          rgba(0, 62, 231, 0.849),
+          rgba(0, 62, 231, 0.849)
+        ),
+        url("/images/random-square-halftone-wallet.svg") center/cover no-repeat;
+      background-size: cover;
+      position: relative;
+
+      border-radius: 16px;
+      padding: 20px;
+      // color: var(--white);
+
+      p {
+        color: var(--white);
+      }
+      h3 {
+        color: var(--white);
+        margin-top: 10px;
+      }
+
+      .fundWithdrawBtn {
+        display: flex;
+        align-items: center;
+
+        .btn {
+          margin-top: 60px;
+
+          &:last-of-type {
+            margin-left: 20px;
+
+            @media screen and (max-width: 700px) {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

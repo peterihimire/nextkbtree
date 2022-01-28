@@ -1,0 +1,114 @@
+.allInvestment {
+  width: 100%;
+
+  .walletContent {
+    background-color: #0202c6;
+    color: #fff;
+    border-radius: 16px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .wrapper {
+    // width: 100%;
+    // display: grid;
+    // grid-template-columns: 30% 68%;
+    // column-gap: 20px;
+    // background: yellowgreen;
+
+    // .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    @media (max-width: 1264px) {
+      // justify-content: space-between;
+    }
+    // }
+
+    .investmentContent {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .inputHolder {
+        width: 600px;
+
+
+        @media screen and (max-width: 700px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      .searchInput {
+        background-color: var(--white);
+        border-color: var(--white);
+      }
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .iconClass {
+      position: absolute;
+      right: 16px;
+      bottom: 28%;
+      background: transparent;
+    }
+
+    .tabContent {
+      .grid {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 1200px) {
+          // grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
+          // justify-content: center;
+          width: 100%;
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 36px 30px;
+        }
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 36px 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+          // grid-template-columns: repeat(auto-fit, minmax(100%, 284px));
+          // justify-content: center;
+          width: 100%;
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 36px 30px;
+        }
+      }
+    }
+  }
+}

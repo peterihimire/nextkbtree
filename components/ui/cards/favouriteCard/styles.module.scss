@@ -1,0 +1,113 @@
+.card {
+  // display: flex;
+  border-radius: 14px;
+  background: white;
+  padding: 15px;
+  //   max-width: 662px;
+
+  @media screen and (max-width: 499px) {
+    flex-direction: column;
+  }
+
+  .cardImg {
+    // width: 40%;
+    flex: 1;
+    height: 173px;
+    position: relative;
+
+    @media screen and (max-width: 700px) {
+      height: auto;
+    }
+
+    @media screen and (max-width: 499px) {
+      flex: auto;
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px 12px 12px 12px;
+
+      @media screen and (max-width: 499px) {
+        border-radius: 12px 12px 12px 12px;
+      }
+    }
+
+    .returns {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: var(--white);
+      // background-color: rgba(66, 174, 81, 0.87);
+      border-radius: 4px;
+      // padding: 5px;
+      text-align: center;
+    }
+  }
+
+  .cardBody {
+    // width: 60%;
+    // padding: 6px 13px 6px 20px;
+    // display: flex;
+    // flex-direction: column;
+
+    // @media screen and (max-width: 499px) {
+    //   width: 100%;
+    // }
+    h3 {
+      font-size: 14px;
+      line-height: 17px;
+      width: 200px;
+      margin-top: 5px;
+    }
+
+    .investors {
+      color: #65676f;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      margin: 8px 0px;
+    }
+    .amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .targetAmt {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+      span {
+        color: rgba(66, 174, 81, 0.87);
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    .durationDiv {
+      display: flex;
+
+      .duration {
+        background-color: rgba(66, 174, 81, 0.87);
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        padding: 5px;
+        border-radius: 50px 50px 50px 50px;
+        margin: 10px 0;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
