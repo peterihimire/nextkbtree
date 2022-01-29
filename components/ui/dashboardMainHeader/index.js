@@ -12,6 +12,7 @@ const DashboardHeader = ({ isOpen, clicked }) => {
   const [bgChange, setBgChange] = useState(false);
 
   const router = useRouter();
+  console.log(router);
 
   const dropHandler = (payload) => {
     setDropOpen(payload);
@@ -57,7 +58,11 @@ const DashboardHeader = ({ isOpen, clicked }) => {
     >
       <div className={styles.wrapper}>
         <div className={styles.dash_header__notif}>
-          <span>{router.pathname.slice(1)}</span>
+          <span>
+          {router.asPath.slice(1)}
+            {/* {router.pathname.slice(1)} */}
+            {/* {`${router.query !== "" ? router.query.id : null}`} */}
+          </span>
         </div>
 
         <div className={styles.dash_header__actions}>
@@ -66,7 +71,7 @@ const DashboardHeader = ({ isOpen, clicked }) => {
         </div> */}
 
           <div className={styles.dropdown_wrapper}>
-            <Link href="/profile">Peter</Link>
+            <Link href='/profile'>Peter</Link>
           </div>
         </div>
       </div>

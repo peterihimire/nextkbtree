@@ -1,0 +1,62 @@
+.allInvestment {
+  width: 100%;
+
+  .walletContent {
+    background-color: #0202c6;
+    color: #fff;
+    border-radius: 16px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    @media (max-width: 1264px) {
+      // justify-content: space-between;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 59.5% 39.5%;
+      gap: 1%;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left {
+        background-color: var(--white);
+        border-radius: 16px;
+        padding: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .right {
+        background-color: var(--white);
+        border-radius: 16px;
+        height: fit-content;
+      }
+    }
+  }
+}
