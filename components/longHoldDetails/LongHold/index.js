@@ -53,7 +53,7 @@ const LongHold = () => {
                 </p>
 
                 <h3>Location</h3>
-                <p>895 Highway 53, Clearlake, California 95422, USA</p>
+                <p className={styles.address}>895 Highway 53, Clearlake, California 95422, USA</p>
 
                 <img src='/images/investment-map.png' alt='' />
 
@@ -87,10 +87,13 @@ const LongHold = () => {
                     </span>
                   </div>
                 </div>
-                <h3>Aklas Real Estate dual Investment</h3>
-                <p>
-                  217 West 57th Street, 127/128, Central Park Tower, Midtown ...
-                </p>
+                <div className={styles.headerAddress}>
+                  <h3>Aklas Real Estate dual Investment</h3>
+                  <p>
+                    217 West 57th Street, 127/128, Central Park Tower, Midtown
+                    ...
+                  </p>
+                </div>
 
                 <ul className={styles.investmentOverview}>
                   <li>
@@ -127,6 +130,9 @@ const LongHold = () => {
                   </label>
                   {isChecked && (
                     <div className={styles.formWrapper}>
+                      <h3 className={styles.colorRed}>
+                        Provide your existing company info
+                      </h3>
                       <form>
                         <div className={styles.formGroup}>
                           <Input
@@ -223,6 +229,9 @@ const LongHold = () => {
                   </label>
                   {isChecked2 && (
                     <div className={styles.formWrapper}>
+                      <h3 className={styles.colorGreen}>
+                        Provide the new company info
+                      </h3>
                       <form>
                         <div className={styles.formGroup}>
                           <Input
