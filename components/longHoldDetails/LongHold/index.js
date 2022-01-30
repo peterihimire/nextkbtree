@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import CustomTabs from "../../ui/tabs/longHoldTab";
 import Select from "../../ui/customSelect";
+import Input from "../../ui/customInput";
+import Textarea from "../../ui/customTextarea";
+
 import styles from "./styles.module.scss";
-import DashboardCard from "../../ui/cards/dashboardCard";
 import Modal from "../../ui/modal";
 
 const LongHold = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+  const handleOnChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleOnChange2 = () => {
+    setIsChecked2(!isChecked2);
+  };
+
   return (
     <section className={styles.allInvestment}>
       <div className={styles.wrapper}>
@@ -79,7 +91,8 @@ const LongHold = () => {
                 <p>
                   217 West 57th Street, 127/128, Central Park Tower, Midtown ...
                 </p>
-                <ul>
+
+                <ul className={styles.investmentOverview}>
                   <li>
                     <p>Closing cost:</p>
                     <span>$150,000,000</span>
@@ -98,7 +111,201 @@ const LongHold = () => {
                   </li>
                 </ul>
 
-                <button className={`btn-medium btn-block ${styles.btnGreen}`}>Buy this property</button>
+                <div className={styles.check}>
+                  <label
+                    className={`${styles.labelCheck} ${
+                      isChecked2 && styles.hide
+                    }`}
+                  >
+                    <input
+                      id='check'
+                      type='checkbox'
+                      checked={isChecked}
+                      onChange={handleOnChange}
+                    />
+                    <span>I want to buy with my company name (optional)</span>
+                  </label>
+                  {isChecked && (
+                    <div className={styles.formWrapper}>
+                      <form>
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="First Name"
+                            name='firstName'
+                            id='firstName'
+                            placeholder='First Name'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Last Name"
+                            name='lastName'
+                            id='lastName'
+                            placeholder='Last Name'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Email"
+                            name='email'
+                            id='email'
+                            placeholder='Email'
+                            required
+                            type='email'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Phone Number"
+                            name='phoneNumber'
+                            id='phoneNumber'
+                            placeholder='Phone Number'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formSelect}>
+                          <Select
+                            // labelText="Country"
+                            id='country'
+                            name='country'
+                            required
+                            wrapClass={styles.selectWrap}
+                          >
+                            <option>Country</option>
+                            <option>Nigeria</option>
+                            <option>Ghana</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                          </Select>
+                        </div>
+
+                        <div className={styles.textarea}>
+                          <Textarea
+                            // labelText="Message"
+                            id='message'
+                            required
+                            name='message'
+                            placeholder='Message'
+                          />
+                        </div>
+                        {/* <div className={styles.submitBtn}>
+                          <button className='btn-primary btn-block'>
+                            Send
+                          </button>
+                        </div> */}
+                      </form>
+                    </div>
+                  )}
+
+                  <label
+                    className={`${styles.labelCheck} ${
+                      isChecked && styles.hide
+                    }`}
+                  >
+                    <input
+                      id='check'
+                      type='checkbox'
+                      checked={isChecked2}
+                      onChange={handleOnChange2}
+                    />
+                    <span>
+                      I want to register a new company name (optional)
+                    </span>
+                  </label>
+                  {isChecked2 && (
+                    <div className={styles.formWrapper}>
+                      <form>
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="First Name"
+                            name='firstName'
+                            id='firstName'
+                            placeholder='First Name'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Last Name"
+                            name='lastName'
+                            id='lastName'
+                            placeholder='Last Name'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Email"
+                            name='email'
+                            id='email'
+                            placeholder='Email'
+                            required
+                            type='email'
+                          />
+                        </div>
+
+                        <div className={styles.formGroup}>
+                          <Input
+                            // labelText="Phone Number"
+                            name='phoneNumber'
+                            id='phoneNumber'
+                            placeholder='Phone Number'
+                            required
+                            type='text'
+                          />
+                        </div>
+
+                        <div className={styles.formSelect}>
+                          <Select
+                            // labelText="Country"
+                            id='country'
+                            name='country'
+                            required
+                            wrapClass={styles.selectWrap}
+                          >
+                            <option>Country</option>
+                            <option>Nigeria</option>
+                            <option>Ghana</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                          </Select>
+                        </div>
+
+                        <div className={styles.textarea}>
+                          <Textarea
+                            // labelText="Message"
+                            id='message'
+                            required
+                            name='message'
+                            placeholder='Message'
+                          />
+                        </div>
+                        {/* <div className={styles.submitBtn}>
+                          <button className='btn-primary btn-block'>
+                            Send
+                          </button>
+                        </div> */}
+                      </form>
+                    </div>
+                  )}
+                </div>
+
+                <button className={`btn-medium btn-block ${styles.btnGreen}`}>
+                  Buy this property
+                </button>
               </div>
             </div>
           </div>
