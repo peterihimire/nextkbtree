@@ -10,17 +10,8 @@
   }
 
   .wrapper {
-    // width: 100%;
-    // display: grid;
-    // grid-template-columns: 30% 68%;
-    // column-gap: 20px;
-    // background: yellowgreen;
-
-    // .wrapper {
     width: 95%;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: space-between;
     align-items: center;
     height: 100%;
     max-width: var(--wrapper-max-width);
@@ -46,7 +37,6 @@
 
       .inputHolder {
         width: 600px;
-
 
         @media screen and (max-width: 700px) {
           width: 100%;

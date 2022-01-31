@@ -3,7 +3,7 @@ import CustomTabs from "../../ui/tabs/longHoldTab";
 import Select from "../../ui/customSelect";
 import Input from "../../ui/customInput";
 import Textarea from "../../ui/customTextarea";
-
+import Link from "next/link";
 import styles from "./styles.module.scss";
 import Modal from "../../ui/modal";
 
@@ -21,6 +21,14 @@ const LongHold = () => {
   return (
     <section className={styles.allInvestment}>
       <div className={styles.wrapper}>
+        <div className={styles.backBtn}>
+          <Link href='/long-hold-investment'>
+            <a>
+              <img src='/images/arrow-back.svg' alt='' />
+              <span>Back</span>
+            </a>
+          </Link>
+        </div>
         <div className={styles.grid}>
           <div className={styles.left}>
             <div className={styles.leftWrapper}>
@@ -53,7 +61,9 @@ const LongHold = () => {
                 </p>
 
                 <h3>Location</h3>
-                <p className={styles.address}>895 Highway 53, Clearlake, California 95422, USA</p>
+                <p className={styles.address}>
+                  895 Highway 53, Clearlake, California 95422, USA
+                </p>
 
                 <img src='/images/investment-map.png' alt='' />
 
@@ -137,9 +147,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="First Name"
-                            name='firstName'
-                            id='firstName'
-                            placeholder='First Name'
+                            name='companyName'
+                            id='companyName'
+                            placeholder='Company Name'
                             required
                             type='text'
                           />
@@ -148,9 +158,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="Last Name"
-                            name='lastName'
-                            id='lastName'
-                            placeholder='Last Name'
+                            name='registeredNumber'
+                            id='registeredNumber'
+                            placeholder='Registered Number'
                             required
                             type='text'
                           />
@@ -161,7 +171,7 @@ const LongHold = () => {
                             // labelText="Email"
                             name='email'
                             id='email'
-                            placeholder='Email'
+                            placeholder='Email Address'
                             required
                             type='email'
                           />
@@ -170,9 +180,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="Phone Number"
-                            name='phoneNumber'
-                            id='phoneNumber'
-                            placeholder='Phone Number'
+                            name='fullName'
+                            id='fullName'
+                            placeholder='Full Name'
                             required
                             type='text'
                           />
@@ -186,7 +196,7 @@ const LongHold = () => {
                             required
                             wrapClass={styles.selectWrap}
                           >
-                            <option>Country</option>
+                            <option>Country of Origin</option>
                             <option>Nigeria</option>
                             <option>Ghana</option>
                             <option>United Kingdom</option>
@@ -197,10 +207,10 @@ const LongHold = () => {
                         <div className={styles.textarea}>
                           <Textarea
                             // labelText="Message"
-                            id='message'
+                            id='info'
                             required
-                            name='message'
-                            placeholder='Message'
+                            name='info'
+                            placeholder='Additional Info'
                           />
                         </div>
                         {/* <div className={styles.submitBtn}>
@@ -236,9 +246,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="First Name"
-                            name='firstName'
-                            id='firstName'
-                            placeholder='First Name'
+                            name='preferName1'
+                            id='preferName1'
+                            placeholder='Prefer name 1'
                             required
                             type='text'
                           />
@@ -247,9 +257,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="Last Name"
-                            name='lastName'
-                            id='lastName'
-                            placeholder='Last Name'
+                            name='preferName2'
+                            id='preferName2'
+                            placeholder='Prefer name 2'
                             required
                             type='text'
                           />
@@ -269,9 +279,9 @@ const LongHold = () => {
                         <div className={styles.formGroup}>
                           <Input
                             // labelText="Phone Number"
-                            name='phoneNumber'
-                            id='phoneNumber'
-                            placeholder='Phone Number'
+                            name='Full Name'
+                            id='Full Name'
+                            placeholder='Full Name'
                             required
                             type='text'
                           />
@@ -285,7 +295,7 @@ const LongHold = () => {
                             required
                             wrapClass={styles.selectWrap}
                           >
-                            <option>Country</option>
+                            <option>Country of Origin</option>
                             <option>Nigeria</option>
                             <option>Ghana</option>
                             <option>United Kingdom</option>
@@ -296,10 +306,10 @@ const LongHold = () => {
                         <div className={styles.textarea}>
                           <Textarea
                             // labelText="Message"
-                            id='message'
+                            id='info'
                             required
-                            name='message'
-                            placeholder='Message'
+                            name='info'
+                            placeholder='Additional Info'
                           />
                         </div>
                         {/* <div className={styles.submitBtn}>
