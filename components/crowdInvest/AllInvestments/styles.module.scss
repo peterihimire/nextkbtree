@@ -102,3 +102,286 @@
     }
   }
 }
+
+.modalContent {
+  // background-color: greenyellow !important;
+  // padding: 20px;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left {
+      background-color: var(--white);
+      border-radius: 16px;
+      // padding: 20px;
+
+      @media (max-width: 900px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 700px) {
+        margin-bottom: 20px;
+      }
+
+      .leftWrapper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        // height: 85vh;
+
+        .leftContent {
+          overflow-y: auto;
+          flex-grow: 1;
+
+          h3 {
+            color: #333131;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+          }
+
+          h4 {
+            color: #ea1d1d;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 17px;
+            color: #333131;
+          }
+
+          .address {
+            color: #65676f;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      background-color: var(--white);
+      border-radius: 16px;
+      height: fit-content;
+      // padding: 20px;
+
+      .rightWrapper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        // height: 85vh;
+
+        .rightContent {
+          overflow-y: auto;
+          flex-grow: 1;
+
+          .headerAddress {
+            h3 {
+              font-size: 16px;
+              line-height: 20px;
+              color: #333131;
+              margin-bottom: 6px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 17px;
+              color: #65676f;
+              max-width: 300px;
+            }
+          }
+
+          .rightHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 0 30px 0;
+
+            .headerLeft {
+              p {
+                font-size: 12px;
+                line-height: 15px;
+                color: #65676f;
+              }
+              h3 {
+                font-size: 16px;
+                line-height: 20px;
+                color: #004ef0;
+                background: #e6edfe;
+                border-radius: 6px;
+                padding: 8px 10px;
+              }
+            }
+
+            .headerRight {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              span {
+                margin-left: 30px;
+              }
+            }
+          }
+          .investmentOverview {
+            background: #e6edfe;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+
+            li {
+              display: flex;
+              padding: 6px 0;
+              font-size: 14px;
+              line-height: 30px;
+              color: #333131;
+
+              p {
+                width: 200px;
+                font-size: 14px;
+                line-height: 30px;
+                color: #333131;
+              }
+            }
+          }
+
+          .check {
+            width: 100%;
+            margin-top: 25px;
+
+            .hide {
+              // visibility: hidden;
+              display: none;
+            }
+            .labelCheck {
+              margin-bottom: 20px;
+
+              &:last-of-type {
+                margin-bottom: 20px;
+              }
+            }
+            .formWrapper {
+              background: #f9f9f9;
+              padding: 20px;
+              border-radius: 8px;
+              margin: 30px 0;
+
+              .colorRed {
+                font-size: 16px;
+                line-height: 20px;
+                color: #ea1d1d;
+                margin-bottom: 20px;
+              }
+
+              .colorGreen {
+                font-size: 16px;
+                line-height: 20px;
+                color: #42ae51;
+                margin-bottom: 20px;
+              }
+
+              form {
+                width: 100%;
+
+                .formGroup {
+                  margin-bottom: 20px;
+                  &:last-of-type {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    @media screen and (max-width: 600px) {
+                      justify-content: flex-start;
+                      // margin-top: 16px;
+                    }
+                  }
+                }
+
+                .textarea {
+                  margin-top: 25px;
+                }
+
+                .submitBtn {
+                  margin-top: 45px;
+                }
+
+                .extraInfo {
+                  width: 100%;
+                  margin-top: 36px;
+
+                  p {
+                    line-height: 1.6;
+                    max-width: 635px;
+                    color: var(--heading);
+                    font-size: 14px;
+
+                    a,
+                    span {
+                      font-family: Proxima-Bold;
+                      color: var(--heading);
+                    }
+                  }
+                }
+              }
+            }
+            label {
+              margin-bottom: 0px;
+              display: flex;
+              align-items: center;
+              width: fit-content;
+
+              input[type="checkbox"] {
+                height: 24px !important;
+                width: 24px !important;
+                flex-shrink: 0;
+
+                &::after {
+                  display: none;
+                }
+              }
+
+              span {
+                margin-left: 16px;
+                font-size: 14px;
+                color: #000000;
+              }
+            }
+          }
+
+          .btnGreen {
+            background-color: #42ae51;
+            border: 1px solid #42ae51;
+            border-radius: 16px;
+            color: var(--white);
+            font-family: Proxima-Regular;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 16px;
+            line-height: 17px;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}

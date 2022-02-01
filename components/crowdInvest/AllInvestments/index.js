@@ -3,7 +3,7 @@ import CustomTabs from "../../ui/tabs/crowdInvestTab";
 import Input from "../../ui/customInputWithIcon";
 import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
-import Modal from "../../ui/modal";
+import Modal from "../../ui/modal/modalInvestment";
 
 const AllInvestments = () => {
   const [tabIndex, setTabIndex] = useState(1);
@@ -447,7 +447,7 @@ const AllInvestments = () => {
       </section>
       {showModal && (
         <Modal
-          header='This is the modal header'
+          // header='This is the modal header'
           bodyClass={styles.modalContent}
           click={() => {
             setShowModal(false);
@@ -582,6 +582,9 @@ const AllInvestments = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className={styles.modalFooter} >
+
           </div>
         </Modal>
       )}
