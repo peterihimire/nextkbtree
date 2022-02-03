@@ -4,7 +4,7 @@ import AllInvestments from "../../components/crowdInvest/AllInvestments";
 // import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
 // import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
 
-const Dashboard = () => {
+const CrowdInvest = () => {
   return (
     <>
       <AllInvestments />
@@ -14,8 +14,8 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default CrowdInvest;
 
-Dashboard.getLayout = function getLayout(page) {
+CrowdInvest.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };

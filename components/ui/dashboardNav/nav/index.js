@@ -23,6 +23,9 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
 
   const router = useRouter();
 
+  const crowdInvest = "/crowd-invest";
+  const orderConfirmation = "/order-confirmation";
+
   // useEffect(() => {
   //   openAbout(false);
   //   openServices(false);
@@ -83,6 +86,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             <span>Crowd Invest</span>
           </ActiveLink>
         </li>
+
         <li>
           <ActiveLink
             href='/long-hold-investment'
@@ -136,7 +140,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           </div>
         </a>
       </Link>
-      
+
       <div className={styles.navLogout}>
         <Logout />
         <button>Logout</button>

@@ -1,0 +1,111 @@
+.referral {
+  width: 100%;
+
+  .wrapper {
+    // width: 100%;
+    // display: grid;
+    // grid-template-columns: 30% 68%;
+    // column-gap: 20px;
+    // background: yellowgreen;
+
+    // .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    @media (max-width: 1264px) {
+      // justify-content: space-between;
+    }
+    // }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 4%;
+
+      @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left {
+        // background-color: var(--white);
+        // height: 75vh;
+        // border-radius: 16px;
+        // padding: 40px;
+        // text-align: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+
+        .investInfo {
+          display: flex;
+          align-items: center;
+          background-color: var(--white);
+          border-radius: 16px;
+          padding: 20px;
+
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+          }
+
+          .investText {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+      .right {
+        // background-color: #fff;
+        // height: 75vh;
+        // border-radius: 16px;
+        // padding: 40px;
+        // display: grid;
+        // grid-template-rows: 20vh 60vh;
+        // gap: 2%;
+
+        .investList {
+          background-color: #fff;
+          border-radius: 16px;
+          padding: 20px;
+
+          ul{
+            li{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 20px;
+
+              &:last-of-type {
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 700px) {
+        }
+      }
+    }
+  }
+}

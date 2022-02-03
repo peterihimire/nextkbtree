@@ -463,6 +463,9 @@ const AllInvestments = () => {
                 <div className={styles.leftWrapper}>
                   <div className={styles.leftContent}>
                     <img src='/images/investment-details-slide.png' alt='' />
+                    <div className={styles.returns}>
+                      <img src='/images/favorite-black-square.svg' alt='' />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -471,11 +474,11 @@ const AllInvestments = () => {
                   <div className={styles.rightContent}>
                     <div className={styles.upDiv}>
                       <div className={styles.portValue}>
-                        <div>
+                        <div className={styles.portValueLeft}>
                           <p>Portfolio Value</p>
                           <h3>$9,000,000</h3>
                         </div>
-                        <div>
+                        <div className={styles.portValueRight}>
                           <p>Raised</p>
                           <h3>$2,000,000</h3>
                         </div>
