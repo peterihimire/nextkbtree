@@ -92,6 +92,9 @@ const OrderConfirmation = () => {
                 </li>
               </ul>
             </div>
+            <button className={`${styles.orderBtn} btn-primary btn-large`}>
+              Complete Purchase
+            </button>
           </div>
         </div>
       </div>
