@@ -69,6 +69,90 @@ const OrderConfirmation = () => {
                 </div>
               </div>
             </div>
+
+            <div className={styles.inputAmt}>
+              <div className={styles.defaultInputAmt}>
+                <div className={styles.radioToolbar}>
+                  <input
+                    type='radio'
+                    id='radioEmployed'
+                    name='employmentStatus'
+                    value='employed'
+                  />
+                  <label
+                    htmlFor='radioEmployed'
+
+                    // onClick={employedHandler}
+                  >
+                    <div> $1,000</div>
+                    {/* <span>
+                      <img src='images/check-circle.svg' />
+                    </span> */}
+                  </label>
+
+                  <input
+                    type='radio'
+                    id='radioUnemployed'
+                    name='employmentStatus'
+                    value='unemployed'
+                  />
+                  <label
+                    htmlFor='radioUnemployed'
+
+                    // onClick={otherHandler}
+                  >
+                    <div> $2,000</div>
+                    {/* <span>
+                      <img src='images/check-circle.svg' />
+                    </span> */}
+                  </label>
+
+                  <input
+                    type='radio'
+                    id='radioSelfemployed'
+                    name='employmentStatus'
+                    value='selfemployed'
+                  />
+                  <label
+                    htmlFor='radioSelfemployed'
+
+                    // onClick={otherHandler}
+                  >
+                    <div>$3,000</div>
+                    {/* <span>
+                      <img src='images/check-circle.svg' />
+                    </span> */}
+                  </label>
+
+                  <input
+                    type='radio'
+                    id='radioStudent'
+                    name='employmentStatus'
+                    value='student'
+                  />
+                  <label
+                    htmlFor='radioStudent'
+
+                    // onClick={otherHandler}
+                  >
+                    <div> $4,000</div>
+                    {/* <span>
+                      <img src='images/check-circle.svg' />
+                    </span> */}
+                  </label>
+                </div>
+              </div>
+              <div className={styles.formGroup}>
+                <Input
+                  // labelText="Create a Password"
+                  type='text'
+                  name='phoneNumber'
+                  id='phoneNumber'
+                  // required
+                  placeholder='Enter Bank Verification Number'
+                />
+              </div>
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.investList}>
