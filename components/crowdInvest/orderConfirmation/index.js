@@ -77,7 +77,7 @@ const OrderConfirmation = () => {
                     type='radio'
                     id='radioEmployed'
                     name='employmentStatus'
-                    value='employed'
+                    value='1000'
                   />
                   <label
                     htmlFor='radioEmployed'
@@ -94,7 +94,7 @@ const OrderConfirmation = () => {
                     type='radio'
                     id='radioUnemployed'
                     name='employmentStatus'
-                    value='unemployed'
+                    value='2000'
                   />
                   <label
                     htmlFor='radioUnemployed'
@@ -111,7 +111,7 @@ const OrderConfirmation = () => {
                     type='radio'
                     id='radioSelfemployed'
                     name='employmentStatus'
-                    value='selfemployed'
+                    value='3000'
                   />
                   <label
                     htmlFor='radioSelfemployed'
@@ -128,7 +128,7 @@ const OrderConfirmation = () => {
                     type='radio'
                     id='radioStudent'
                     name='employmentStatus'
-                    value='student'
+                    value='4000'
                   />
                   <label
                     htmlFor='radioStudent'
@@ -149,7 +149,7 @@ const OrderConfirmation = () => {
                   name='phoneNumber'
                   id='phoneNumber'
                   // required
-                  placeholder='Enter Bank Verification Number'
+                  placeholder='Enter Preffered Amount'
                 />
               </div>
             </div>
