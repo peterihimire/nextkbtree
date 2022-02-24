@@ -85,9 +85,6 @@ const OrderConfirmation = () => {
                     // onClick={employedHandler}
                   >
                     <div> $1,000</div>
-                    {/* <span>
-                      <img src='images/check-circle.svg' />
-                    </span> */}
                   </label>
 
                   <input
@@ -102,9 +99,6 @@ const OrderConfirmation = () => {
                     // onClick={otherHandler}
                   >
                     <div> $2,000</div>
-                    {/* <span>
-                      <img src='images/check-circle.svg' />
-                    </span> */}
                   </label>
 
                   <input
@@ -119,9 +113,6 @@ const OrderConfirmation = () => {
                     // onClick={otherHandler}
                   >
                     <div>$3,000</div>
-                    {/* <span>
-                      <img src='images/check-circle.svg' />
-                    </span> */}
                   </label>
 
                   <input
@@ -136,9 +127,6 @@ const OrderConfirmation = () => {
                     // onClick={otherHandler}
                   >
                     <div> $4,000</div>
-                    {/* <span>
-                      <img src='images/check-circle.svg' />
-                    </span> */}
                   </label>
                 </div>
               </div>
