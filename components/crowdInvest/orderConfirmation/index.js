@@ -1,55 +1,8 @@
 import React, { useState } from "react";
-import CustomTabs from "../../ui/tabs/settingsTab";
-import Select from "../../ui/customSelect";
-import Switch from "../../ui/switch";
-
 import Input from "../../ui/customInput";
 import styles from "./styles.module.scss";
-import DashboardCard from "../../ui/cards/dashboardCard";
-import Modal from "../../ui/modal";
-import CopyIcon from "../../../public/images/copy-icon.svg";
-import Bank from "../../../public/images/bank.svg";
-import Bell from "../../../public/images/bell.svg";
-import CreditCard from "../../../public/images/credit-card.svg";
-import Lock from "../../../public/images/lock.svg";
-import Person from "../../../public/images/person.svg";
-import Shield from "../../../public/images/shield.svg";
 
 const OrderConfirmation = () => {
-  const [tabIndex, setTabIndex] = useState(1);
-
-  const tabIndexHandler = (index) => {
-    setTabIndex(index);
-  };
-
-  const tabHeaders = [
-    {
-      name: "Profile Settings",
-      icon: "../../../public/images/person.svg",
-      id: 1,
-    },
-    {
-      name: "Card Settings",
-      id: 2,
-    },
-    {
-      name: "Bank Settings",
-      id: 3,
-    },
-    {
-      name: "Notifications",
-      id: 4,
-    },
-    {
-      name: "Change Password",
-      id: 5,
-    },
-    {
-      name: "2FA Settings",
-      id: 6,
-    },
-  ];
-
   return (
     <section className={styles.referral}>
       <div className={styles.wrapper}>
@@ -81,7 +34,6 @@ const OrderConfirmation = () => {
                   />
                   <label
                     htmlFor='radioEmployed'
-
                     // onClick={employedHandler}
                   >
                     <div> $1,000</div>
@@ -95,7 +47,6 @@ const OrderConfirmation = () => {
                   />
                   <label
                     htmlFor='radioUnemployed'
-
                     // onClick={otherHandler}
                   >
                     <div> $2,000</div>
@@ -109,7 +60,6 @@ const OrderConfirmation = () => {
                   />
                   <label
                     htmlFor='radioSelfemployed'
-
                     // onClick={otherHandler}
                   >
                     <div>$3,000</div>
@@ -123,7 +73,6 @@ const OrderConfirmation = () => {
                   />
                   <label
                     htmlFor='radioStudent'
-
                     // onClick={otherHandler}
                   >
                     <div> $4,000</div>
