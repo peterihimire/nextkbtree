@@ -145,7 +145,7 @@ const OrderConfirmation = () => {
             document.body.classList.remove("_fixed");
           }}
         >
-          <div className={styles.gridWrapper}>
+          <div className={styles.modalOrderWrapper}>
             <p>Wallet Balance</p>
             <h3>₦200,642,324.00</h3>
           </div>
