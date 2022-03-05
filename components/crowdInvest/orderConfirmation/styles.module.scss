@@ -269,6 +269,11 @@
 
 .modalContent {
   .modalOrderWrapper {
-    padding: 50px;
+    padding: 30px 20px;
+    background: var(--white);
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

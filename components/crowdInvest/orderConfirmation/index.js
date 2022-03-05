@@ -146,8 +146,13 @@ const OrderConfirmation = () => {
           }}
         >
           <div className={styles.modalOrderWrapper}>
-            <p>Wallet Balance</p>
-            <h3>₦200,642,324.00</h3>
+            <div className={styles.walletBal}>
+              <p>Wallet Balance</p>
+              <h3>₦200,642,324.00</h3>
+            </div>
+            <div className={styles.fundBtnWrapper}>
+              <button className={styles.fundBtn}>+</button>
+            </div>
           </div>
         </Modal>
       )}

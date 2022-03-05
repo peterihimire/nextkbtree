@@ -12,36 +12,38 @@ const Form = () => {
         <div className={styles.formGroup}>
           <Input
             // labelText="What’s your Email?"
-            type="email"
-            name="email"
-            id="email"
+            type='email'
+            name='email'
+            id='email'
             required
-            placeholder="Email"
+            placeholder='Email'
           />
         </div>
         <div className={styles.formGroup}>
           <Input
             // labelText="Create a Password"
-            type="password"
-            name="password"
-            id="password"
+            type='password'
+            name='password'
+            id='password'
             required
-            placeholder="Password"
+            placeholder='Password'
           />
         </div>
         <div className={styles.forgot}>
-          <Link href="/forgot-password">
+          <Link href='/forgot-password'>
             <a className={styles.linkStyle}>Forgot Password?</a>
           </Link>
         </div>
 
         <div className={styles.submitBtn}>
-          <button className="btn-primary btn-block">Send</button>
+          <button className='btn-primary btn-block' onClick={"/dashboard"}>
+            Send
+          </button>
         </div>
 
         <div className={styles.register}>
           <span>Don't have an account? </span>
-          <Link href="/register">
+          <Link href='/register'>
             <a className={styles.linkStyle}>Register</a>
           </Link>
         </div>
