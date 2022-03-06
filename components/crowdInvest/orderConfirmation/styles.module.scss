@@ -254,6 +254,11 @@
           }
         }
 
+
+        @media (max-width: 900px) {
+          margin-top: 20px;
+        }
+
         @media (max-width: 700px) {
           margin-top: 20px;
         }
@@ -269,11 +274,36 @@
 
 .modalContent {
   .modalOrderWrapper {
-    padding: 30px 20px;
+    padding: 20px 20px;
     background: var(--white);
     border-radius: 26px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .walletBal {
+      p {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #65676f;
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 29px;
+        color: #333131;
+      }
+    }
+
+    .fundBtnWrapper {
+      .fundBtn {
+        color: var(--white);
+        background: #004ef0;
+        border-radius: 16px;
+        padding: 15px 10px;
+        font-size: 30px;
+      }
+    }
   }
 }

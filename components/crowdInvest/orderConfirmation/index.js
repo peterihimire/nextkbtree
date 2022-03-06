@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import Input from "../../ui/customInput";
+import Select from "../../ui/customSelect";
 import styles from "./styles.module.scss";
 import Modal from "../../ui/modal/modalOrderInvest";
+import Modal2 from "../../ui/modal/modalFundWallet";
 
 const OrderConfirmation = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
 
   const applyHandler = () => {
     setShowModal(true);
+
+    document.documentElement.classList.add("_fixed");
+    document.body.classList.add("_fixed");
+  };
+
+  const applyHandler2 = () => {
+    setShowModal2(true);
 
     document.documentElement.classList.add("_fixed");
     document.body.classList.add("_fixed");
@@ -151,10 +161,35 @@ const OrderConfirmation = () => {
               <h3>₦200,642,324.00</h3>
             </div>
             <div className={styles.fundBtnWrapper}>
-              <button className={styles.fundBtn}>+</button>
+              <button className={styles.fundBtn} onClick={applyHandler2}>
+                +
+              </button>
             </div>
           </div>
         </Modal>
+      )}
+
+      {showModal2 && (
+        <Modal2
+          // header='This is the modal header'
+          bodyClass={styles.modalContent}
+          click={() => {
+            setShowModal2(false);
+
+            document.documentElement.classList.remove("_fixed");
+            document.body.classList.remove("_fixed");
+          }}
+        >
+          <div className={styles.modalFundWrapper}>
+            <h3>How much would you like to fund your wallet?</h3>
+            <form>
+              <div className={styles.formGroup}>
+                <Select /> <Input />
+              </div>
+              <button className={styles.fundBtn}>Continue</button>
+            </form>
+          </div>
+        </Modal2>
       )}
     </>
   );
