@@ -172,7 +172,7 @@ const OrderConfirmation = () => {
       {showModal2 && (
         <Modal2
           // header='This is the modal header'
-          bodyClass={styles.modalContent}
+          bodyClass={styles.modal2Content}
           click={() => {
             setShowModal2(false);
 
@@ -183,10 +183,34 @@ const OrderConfirmation = () => {
           <div className={styles.modalFundWrapper}>
             <h3>How much would you like to fund your wallet?</h3>
             <form>
-              <div className={styles.formGroup}>
-                <Select /> <Input />
+              <div className={styles.formGrid}>
+                <div className={styles.formGroup}>
+                  <Select
+                    id='country'
+                    name='country'
+                    required
+                    // wrapClass={styles.selectWrap}
+                    // className={styles.filterInput}
+                  >
+                    <option>NGN</option>
+                    <option>GHA</option>
+                    <option>UK</option>
+                    <option>AUS</option>
+                    <option>USA</option>
+                  </Select>
+                </div>
+                <div className={styles.formGroup}>
+                  <Input />
+                </div>
               </div>
-              <button className={styles.fundBtn}>Continue</button>
+              <div className={styles.processFee}>
+                <p>Processing fee </p>
+                <span>$200</span>
+              </div>
+
+              <button className={`${styles.fundButton} btn-large btn-primary`}>
+                Continue
+              </button>
             </form>
           </div>
         </Modal2>

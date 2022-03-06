@@ -254,7 +254,6 @@
           }
         }
 
-
         @media (max-width: 900px) {
           margin-top: 20px;
         }
@@ -303,6 +302,39 @@
         border-radius: 16px;
         padding: 15px 10px;
         font-size: 30px;
+      }
+    }
+  }
+}
+
+.modal2Content {
+  .modalFundWrapper {
+    padding: 40px 20px;
+    background: var(--white);
+    border-radius: 26px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    form {
+      .formGrid {
+        display: grid;
+        width: 100%;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 30% 65%;
+        gap: 20px 18px;
+
+        // @media screen and (max-width: 600px) {
+        //   grid-template-columns: repeat(1, 1fr);
+        //   gap: 32px 48px;
+        // }
+      }
+      .processFee {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .fundButton {
+        width: 100% !important;
       }
     }
   }
