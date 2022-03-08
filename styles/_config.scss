@@ -842,3 +842,48 @@ input {
 // 1264px 1200px 903px 700px 600px 400px
 
 // height of header - 70px
+
+.animated {
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  // will-change: opacity, transform, visibility;
+}
+.animated.fadeIn {
+  transform: none;
+  visibility: visible;
+}
+.marqueecustom {
+  .overlay {
+    &:after,
+    &:before {
+      content: none;
+    }
+  }
+}
+.searchbtnCol {
+  .nav {
+    display: none;
+  }
+  .nav.show {
+    display: block;
+  }
+}
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+.swiper-slide.swiper-slide-visible.swiper-slide-active {
+  h1 {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+  }
+  p {
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+  }
+  a {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+  }
+}
