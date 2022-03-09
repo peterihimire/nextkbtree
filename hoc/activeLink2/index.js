@@ -8,10 +8,11 @@ const ActiveLink2 = ({ href, name, as, children, linkClass }) => {
 
   const style = {
     backgroundColor: router.pathname === href ? "rgba(255, 255, 255, 0.3)" : "",
-    color: router.pathname === href ? "#ffffff" : "",
+    color: router.pathname === href ? " #004EF0" : "",
     // fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
     borderRight: router.pathname === href ? "solid #fff 5px" : "",
     borderRadius: router.pathname === href ? "5px" : "",
+    // fontSize: router.pathname === href ? "50px" : "",
   };
 
   return (
