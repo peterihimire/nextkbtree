@@ -1,7 +1,6 @@
 .hero {
   width: 100%;
   padding: 198px 0;
-
   background: linear-gradient(
       to right,
       rgba(020, 25, 71, 0.8),
@@ -28,21 +27,29 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 48px;
-      line-height: 59px;
-      max-width: 684px;
+    .slideItem {
+      h1 {
+        font-size: 48px;
+        line-height: 59px;
+        max-width: 684px;
 
-      @media (max-width: 700px) {
-        font-size: 34px;
+        @media (max-width: 700px) {
+          font-size: 34px;
+        }
       }
-    }
 
-    p {
-      font-size: 20px;
-      line-height: 24px;
-      max-width: 400px;
-      margin: 30px 0;
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 400px;
+        margin: 30px 0;
+      }
+      @media (max-width: 700px) {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
   .accomplishment {

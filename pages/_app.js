@@ -24,17 +24,21 @@ function MyApp({ Component, pageProps }) {
   return getLayout(
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Grow money on tree." />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='Grow money on tree.' />
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'
+        ></link>
         <title>Kobo-T</title>
       </Head>
 
-      <Script src="/fontawesome.js" />
+      <Script src='/fontawesome.js' />
 
       {/* <PersistGate persistor={store.__persistor}> */}
       <Component {...pageProps} />
       {/* </PersistGate> */}
-    </>
+    </>,
   );
 }
 

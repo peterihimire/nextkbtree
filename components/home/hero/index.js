@@ -15,7 +15,7 @@ const HomeHero = () => {
     },
   };
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} hero-section`}>
       {/* <div className={`${styles.wrapper} wrapper`}>
         <h1>Crowdfunding Real Estate Investment in Diaspora</h1>
         <p>
@@ -70,7 +70,7 @@ const HomeHero = () => {
         centeredSlides={true}
         autoplay={true}
         autoplay={{
-          delay: 3000,
+          delay: 13000,
           disableOnInteraction: false,
         }}
       >

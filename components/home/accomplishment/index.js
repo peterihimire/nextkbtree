@@ -5,12 +5,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Accomplishment = () => {
   return (
     <div className={` wrapper `}>
-      <ScrollAnimation
+      {/* <ScrollAnimation
         animateIn='fadeIn'
         duration={0.8}
         delay={400}
         animateOnce={true}
-      >
+      > */}
         <div className={styles.accomplishment}>
           <div className={styles.singleAccomplishment}>
             <div className={styles.icon}>
@@ -42,7 +42,7 @@ const Accomplishment = () => {
             </div>
           </div>
         </div>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
     </div>
   );
 };
