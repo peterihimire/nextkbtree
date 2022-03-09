@@ -4,6 +4,7 @@ import BrokenRing1 from "../../../public/images/broken-ring-1.svg";
 import BrokenRing2 from "../../../public/images/broken-ring-2.svg";
 import BrokenRing3 from "../../../public/images/broken-ring-3.svg";
 import BrokenRing4 from "../../../public/images/broken-ring-4.svg";
+import ScrollAnimation from "react-animate-on-scroll";
 // import Image from "next/image";
 
 const CrowdInvest = () => {
@@ -24,6 +25,7 @@ const CrowdInvest = () => {
               dynamic asset updates.
             </p>
           </div>
+
           <div className={styles.right}>
             <img src='/images/galaxy-note20-full.svg' alt='' loading='lazy' />
           </div>
@@ -35,13 +37,22 @@ const CrowdInvest = () => {
           <BrokenRing3 className={styles.ringThree} />
           <BrokenRing4 className={styles.ringFour} />
 
-          <div className={styles.head}>
-            <h3>
-              The right skills wielded by the right people to make anything
-              possible.
-            </h3>
-            <p>Filter the best deals and proceed to checkout with confidence</p>
-          </div>
+          <ScrollAnimation
+            animateIn='fadeIn'
+            duration={0.8}
+            delay={400}
+            animateOnce={true}
+          >
+            <div className={styles.head}>
+              <h3>
+                The right skills wielded by the right people to make anything
+                possible.
+              </h3>
+              <p>
+                Filter the best deals and proceed to checkout with confidence
+              </p>
+            </div>
+          </ScrollAnimation>
         </div>
       </div>
       {/* <div className={`${styles.wrapper} wrapper`}>

@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import StarUnfill from "../../../public/images/star-unfill.svg";
+import ScrollAnimation from "react-animate-on-scroll";
 // import Image from "next/image";
 
 SwiperCore.use([Pagination, Autoplay]);
@@ -11,6 +12,12 @@ const TrustedBy = () => {
   return (
     <section className={styles.trustedBy}>
       <div className={`${styles.wrapper} wrapper`}>
+      <ScrollAnimation
+          animateIn='fadeIn'
+          duration={0.8}
+          delay={400}
+          animateOnce={true}
+        >
         <div className={styles.heading}>
           <h2>Trusted by Thousands of Happy Customer Worldwide</h2>
           <p>From startups to established brands, you'll be in good company.</p>
@@ -182,6 +189,7 @@ const TrustedBy = () => {
             Store
           </p>
         </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

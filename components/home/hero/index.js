@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
 // import Image from "next/image";
+import Accomplishment from "../accomplishment";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-import ScrollAnimation from "react-animate-on-scroll";
 SwiperCore.use([Pagination]);
 SwiperCore.use([Autoplay]);
 
@@ -114,7 +114,8 @@ const HomeHero = () => {
           </div>
         </SwiperSlide>
       </Swiper>{" "}
-      <ScrollAnimation
+      <Accomplishment />
+      {/* <ScrollAnimation
         animateIn='fadeIn'
         duration={0.8}
         delay={400}
@@ -153,7 +154,7 @@ const HomeHero = () => {
             </div>
           </div>
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
     </section>
   );
 };

@@ -1,0 +1,51 @@
+.accomplishment {
+  display: flex;
+  position: absolute;
+  bottom: -60px;
+  z-index: 2;
+  color: var(--black);
+  background-color: var(--white);
+  width: 85%;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 8px;
+
+  @media (max-width: 700px) {
+    padding: 40px 40px 40px 40px;
+  }
+  @media (max-width: 1387px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1315px) {
+    width: 95%;
+  }
+
+  .singleAccomplishment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      font-size: 24px;
+      line-height: 29px;
+      color: #333131;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      color: #333131;
+    }
+
+    @media (max-width: 700px) {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .icon {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+}
