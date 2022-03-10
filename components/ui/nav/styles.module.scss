@@ -70,7 +70,8 @@
 
         @media (max-width: 1264px) {
           color: var(--black) !important;
-          font-size: 16px;
+          font-size: 15px;
+          font-family: Proxima-Regular !important;
         }
 
         &.boldText {
@@ -398,23 +399,6 @@
               }
             }
           }
-        }
-      }
-
-      > .navLink {
-        color: var(--text-primary);
-        font-size: 15px;
-
-        @media (max-width: 1275px) {
-          width: var(--full);
-          font-size: 16px;
-          display: block;
-        }
-
-        &:hover {
-          color: #004ef0;
-          font-family: Proxima-Medium;
-          font-size: 17px;
         }
       }
     }
