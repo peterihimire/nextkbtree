@@ -143,7 +143,14 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
 
       <div className={styles.navLogout}>
         <Logout />
-        <button>Logout</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            router.push("/");
+          }}
+        >
+          Logout
+        </button>
       </div>
     </nav>
   );
