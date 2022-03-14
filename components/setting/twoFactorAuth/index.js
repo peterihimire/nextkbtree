@@ -1,29 +1,30 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss'
 
-const ChangePassword = () => {
+const TwoFactorAuth = () => {
   return (
     <div className={styles.content}>
-      <h3>Change Password</h3>
+      <h3>2FA Settings</h3>
+
       <form>
         <div className={styles.formGroup}>
           <Input
-            labelText='Old Password'
-            placeholder='Old Password'
+            labelText='Set Security Question'
+            placeholder='Set Security Question'
             // value='Peter Ihimire'
           />
         </div>
         <div className={styles.formGroup}>
           <Input
-            labelText='New Password'
-            placeholder='New Password'
+            labelText='Enter Answer'
+            placeholder='Enter Answer'
             // value='Peter Ihimire'
           />
         </div>
         <div className={styles.formGroup}>
           <Input
-            labelText='Confirm New Password'
-            placeholder='Confirm New Password'
+            labelText='Comfirm Password'
+            placeholder='Comfirm Password'
             // value='Peter Ihimire'
           />
         </div>
@@ -42,4 +43,4 @@ const ChangePassword = () => {
   );
 };
 
-export default ChangePassword;
+export default TwoFactorAuth;
