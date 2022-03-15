@@ -1,7 +1,14 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Bank from "../../public/images/bank.svg";
+import Bell from "../../public/images/bell.svg";
+import CreditCard from "../../public/images/credit-card.svg";
+import Lock from "../../public/images/lock.svg";
+import Person from "../../public/images/person.svg";
+import Shield from "../../public/images/shield.svg";
+
+import styles from "./styles.module.scss";
 
 const SettingzSubLayout = ({ children }) => {
   const router = useRouter();
@@ -22,7 +29,7 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      Profile Settings
+                      <Person /> <span>Profile Settings</span>
                     </a>
                   </Link>
                 </li>
@@ -35,7 +42,7 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      Card Settings
+                      <CreditCard /> <span>Card Settings</span>
                     </a>
                   </Link>
                 </li>
@@ -48,7 +55,8 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      Bank Settings
+                      <Bank />
+                      <span>Bank Settings</span>
                     </a>
                   </Link>
                 </li>
@@ -61,7 +69,8 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      Notifications
+                      <Bell />
+                      <span>Notifications</span>
                     </a>
                   </Link>
                 </li>
@@ -74,7 +83,7 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      Change Password
+                      <Lock /> <span>Change Password</span>
                     </a>
                   </Link>
                 </li>
@@ -87,7 +96,7 @@ const SettingzSubLayout = ({ children }) => {
                           : ""
                       }`}
                     >
-                      2FA Settings
+                      <Shield /> <span> 2FA Settings</span>
                     </a>
                   </Link>
                 </li>

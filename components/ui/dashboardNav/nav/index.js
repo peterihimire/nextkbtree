@@ -126,7 +126,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
-          <ActiveLink href='/settings' linkClass={`${styles.dashLink}`}>
+          <ActiveLink href='/setting' linkClass={`${styles.dashLink}`}>
             <Settings />
             <span>Settings</span>
           </ActiveLink>
