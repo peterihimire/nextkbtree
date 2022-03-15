@@ -1,4 +1,6 @@
 import React from "react";
+import Input from "../../ui/profileInput";
+
 import styles from "./styles.module.scss";
 
 const Profile = () => {

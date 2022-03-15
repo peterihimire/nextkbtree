@@ -1,0 +1,179 @@
+.content {
+  width: 60%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    .formGroup {
+      margin-bottom: 20px;
+    }
+
+    .submitBtn {
+      margin-top: 40px;
+    }
+  }
+
+  .cardWrapper {
+  }
+
+  .bankCard {
+    display: flex;
+    background: #fefefe;
+    border: 1px solid #b6b7b9;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    // width: 100%;
+
+    img {
+      border-radius: 8px;
+    }
+
+    .bankDetailDelete {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0px 20px;
+
+      .bankDetail {
+        h4 {
+          font-size: 16px;
+          line-height: 20px;
+          color: #333131;
+        }
+        h5 {
+          font-size: 12px;
+          line-height: 15px;
+          color: #65676f;
+          margin: 5px 0px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          color: #65676f;
+        }
+      }
+    }
+  }
+  .atmCard1 {
+    background: linear-gradient(
+      136.48deg,
+      #004ef0 3.14%,
+      #0202c6 98.63%
+    );
+    color: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    margin: 0px 0px 20px 0px;
+
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 10px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 15px;
+      margin: 10px 0;
+    }
+
+    .expiryDelete {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .date {
+        small {
+          font-size: 7px;
+          line-height: 9px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  .atmCard2 {
+    background: linear-gradient(
+      136.48deg,
+      #f08200 3.14%,
+      #c66002 98.63%
+    );
+    color: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    margin: 0px 0px 20px 0px;
+
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 10px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 15px;
+      margin: 10px 0;
+    }
+
+    .expiryDelete {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .date {
+        small {
+          font-size: 7px;
+          line-height: 9px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  .submitBtn {
+    margin-top: 40px;
+  }
+
+  .notifWrapper {
+    .notifSwitch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: #fefefe;
+      border: 1px solid #b6b7b9;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin-bottom: 15px;
+
+      h4 {
+        font-size: 12px;
+        line-height: 15px;
+        color: #333131;
+      }
+    }
+  }
+}

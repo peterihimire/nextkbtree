@@ -1,4 +1,6 @@
 import React from "react";
+import Switch from "../../ui/switch";
+
 import styles from "./styles.module.scss";
 
 const Notification = () => {
