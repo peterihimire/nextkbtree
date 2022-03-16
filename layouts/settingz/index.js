@@ -61,10 +61,10 @@ const SettingzSubLayout = ({ children }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href='/setting/notifications-setting'>
+                  <Link href='/setting/notifications'>
                     <a
                       className={`${styles.link} ${
-                        router.pathname === "/setting/notifications-setting"
+                        router.pathname === "/setting/notifications"
                           ? styles.active
                           : ""
                       }`}
@@ -75,10 +75,10 @@ const SettingzSubLayout = ({ children }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href='/setting/change-password-setting'>
+                  <Link href='/setting/change-password'>
                     <a
                       className={`${styles.link} ${
-                        router.pathname === "/setting/change-password-setting"
+                        router.pathname === "/setting/change-password"
                           ? styles.active
                           : ""
                       }`}
@@ -88,10 +88,10 @@ const SettingzSubLayout = ({ children }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href='/setting/two-factor-setting'>
+                  <Link href='/setting/2-factor-auth'>
                     <a
                       className={`${styles.link} ${
-                        router.pathname === "/setting/two-factor-setting"
+                        router.pathname === "/setting/2-factor-auth"
                           ? styles.active
                           : ""
                       }`}
