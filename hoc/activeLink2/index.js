@@ -5,9 +5,13 @@ import Link from "next/link";
 
 const ActiveLink2 = ({ href, name, as, children, linkClass }) => {
   const router = useRouter();
-
+console.log(router.asPath)
+console.log(router.pathname)
   const style = {
     backgroundColor: router.pathname === href ? "rgba(255, 255, 255, 0.3)" : "",
+    // backgroundColor:  router.pathname.startsWith('/setting')
+    //   ? "rgba(255, 255, 255, 0.3)"
+    //   : "",
     color: router.pathname === href ? " #004EF0" : "",
     // fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
     borderRight: router.pathname === href ? "solid #fff 5px" : "",
