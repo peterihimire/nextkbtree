@@ -105,8 +105,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='1'
-                id='1'
+                key='5'
+                id='5'
                 src='/images/recommend-invest-img.png'
                 alt='img hot'
                 title='Aklas real estate dual home'
@@ -118,8 +118,8 @@ const Investments = () => {
                 // openModal={applyHandler}
               />
               <DashboardCard
-                key='2'
-                id='2'
+                key='6'
+                id='6'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'
@@ -130,8 +130,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='3'
-                id='3'
+                key='7'
+                id='7'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'
@@ -142,8 +142,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='4'
-                id='4'
+                key='8'
+                id='8'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'
@@ -154,8 +154,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='1'
-                id='1'
+                key='9'
+                id='9'
                 src='/images/recommend-invest-img.png'
                 alt='img hot'
                 title='Aklas real estate dual home'
@@ -167,8 +167,8 @@ const Investments = () => {
                 // openModal={applyHandler}
               />
               <DashboardCard
-                key='2'
-                id='2'
+                key='10'
+                id='10'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'
@@ -179,8 +179,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='3'
-                id='3'
+                key='11'
+                id='11'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'
@@ -191,8 +191,8 @@ const Investments = () => {
                 raisedAmt='2,000,000'
               />
               <DashboardCard
-                key='4'
-                id='4'
+                key='12'
+                id='12'
                 src='/images/recommend-invest-img.png'
                 alt='img'
                 title='Aklas real estate dual home'

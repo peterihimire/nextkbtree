@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 // import Dropdown from "../dropdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import ActiveLink from "../../../../hoc/activeLink2";
+import ActiveLink2 from "../../../../hoc/activeLink2";
 import Logo from "../../../../public/images/logo-light.svg";
 import LogoDark from "../../../../public/images/logo-dark.svg";
 import Dashboard from "../../../../public/images/dashboardd.svg";
@@ -74,66 +74,66 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <ActiveLink href='/dashboard' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/dashboard' linkClass={`${styles.dashLink}`}>
             <Dashboard />
             <span>Dashboard</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/crowd-invest' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/crowd-invest' linkClass={`${styles.dashLink}`}>
             <CrowdInvest />
             <span>Crowd Invest</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink
+          <ActiveLink2
             href='/long-hold-investment'
             linkClass={`${styles.dashLink}`}
           >
             <LongHold />
             <span>Long Hold Investment</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/favourite' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/favourite' linkClass={`${styles.dashLink}`}>
             <Favourite />
             <span>Favourite</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/wallet' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/wallet' linkClass={`${styles.dashLink}`}>
             <Wallet />
             <span>Wallet</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/my-portfolio' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/my-portfolio' linkClass={`${styles.dashLink}`}>
             <Portfolio />
             <span>My Portfolio</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/referral' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/referral' linkClass={`${styles.dashLink}`}>
             <Referral />
             <span>Referral</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
 
         <li>
-          <ActiveLink href='/setting' linkClass={`${styles.dashLink}`}>
+          <ActiveLink2 href='/setting' linkClass={`${styles.dashLink}`}>
             <Settings />
             <span>Settings</span>
-          </ActiveLink>
+          </ActiveLink2>
         </li>
       </ul>
 
-      <Link href='register-more'>
+      <Link href='/register-more'>
         <a>
           <div className={styles.attention}>
             <Attention /> <p>Tap to complete your profile setup</p>

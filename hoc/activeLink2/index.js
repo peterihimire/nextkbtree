@@ -9,19 +9,24 @@ const ActiveLink2 = ({ href, name, as, children, linkClass }) => {
   console.log(router.pathname);
   console.log(href);
   const style = {
-    backgroundColor:
-      router.pathname === href ||
-      router.pathname.startsWith("/setting") === href
-        ? "rgba(255, 255, 255, 0.3)"
-        : "",
     // backgroundColor:  router.pathname.startsWith('/setting')
     //   ? "rgba(255, 255, 255, 0.3)"
     //   : "",
-    color: router.pathname === href ? " #004EF0" : "",
-    // fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
-    borderRight: router.pathname === href ? "solid #fff 5px" : "",
-    borderRadius: router.pathname === href ? "5px" : "",
+
     // fontSize: router.pathname === href ? "50px" : "",
+    // fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
+    backgroundColor:
+      router.pathname.slice(0, 8) == href.slice(0, 8)
+        ? "rgba(255, 255, 255, 0.3)"
+        : "",
+    // backgroundColor: router.pathname === href ? "rgba(255, 255, 255, 0.3)" : "",
+    color: router.pathname.slice(0, 8) == href.slice(0, 8) ? " #004EF0" : "",
+    // color: router.pathname === href ? " #004EF0" : "",
+    borderRight:
+      router.pathname.slice(0, 8) == href.slice(0, 8) ? "solid #fff 5px" : "",
+    // borderRight: router.pathname === href ? "solid #fff 5px" : "",
+    borderRadius: router.pathname.slice(0, 8) == href.slice(0, 8) ? "5px" : "",
+    // borderRadius: router.pathname === href ? "5px" : "",
   };
 
   return (
