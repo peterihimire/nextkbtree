@@ -4,8 +4,12 @@ import Input from "../../ui/customInputWithIcon";
 import styles from "./styles.module.scss";
 import DashboardCard from "../../ui/cards/dashboardCard";
 import Modal from "../../ui/modal/modalInvestment";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const AllInvestments = () => {
+  const router = useRouter();
+
   const [tabIndex, setTabIndex] = useState(1);
   const [showModal, setShowModal] = useState(false);
 
@@ -523,9 +527,13 @@ const AllInvestments = () => {
           </div>
 
           <div className={styles.modalFooter}>
-            <button className={`${styles.invesNowtBtn} btn-primary btn-large`}>
-              Invest Now
-            </button>
+            <Link
+              href='/crowd-invest/order-confirmation'
+            >
+              <a className={`${styles.invesNowtBtn} btn-primary btn-large`}>
+                Invest Now
+              </a>
+            </Link>
           </div>
         </Modal>
       )}
