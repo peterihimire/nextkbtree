@@ -50,6 +50,8 @@ const Header = ({ isOpen, clicked }) => {
         isOpen ||
         router.pathname === "/contact-us" ||
         router.pathname === "/about-us" ||
+        router.pathname === "/about-us/who-we-are" ||
+        router.pathname === "/about-us/our-vision" ||
         router.pathname === "/faq"
           ? styles.bgLight
           : ""
@@ -57,12 +59,14 @@ const Header = ({ isOpen, clicked }) => {
     >
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href='/'>
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
               {bgChange ||
               isOpen ||
               router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
+              router.pathname === "/about-us/who-we-are" ||
+              router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq" ? (
                 <LogoDark />
               ) : (
@@ -81,17 +85,19 @@ const Header = ({ isOpen, clicked }) => {
 
         <div className={styles.hamburgerBtn}>
           <button
-            type="button"
-            aria-label="navigation button"
+            type='button'
+            aria-label='navigation button'
             onClick={clicked}
             className={`hamburger hamburger--spin ${isOpen ? "is-active" : ""}`}
           >
-            <span className="hamburger-box">
+            <span className='hamburger-box'>
               <span
                 className={`${
                   bgChange ||
                   router.pathname === "/contact-us" ||
                   router.pathname === "/about-us" ||
+                  router.pathname === "/about-us/who-we-are" ||
+                  router.pathname === "/about-us/our-vision" ||
                   router.pathname === "/faq"
                     ? "hamburger-inner hamburger-inner-dark"
                     : "hamburger-inner hamburger-inner-light"

@@ -9,7 +9,6 @@ import CrowdFunding from "../../components/aboutUs/crowdFunding";
 import CrowdInvest from "../../components/aboutUs/crowdInvest";
 import Team from "../../components/aboutUs/team";
 
-
 export default function About() {
   return (
     <>

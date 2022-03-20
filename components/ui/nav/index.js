@@ -46,6 +46,8 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               bgChange ||
               router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
+              router.pathname === "/about-us/who-we-are" ||
+              router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
                 ? styles.darkText
                 : ""
@@ -62,6 +64,8 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               bgChange ||
               router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
+              router.pathname === "/about-us/who-we-are" ||
+              router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
                 ? styles.darkText
                 : ""
@@ -69,10 +73,10 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           />
         </li>
 
-        {/* <li>
+        <li>
           <ActiveLink
-            name="About Us"
-            href="/about-us"
+            name='About Us'
+            href='/about-us'
             linkClass={`${
               isDrop ||
               bgChange ||
@@ -83,7 +87,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 : ""
             }`}
           />
-        </li> */}
+        </li>
 
         {/* <li className={styles.hasDrop}>
           <button
@@ -123,16 +127,27 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           </div>
         </li> */}
 
-        <li className={styles.hasDrop}>
+        {/* <li className={styles.hasDrop}>
           <button
             className={styles.hasDropBtn}
             onClick={() => {
               openAbout(!about);
             }}
+            onMouseEnter={() => {
+              openAbout(!about);
+            }}
+            onMouseLeave={() => {
+              openAbout(!about);
+            }}
           >
             <span>About Us</span>
-            <i className='far fa-chevron-down'></i>
+            {about ? (
+              <i className='far fa-chevron-up'></i>
+            ) : (
+              <i className='far fa-chevron-down'></i>
+            )}
           </button>
+
           <div
             className={`${styles.dropdownMenu} ${styles.dropResources} ${
               about ? styles.show : ""
@@ -141,13 +156,13 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             <div className={styles.dropdownContainer}>
               <ul className={styles.dropdownWrapper}>
                 <li>
-                  <Link href='/about-us/our-mission'>
+                  <Link href='/about-us/who-we-are'>
                     <a>
                       <div className={styles.dropIcon}></div>
                       <div className={styles.dropText}>
-                        <span className={styles.dropTextHead}>Our Mission</span>
+                        <span className={styles.dropTextHead}>Who We Are</span>
                         <span className={styles.dropDesc}>
-                          Quickly and simply map your company's cloud talent.
+                          Who KoboTree are as a Real Estate Agent
                         </span>
                       </div>
                     </a>
@@ -192,13 +207,13 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </a>
                 </li>
                 <li>
-                  <Link href='/about-us/who-we-are'>
+                  <Link href='/about-us/our-mission'>
                     <a>
                       <div className={styles.dropIcon}></div>
                       <div className={styles.dropText}>
-                        <span className={styles.dropTextHead}>Who We Are</span>
+                        <span className={styles.dropTextHead}>Our Mission</span>
                         <span className={styles.dropDesc}>
-                          Who KoboTree are as a Real Estate Agent
+                          Quickly and simply map your company's cloud talent.
                         </span>
                       </div>
                     </a>
@@ -218,7 +233,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               </ul>
             </div>
           </div>
-        </li>
+        </li> */}
 
         <li>
           <ActiveLink
@@ -229,6 +244,8 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               bgChange ||
               router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
+              router.pathname === "/about-us/who-we-are" ||
+              router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
                 ? styles.darkText
                 : ""
@@ -246,6 +263,8 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 bgChange ||
                 router.pathname === "/contact-us" ||
                 router.pathname === "/about-us" ||
+                router.pathname === "/about-us/who-we-are" ||
+                router.pathname === "/about-us/our-vision" ||
                 router.pathname === "/faq"
                   ? "btn-transparent-dark btn-login"
                   : "btn-transparent btn-login"
