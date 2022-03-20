@@ -69,7 +69,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           />
         </li>
 
-        <li>
+        {/* <li>
           <ActiveLink
             name="About Us"
             href="/about-us"
@@ -83,7 +83,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                 : ""
             }`}
           />
-        </li>
+        </li> */}
 
         {/* <li className={styles.hasDrop}>
           <button
@@ -123,7 +123,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           </div>
         </li> */}
 
-        {/* <li className={styles.hasDrop}>
+        <li className={styles.hasDrop}>
           <button
             className={styles.hasDropBtn}
             onClick={() => {
@@ -141,7 +141,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             <div className={styles.dropdownContainer}>
               <ul className={styles.dropdownWrapper}>
                 <li>
-                  <Link href='/insights'>
+                  <Link href='/about-us/our-mission'>
                     <a>
                       <div className={styles.dropIcon}></div>
                       <div className={styles.dropText}>
@@ -154,7 +154,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </Link>
                 </li>
                 <li>
-                  <a href='/'>
+                  <a href='/about-us/our-vision'>
                     <div className={styles.dropIcon}></div>
                     <div className={styles.dropText}>
                       <span className={styles.dropTextHead}>Our Vision</span>
@@ -165,7 +165,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </a>
                 </li>
                 <li>
-                  <Link href='/case-studies'>
+                  <Link href='/about-us/case-studies'>
                     <a>
                       <div className={styles.dropIcon}></div>
                       <div className={styles.dropText}>
@@ -181,7 +181,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </Link>
                 </li>
                 <li>
-                  <a href='/'>
+                  <a href='/about-us/blog'>
                     <div className={styles.dropIcon}></div>
                     <div className={styles.dropText}>
                       <span className={styles.dropTextHead}>Blog</span>
@@ -192,7 +192,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </a>
                 </li>
                 <li>
-                  <Link href='/about-us'>
+                  <Link href='/about-us/who-we-are'>
                     <a>
                       <div className={styles.dropIcon}></div>
                       <div className={styles.dropText}>
@@ -205,7 +205,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
                   </Link>
                 </li>
                 <li>
-                  <a href='/'>
+                  <a href='/about-us/ebooks'>
                     <div className={styles.dropIcon}></div>
                     <div className={styles.dropText}>
                       <span className={styles.dropTextHead}>Ebooks</span>
@@ -218,7 +218,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               </ul>
             </div>
           </div>
-        </li> */}
+        </li>
 
         <li>
           <ActiveLink
