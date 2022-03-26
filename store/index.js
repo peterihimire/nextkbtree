@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import { HYDRATE, createWrapper } from "next-redux-wrapper";
 import thunkMiddleware from "redux-thunk";
-
+import auth from "./reducers/auth";
 
 const bindMiddleware = (middleware) => {
   if (process.env.NODE_ENV !== "production") {
@@ -13,6 +13,7 @@ const bindMiddleware = (middleware) => {
 
 const rootReducer = combineReducers({
   // reducers will go in here
+  auth,
 });
 
 const makeStore = ({ isServer }) => {
@@ -33,7 +34,7 @@ const makeStore = ({ isServer }) => {
 
     const store = createStore(
       persistedReducer,
-      bindMiddleware([thunkMiddleware])
+      bindMiddleware([thunkMiddleware]),
     );
 
     store.__persistor = persistStore(store);
