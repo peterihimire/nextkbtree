@@ -51,7 +51,7 @@ export const register = ({
         password,
       });
       resetForm({ firstName: "", lastName: "", email: "", password: "" });
-      console.log(response);
+      // console.log(response);
       dispatch(authResponse(response.data.message));
     } catch (err) {
       dispatch(authError(err.response));

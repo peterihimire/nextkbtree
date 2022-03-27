@@ -5,8 +5,10 @@ import Link from "next/link";
 // import Image from "next/image";
 import Modal from "../ui/modal/modalRegister";
 import { useSelector, useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 const Register = () => {
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
 
   const { error, loading, response } = useSelector((state) => {
@@ -18,9 +20,7 @@ const Register = () => {
     };
   });
 
-  useEffect(() => {
-
-  },[])
+  useEffect(() => {}, []);
 
   // const applyHandler = () => {
   //   setShowModal(true);
@@ -62,8 +62,19 @@ const Register = () => {
             document.body.classList.remove("_fixed");
           }}
         >
-          <div>
-            <h2>This is the success register modal {response} </h2>
+          <div className={styles.registerModal}>
+            <h2>{response}</h2>
+            <div>
+              Proceed to login
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push("/login");
+                }}
+              >
+                Login
+              </button>
+            </div>
           </div>
         </Modal>
       )}
