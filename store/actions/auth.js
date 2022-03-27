@@ -16,6 +16,13 @@ export const authError = (payload) => {
   };
 };
 
+export const authResponse = (payload) => {
+  return {
+    type: actionTypes.AUTH_RESPONSE,
+    payload,
+  };
+};
+
 export const setCurrentUser = (payload) => {
   return {
     type: actionTypes.SET_USER,
@@ -44,7 +51,8 @@ export const register = ({
         password,
       });
       resetForm({ firstName: "", lastName: "", email: "", password: "" });
-      dispatch(setCurrentUser(response.data.accessToken));
+      console.log(response);
+      dispatch(authResponse(response.data.message));
     } catch (err) {
       dispatch(authError(err.response));
     } finally {

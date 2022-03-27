@@ -6,10 +6,11 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import * as actions from "../../../store/actions";
 import { useSelector, useDispatch } from "react-redux";
-import axios from "../../../utils/axios";
+// import Modal from "../../ui/modal";
 
 const Form = () => {
   const dispatch = useDispatch();
+  // const [showModal, setShowModal] = useState(false);
 
   const { error, loading } = useSelector((state) => {
     // console.log(state);
@@ -39,12 +40,6 @@ const Form = () => {
 
       password: Yup.string().required("Required *"),
     }),
-    // onSubmit: (values, { resetForm }) => {
-    //   const id = content.id;
-    //   console.log(values, id);
-    //   dispatch(actions.careerApplication({ ...values, id }));
-    //   resetForm({ values: "" });
-    // },
 
     onSubmit: async (values, { resetForm }) => {
       console.log(values);

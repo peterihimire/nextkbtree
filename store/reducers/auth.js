@@ -1,10 +1,10 @@
-
 import * as actionTypes from "../actions/actionTypes";
 
 const initialState = {
   // currentUser: JSON.parse(localStorage.getItem("user")) || null,
   loading: false,
   error: null,
+  response: "",
 };
 
 const reducer = (state = initialState, action) => {
@@ -19,11 +19,17 @@ const reducer = (state = initialState, action) => {
         ...state,
         loading: action.payload,
       };
+    case actionTypes.AUTH_RESPONSE:
+      return {
+        ...state,
+        response: action.payload,
+      };
     case actionTypes.AUTH_ERROR:
       return {
         ...state,
         error: action.payload,
       };
+
     default:
       return state;
   }
