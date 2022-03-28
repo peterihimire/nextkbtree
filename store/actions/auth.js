@@ -60,3 +60,25 @@ export const register = ({
     }
   };
 };
+
+
+// login
+
+export const login = ({ email, password }) => {
+  return async (dispatch) => {
+    dispatch(authStart(true));
+
+    try {
+      const response = await axios.post("user/auth/login", {
+        email,
+        password,
+      });
+
+      dispatch(setCurrentUser(response.data.accessToken));
+    } catch (err) {
+      dispatch(authError(err.response.data.error.message));
+    } finally {
+      dispatch(authStart(false));
+    }
+  };
+};
