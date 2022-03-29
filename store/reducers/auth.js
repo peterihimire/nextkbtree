@@ -4,7 +4,7 @@ const initialState = {
   // currentUser: JSON.parse(localStorage.getItem("user")) || null,
   loading: false,
   error: null,
-  response: "",
+  response: '',
 };
 
 const reducer = (state = initialState, action) => {

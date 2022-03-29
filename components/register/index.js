@@ -4,11 +4,13 @@ import Form from "./form";
 import Link from "next/link";
 // import Image from "next/image";
 import Modal from "../ui/modal/modalRegister";
+import * as actions from "../../store/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 
 const Register = () => {
   const router = useRouter();
+  const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(true);
 
   const { error, loading, response } = useSelector((state) => {
@@ -19,17 +21,27 @@ const Register = () => {
       response: state.auth.response,
     };
   });
+  console.log(response);
 
-  useEffect(() => {}, []);
+  // useEffect(() => {
+  //   response === true;
+  //   setIsResponse(response);
+  //   document.documentElement.classList.add("_fixed");
+  //   document.body.classList.add("_fixed");
+  // }, []);
 
-
-  
   // const applyHandler = () => {
   //   setShowModal(true);
 
-    // document.documentElement.classList.add("_fixed");
-    // document.body.classList.add("_fixed");
+  // document.documentElement.classList.add("_fixed");
+  // document.body.classList.add("_fixed");
   // };
+
+  // {
+  //   response && setShowModal(true);
+  //   document.documentElement.classList.add("_fixed");
+  //   document.body.classList.add("_fixed");
+  // }
 
   return (
     <>
@@ -58,7 +70,9 @@ const Register = () => {
           // header='This is the modal header'
           bodyClass={styles.modalContent}
           click={() => {
-            setShowModal(false);
+            // setShowModal(false);
+
+            dispatch(actions.authResponse(""));
 
             document.documentElement.classList.remove("_fixed");
             document.body.classList.remove("_fixed");

@@ -61,7 +61,6 @@ export const register = ({
   };
 };
 
-
 // login
 
 export const login = ({ email, password }) => {
@@ -73,10 +72,10 @@ export const login = ({ email, password }) => {
         email,
         password,
       });
-
+      console.log(response.data);
       dispatch(setCurrentUser(response.data));
     } catch (err) {
-      dispatch(authError(err.response.data.error.message));
+      dispatch(authError(err.response));
     } finally {
       dispatch(authStart(false));
     }

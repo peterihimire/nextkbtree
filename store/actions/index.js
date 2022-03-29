@@ -1,1 +1,8 @@
-export { authError, setCurrentUser, authStart, register, login } from "./auth";
+export {
+  authError,
+  setCurrentUser,
+  authResponse,
+  authStart,
+  register,
+  login,
+} from "./auth";
