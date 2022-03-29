@@ -22,30 +22,18 @@ const Form = () => {
   });
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
       email: "",
       password: "",
     },
     validationSchema: Yup.object({
-      firstName: Yup.string()
-        .min(4, "Characters must not be less than 4")
-        .matches(/^[A-Za-z ]*$/, "Please enter a valid name")
-        .required("Required *"),
-      lastName: Yup.string()
-        .min(4, "Characters must not be less than 4")
-        .matches(/^[A-Za-z ]*$/, "Please enter a valid name")
-        .required("Required *"),
-
       email: Yup.string().email("Invalid email address").required("Required *"),
-
       password: Yup.string().required("Required *"),
     }),
 
     onSubmit: async (values, { resetForm }) => {
       console.log(values);
 
-      dispatch(actions.register({ ...values, resetForm }));
+      dispatch(actions.login({ ...values, resetForm }));
     },
   });
 
@@ -53,14 +41,14 @@ const Form = () => {
     <div className={styles.loginForm}>
       <h2>Log in into your Account</h2>
 
-      <form>
+      <form onSubmit={formik.handleSubmit}>
         <div className={styles.formGroup}>
           <Input
             // labelText="What’s your Email?"
             type='email'
             name='email'
             id='email'
-            required
+            // required
             placeholder='Email'
             value={formik.values.email}
             onBlur={formik.handleBlur}
@@ -76,7 +64,7 @@ const Form = () => {
             type='password'
             name='password'
             id='password'
-            required
+            // required
             placeholder='Password'
             value={formik.values.password}
             onBlur={formik.handleBlur}
@@ -95,12 +83,15 @@ const Form = () => {
         <div className={styles.submitBtn}>
           <button
             className='btn-primary btn-block'
-            onClick={(e) => {
-              e.preventDefault();
-              router.push("/dashboard");
-            }}
+            type='submit'
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   router.push("/dashboard");
+            // }}
           >
-            Send
+            {/* Send */}
+            {loading && "Loading..."}
+            {!loading && <div>Send</div>}
           </button>
         </div>
 

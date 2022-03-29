@@ -74,7 +74,7 @@ export const login = ({ email, password }) => {
         password,
       });
 
-      dispatch(setCurrentUser(response.data.accessToken));
+      dispatch(setCurrentUser(response.data));
     } catch (err) {
       dispatch(authError(err.response.data.error.message));
     } finally {

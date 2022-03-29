@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 
 const Register = () => {
   const router = useRouter();
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const { error, loading, response } = useSelector((state) => {
     // console.log(state);
@@ -22,11 +22,13 @@ const Register = () => {
 
   useEffect(() => {}, []);
 
+
+  
   // const applyHandler = () => {
   //   setShowModal(true);
 
-  //   document.documentElement.classList.add("_fixed");
-  //   document.body.classList.add("_fixed");
+    // document.documentElement.classList.add("_fixed");
+    // document.body.classList.add("_fixed");
   // };
 
   return (
