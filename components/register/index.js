@@ -73,7 +73,6 @@ const Register = () => {
             // setShowModal(false);
 
             dispatch(actions.authResponse(""));
-
             document.documentElement.classList.remove("_fixed");
             document.body.classList.remove("_fixed");
           }}

@@ -30,6 +30,19 @@ export const setCurrentUser = (payload) => {
   };
 };
 
+export const removeCurrentUser = () => {
+  return {
+    type: actionTypes.REMOVE_USER,
+  };
+};
+
+export const restoreCurrentUser = (payload) => {
+  return {
+    type: actionTypes.RESTORE_USER,
+    payload,
+  };
+};
+
 // register
 
 export const register = ({
@@ -66,6 +79,37 @@ export const register = ({
 export const login = ({ email, password }) => {
   return async (dispatch) => {
     dispatch(authStart(true));
+
+    try {
+      const response = await axios.post("user/auth/login", {
+        email,
+        password,
+      });
+      console.log(response.data);
+      dispatch(setCurrentUser(response.data));
+    } catch (err) {
+      dispatch(authError(err.response));
+    } finally {
+      dispatch(authStart(false));
+    }
+  };
+};
+
+// logout
+
+export const logout = () => {
+  return async (dispatch) => {
+    // dispatch(authStart(true));
+    dispatch(removeCurrentUser());
+  };
+};
+
+// restore
+
+export const restore = ({ email, password }) => {
+  return async (dispatch) => {
+    dispatch(authStart(true));
+    dispatch(restoreCurrentUser());
 
     try {
       const response = await axios.post("user/auth/login", {
