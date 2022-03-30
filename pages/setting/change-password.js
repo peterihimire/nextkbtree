@@ -19,7 +19,7 @@ const ChangePasswordSetting = () => {
 
   useEffect(() => {
     if (isLoggedIn === true) {
-      router.push("/setting/notifications");
+      router.push("/setting/change-password");
     } else {
       router.push("/login");
     }
