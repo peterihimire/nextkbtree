@@ -18,10 +18,14 @@ import Settings from "../../../../public/images/settings.svg";
 import Attention from "../../../../public/images/attention.svg";
 import Logout from "../../../../public/images/logoutt.svg";
 
+import { useSelector, useDispatch } from "react-redux";
+import * as actions from "../../../../store/actions";
+
 const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   // const [showLang, setShowLang] = useState(false);
 
   const router = useRouter();
+  const dispatch = useDispatch();
 
   const crowdInvest = "/crowd-invest";
   const orderConfirmation = "/order-confirmation";
@@ -146,7 +150,8 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            router.push("/");
+            dispatch(actions.removeCurrentUser());
+            router.push("/login");
           }}
         >
           Logout

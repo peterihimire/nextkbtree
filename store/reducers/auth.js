@@ -1,10 +1,24 @@
 import * as actionTypes from "../actions/actionTypes";
 
+const getLocalStorage = () => {
+  if (typeof window !== "undefined") {
+    return JSON.parse(localStorage.getItem("userToken")) || null;
+  }
+};
+
+const removeLocalStorage = () => {
+  if (typeof window !== "undefined") {
+    return JSON.parse(localStorage.removeItem("userToken")) || "";
+  }
+};
+
 const initialState = {
-  // currentUser: JSON.parse(localStorage.getItem("user")) || null,
+  // currentUser: JSON.parse(localStorage.getItem("userToken")) || null,
+  currentUser: getLocalStorage,
+  isLoggedIn: false,
   loading: false,
   error: null,
-  response: '',
+  response: "",
 };
 
 const reducer = (state = initialState, action) => {
@@ -13,6 +27,14 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         currentUser: action.payload,
+        isLoggedIn: true,
+      };
+    case actionTypes.REMOVE_USER:
+      return {
+        ...state,
+        // currentUser: removeLocalStorage,
+        currentUser: localStorage.removeItem("userToken") ,
+        isLoggedIn: false,
       };
     case actionTypes.AUTH_START:
       return {

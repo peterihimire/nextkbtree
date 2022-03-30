@@ -86,7 +86,8 @@ export const login = ({ email, password }) => {
         password,
       });
       console.log(response.data);
-      dispatch(setCurrentUser(response.data));
+      console.log(response.data.accessToken);
+      dispatch(setCurrentUser(response.data.accessToken));
     } catch (err) {
       dispatch(authError(err.response));
     } finally {
@@ -117,7 +118,8 @@ export const restore = ({ email, password }) => {
         password,
       });
       console.log(response.data);
-      dispatch(setCurrentUser(response.data));
+      console.log(response.data.accessToken);
+      dispatch(setCurrentUser(response.data.accessToken));
     } catch (err) {
       dispatch(authError(err.response));
     } finally {

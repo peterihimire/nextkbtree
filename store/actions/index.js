@@ -1,6 +1,7 @@
 export {
   authError,
   setCurrentUser,
+  removeCurrentUser,
   authResponse,
   authStart,
   register,
