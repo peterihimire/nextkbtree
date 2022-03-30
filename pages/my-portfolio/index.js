@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 // import * as actions from "../../../store/actions";
 import { useSelector, useDispatch } from "react-redux";
 
-const Settings = () => {
+const MyPortfolio = () => {
 
   const router = useRouter();
  
@@ -38,8 +38,8 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default MyPortfolio;
 
-Settings.getLayout = function getLayout(page) {
+MyPortfolio.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };

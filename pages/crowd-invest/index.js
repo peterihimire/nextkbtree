@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../../layouts/dashboard";
 import AllInvestments from "../../components/crowdInvest/AllInvestments";
 import { useRouter } from "next/router";
-// import * as actions from "../../../store/actions";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const CrowdInvest = () => {
   const router = useRouter();
