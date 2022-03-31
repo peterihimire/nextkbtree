@@ -8,6 +8,7 @@ import styles from "./styles.module.scss";
 import Modal from "../../ui/modal";
 
 const LongHold = () => {
+  // make api call here
   const [isChecked, setIsChecked] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
   const handleOnChange = () => {
