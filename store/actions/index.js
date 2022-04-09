@@ -6,4 +6,5 @@ export {
   authStart,
   register,
   login,
+  restoreCurrentUser
 } from "./auth";
