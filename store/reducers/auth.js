@@ -6,11 +6,7 @@ const getLocalStorage = () => {
   }
 };
 
-const removeLocalStorage = () => {
-  if (typeof window !== "undefined") {
-    return JSON.parse(localStorage.removeItem("userToken")) || "";
-  }
-};
+
 
 const initialState = {
   // currentUser: JSON.parse(localStorage.getItem("userToken")) || null,
@@ -32,7 +28,6 @@ const reducer = (state = initialState, action) => {
     case actionTypes.REMOVE_USER:
       return {
         ...state,
-        // currentUser: removeLocalStorage,
         currentUser: localStorage.removeItem("userToken") ,
         isLoggedIn: false,
       };
