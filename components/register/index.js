@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 const Register = () => {
   const router = useRouter();
   const dispatch = useDispatch();
-  const [showModal, setShowModal] = useState(true);
+  // const [showModal, setShowModal] = useState(true);
 
   const { error, loading, response } = useSelector((state) => {
     // console.log(state);
