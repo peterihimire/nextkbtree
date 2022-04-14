@@ -4,7 +4,7 @@ import ArrowUp from "/public/images/arrow-up.svg";
 import ArrowDown from "/public/images/arrow-dowm.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
-// import Image from "next/image";
+
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(0);
