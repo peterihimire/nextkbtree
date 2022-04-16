@@ -4,11 +4,8 @@ import ArrowUp from "/public/images/arrow-up.svg";
 import ArrowDown from "/public/images/arrow-dowm.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
-
-
 const Accordion = () => {
   const [clicked, setClicked] = useState(0);
-  // const router = useRouter();
 
   const toggler = (index) => {
     if (clicked === index) {
