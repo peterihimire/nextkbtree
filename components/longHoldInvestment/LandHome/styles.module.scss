@@ -10,17 +10,8 @@
   }
 
   .wrapper {
-    // width: 100%;
-    // display: grid;
-    // grid-template-columns: 30% 68%;
-    // column-gap: 20px;
-    // background: yellowgreen;
-
-    // .wrapper {
     width: 95%;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: space-between;
     align-items: center;
     height: 100%;
     max-width: var(--wrapper-max-width);
@@ -34,24 +25,13 @@
     }
 
     @media (max-width: 1264px) {
-      // justify-content: space-between;
     }
-    // }
 
     .investmentContent {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      // .inputHolder {
-      //   width: 600px;
-      // }
-
-      // .searchInput {
-      //   background-color: var(--white);
-      //   border-color: var(--white);
-      // }
 
       .selectWrap {
         width: 500px;
@@ -73,20 +53,6 @@
       .filterInput {
         background-color: var(--white);
       }
-
-      // .inputHolder {
-      //   width: 600px;
-
-      //   @media screen and (max-width: 700px) {
-      //     width: 100%;
-      //     margin-bottom: 20px;
-      //   }
-      // }
-
-      // .searchInput {
-      //   background-color: var(--white);
-      //   border-color: var(--white);
-      // }
 
       @media screen and (max-width: 700px) {
         flex-direction: column;
@@ -111,14 +77,11 @@
         margin-right: auto;
 
         @media screen and (max-width: 1200px) {
-          // grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
-          // justify-content: center;
           width: 100%;
           margin-top: 20px;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 36px 30px;
-
         }
 
         @media screen and (max-width: 900px) {
@@ -130,8 +93,6 @@
         }
 
         @media screen and (max-width: 700px) {
-          // grid-template-columns: repeat(auto-fit, minmax(100%, 284px));
-          // justify-content: center;
           width: 100%;
           margin-top: 20px;
           display: grid;
