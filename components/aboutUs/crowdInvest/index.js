@@ -55,9 +55,7 @@ const CrowdInvest = () => {
           </ScrollAnimation>
         </div>
       </div>
-      {/* <div className={`${styles.wrapper} wrapper`}>
-
-      </div> */}
+    
     </section>
   );
 };

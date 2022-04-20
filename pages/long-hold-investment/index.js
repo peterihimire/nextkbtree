@@ -1,8 +1,7 @@
 import React, {useEffect} from "react";
 import Layout from "../../layouts/dashboard";
 import AllInvestments from "../../components/longHoldInvestment/LandHome";
-// import DashboardHotInvestment from "../../components/dashboard/hotInvestment";
-// import DashboardRecommendInvestment from "../../components/dashboard/recommendInvestment";
+
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 const LongHoldInvestment = () => {
@@ -28,8 +27,7 @@ const LongHoldInvestment = () => {
   return (
     <>
       <AllInvestments />
-      {/* <DashboardRecommendInvestment />
-      <DashboardHotInvestment /> */}
+    
     </>
   );
 };

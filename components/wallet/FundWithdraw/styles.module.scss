@@ -4,7 +4,6 @@
   .wrapper {
     width: 95%;
     margin: 0 auto;
-    // height: 100%;
     max-width: var(--wrapper-max-width);
 
     @media (max-width: 1387px) {
@@ -16,9 +15,6 @@
     }
 
     .content {
-      // background-color: var(--dashBlue);
-      // background: url(/public/images/random-halftone-square-wallet.svg);
-
       background: linear-gradient(
           to right,
           rgba(0, 62, 231, 0.849),
@@ -30,7 +26,6 @@
 
       border-radius: 16px;
       padding: 20px;
-      // color: var(--white);
 
       p {
         color: var(--white);

@@ -5,8 +5,6 @@ import SwiperCore, { Pagination, Autoplay } from "swiper";
 import StarUnfill from "../../../public/images/star-unfill.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
-// import Image from "next/image";
-
 SwiperCore.use([Pagination, Autoplay]);
 
 const TrustedBy = () => {

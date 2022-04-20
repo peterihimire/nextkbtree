@@ -14,7 +14,6 @@ const Form = () => {
   // const [showModal, setShowModal] = useState(false);
 
   const { error, loading } = useSelector((state) => {
-    // console.log(state);
     return {
       error: state.auth.error,
       loading: state.auth.loading,
